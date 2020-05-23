@@ -1,0 +1,31 @@
+//
+.sp-heading{
+    display: inline-block;
+    font-size: 5rem;
+    font-family: inherit;
+    background-image: $l-grad;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+    // border-bottom: .5rem solid $grad-color-yellow;
+    @include respond(phone){
+        font-size: 4rem;
+    }
+}
+.sp-heading-2{
+    font-family: inherit;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.sp-heading-3{
+    display: inline-block;
+    font-family: $font-1;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #999;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,66 @@
+{
+  "name": "sarojkumar-portfolio",
+  "private": true,
+  "description": "An creative front-end deisnger and developer",
+  "version": "1.0.4",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "env-cmd -f .env gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm-run-all --parallel develop watch:sass",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "watch:sass": "node-sass src/sass/main.scss src/styles/style_v1.css -w",
+    "compile:sass": "node-sass src/sass/main.scss src/styles/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/styles/style.comp.css -o src/styles/style.prefix.css",
+    "compress:css": "node-sass src/styles/style.prefix.css src/styles/style_v1.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "keywords": [
+    "saroj",
+    "sarojkumar",
+    "sarojkumar github",
+    "sarojkumar007 github",
+    "saroj kumar sahoo"
+  ],
+  "author": "Saroj Kumar Sahoo",
+  "dependencies": {
+    "gatsby": "^2.19.7",
+    "gatsby-plugin-google-analytics": "^2.2.2",
+    "gatsby-plugin-nprogress": "^2.2.1",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sass": "^2.2.1",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-remark-images": "^3.2.1",
+    "gatsby-remark-prismjs": "^3.4.1",
+    "gatsby-remark-relative-images": "^0.3.0",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-remark": "^2.7.1",
+    "node-sass": "^4.13.1",
+    "prismjs": "^1.19.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1",
+    "prettier": "^1.19.1"
+  },
+  "x-dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "gatsby-source-contentful": "^2.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://sarojkumar007@bitbucket.org/sarojkumar007/sarojkumar-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

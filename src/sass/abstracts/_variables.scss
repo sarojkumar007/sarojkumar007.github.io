@@ -1,0 +1,17 @@
+//
+:root{
+    --color-p:#0092ca;
+    --color-black:#222831;
+    --color-grey: #393e46;
+    --color-white: #fefefe;
+}
+
+$font-1: "Proxima Nova",sans-serif;
+$font-2: "Sen",sans;
+
+$grad-color-orange: #EE5522;
+$grad-color-yellow: #FFBB33;
+
+$l-grad: linear-gradient(to right, $grad-color-orange, $grad-color-yellow);
+$l-grad-2: linear-gradient(to left, rgba($grad-color-orange,.3), rgba($grad-color-yellow,.3));
+$l-grad-3: linear-gradient(to top, $grad-color-orange, $grad-color-yellow);

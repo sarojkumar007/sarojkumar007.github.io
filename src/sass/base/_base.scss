@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 10px;
+
+    @include respond(tab-land){
+        font-size: 9px;
+    }
+    @include respond(tab){
+        font-size: 9px;
+    }
+    @include respond(phone){
+        font-size: 8px;
+    }
+}
+body {
+    position: relative;
+    line-height: 1.6;
+    font-family: $font-1;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #444;
+}
+section,header,main,footer{
+    max-width: 100vw;
+}
+button{
+    user-select: none;
+}
+
+.sp-link{
+    display: inline-block;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: var(--color-p);
+    transition: border .3s;
+    &:hover{
+        background-image: $l-grad;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &:focus{
+        outline: none;
+        background-image: $l-grad;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+
+code.language-text{
+	background-color: rgba($grad-color-orange, .1) !important;
+    color: #333 !important;
+    border-radius: 1px !important;
+    padding: 2px 4px !important;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar:horizontal {
+  height: .7rem;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8B24;
+  background-image: $l-grad-3;
+}
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #FF8B24;
+  background-image: $l-grad;
+}
+
+// Global Selection
+::-moz-selection {
+    background-color: #FF8B24;
+    color: var(--color-white);
+}
+
+::selection {
+    background-color: #FF8B24;
+    color: var(--color-white);
+}
+
+
+
+

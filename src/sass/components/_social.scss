@@ -1,0 +1,48 @@
+//
+.sp-social--container{
+    display: inline-flex;
+    margin-left: 5rem;
+    margin-top: 2rem;
+
+    & span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+        background-color: #fff;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 0.6rem;
+        transition: transform .3s;
+        & a {
+            border: none;
+        }
+        &:hover,&:focus-within{
+            transform: scale(1.15);
+        }
+        &:focus-within > a{
+            border:none !important;
+        }
+    }
+}
+.sp-social{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid transparent;
+    backface-visibility: hidden;
+    &:hover{
+        text-decoration: none;
+        border-bottom: none;
+    }
+    &:not(:last-child){
+        margin-right: 2rem;
+    }
+    svg{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+
+}

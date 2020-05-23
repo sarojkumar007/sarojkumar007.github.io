@@ -1,0 +1,48 @@
+@import "../sass/abstracts/variables";
+
+.container{
+	text-align: center;
+}
+.err-img{
+	display: block;
+	margin: 0 auto;
+	max-height: 40vh;
+	height: 40vh;
+	// background-color: #999;
+	background-image: url(../images/undraw_warning.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.err-msg{
+	font-family: $font-1;
+	font-size: 2.6rem;
+	color: #333;
+}
+.err-text{
+	font-size: 1.7rem;
+	color: #666;
+	font-family: $font-2;
+	& a{
+		text-decoration: none;
+		color: var(--color-p);
+		font-style: italic;
+		margin: 0 .6rem;
+		border: 1px solid transparent;
+
+		&:hover{
+			background-image: $l-grad;
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
+		&:focus{
+			outline: none;
+			border: 1px dotted var(--color-grey);
+			background-image: $l-grad;
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
+	}
+}

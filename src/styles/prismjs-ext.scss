@@ -1,0 +1,51 @@
+// .gatsby-highlight-code-line {
+//   background-color: #feb;
+//   display: block;
+//   margin-right: -1em;
+//   margin-left: -1em;
+//   padding-right: 1em;
+//   padding-left: 0.75em;
+//   border-left: 0.25em solid #f99;
+// }
+// .gatsby-highlight {
+//   background-color: #fdf6e3;
+//   border-radius: 0.3em;
+//   margin: 0.5em 0;
+//   padding: 1em;
+//   overflow: auto;
+// }
+
+// .gatsby-highlight pre[class*="language-"] {
+//   background-color: transparent;
+//   margin: 0;
+//   padding: 0;
+//   overflow: initial;
+//   float: left; /* 1 */
+//   min-width: 100%; /* 2 */
+// }
+
+// /**/
+// .gatsby-highlight pre[class*="language-"]::before {
+// 	display: block;
+//   color: #232129;
+//   font-size: 0.75rem;
+//   font-family: Consolas, "Liberation Mono", "Courier New", monospace;
+//   letter-spacing: 0.075em;
+//   line-height: 1;
+//   position: absolute;
+//   left: 1.5rem;
+//   text-align: right;
+//   text-transform: uppercase;
+//   top: 0px;
+//   border-radius: 0px 0px 4px 4px;
+//   padding: 0.25rem 0.5rem;
+// }
+// .gatsby-highlight pre[class="language-css"]::before {
+//   content: "css";
+//   color: #ffffff;
+//   background: rgb(255, 152, 0);
+// }
+// .gatsby-highlight pre[class="language-javascript"]::before {
+//   content: "js";
+//   background: rgb(247, 223, 30);
+// }
