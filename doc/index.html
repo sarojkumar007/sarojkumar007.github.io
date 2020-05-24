@@ -12,6 +12,10 @@
             color: #333;
         }
         @media (prefers-color-scheme: dark) {
+            body{
+                background-color: #313232;
+                color: #fff;
+            }
           .dark-scheme   { background:  #333; color: #FFF; }
         }
         *{
@@ -19,6 +23,7 @@
         }
         select{width: 100px;}
     </style>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <h1>This is a big heading as you can see.</h1>
@@ -40,5 +45,7 @@
         </select>
     </form>
     <div class="dark-scheme"></div>
+    <div class="result"></div>
+    <button id="share_btn">Share Blog</button>
 </body>
 </html>
