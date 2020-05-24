@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html id="html" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>SimpleChat | Saroj's Git</title>
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="light_div" id="light_div" data-remove="dark" title="Light Theme"></div>
+        <div class="dark_div" id="dark_div" data-add="dark" title="Dark Theme"></div>
+    </div>
+    <h1>Head to head Chat with webRTC</h1><hr>
+    <div class="connection_container">
+        <fieldset>
+            <legend>Your ID Information</legend>
+            <label for="yourId">Your Id</label>
+            <textarea name="yourId" id="yourId" cols="20" rows="5"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Friends ID Information</legend>
+            <label for="otherId">Other Id</label>
+            <textarea name="otherId" id="otherId" cols="20" rows="5"></textarea>
+        </fieldset>
+
+        <button id="connect">Connect</button>
+    </div><hr>
+    <div class="sendMessage_container">
+        <fieldset class="sendMessage">
+            <legend>Send Message</legend>
+            <label for="yourMessages">Enter Messages:</label>
+            <textarea name="yourMessages" id="yourMessages" cols="30" rows="10"></textarea><br>
+            <button id="send">Send</button>
+        </fieldset>
+    </div><hr>
+    <div class="chat_container">
+        <label for="messages">Chats:</label>
+        <pre id="messages"></pre>
+    </div>
+
+    <!-- <script type="text/javascript" src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+
+    <script type="text/javascript" src="bundle.js"></script>
+
+    <script type="text/javascript">
+        var light_div = document.getElementById("light_div");
+        var dark_div = document.getElementById("dark_div");
+        var html = document.getElementById('html');
+
+        light_div.addEventListener("click", function() {
+            if(this.getAttribute("data-remove")) {
+                html.classList.remove(this.getAttribute("data-remove"));
+            }
+        });
+        dark_div.addEventListener("click", function() {
+            if(this.getAttribute("data-add")) {
+                html.classList.add(this.getAttribute("data-add"));
+            }
+        });
+    </script>
+</body>
+</html>

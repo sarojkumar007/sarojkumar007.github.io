@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>GitHub Finder | Saroj's Git</title>
+
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+      body {font-family: 'Varela Round', sans-serif;}
+      h2 {text-decoration-style: dashed;}
+      .form-control {border:1px solid #333;}
+      .btn-toolbar a {margin-bottom: 5px;}
+      #counters span {margin:0px 3px;}
+      nav { position: relative; }
+
+      .navbar_ul {
+            -webkit-padding-start: 10px;
+        }
+        .nav-link, .nav-item {
+            display: inline-block;
+            color: #000;
+        }
+        .nav-item:hover {
+            background-color: #eee;
+            color: #17a2b8;
+        }
+
+      /*.btn-designed {
+        background-image: linear-gradient(to bottom right, #eee, #17a2b8);
+        color: #fff;
+        border: 2px solid #ddd;
+        transition: .3s;
+      }
+      .btn-designed:hover {
+        transform: translateY(-2px);
+        color: #fff;
+        outline: none;
+      }
+      .btn-designed:active {
+        color: #fff;
+      }
+      .home-link {
+        outline: none;
+        position: absolute;
+        right: 15px;
+        padding: 6px 10px;
+        border-radius: 5px;
+      }*/
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info" style="height: 67px;">
+      <a class="navbar-brand" href=""><h1>Github Finder</h1></a>
+      <!-- <button onclick="goto_home()" class="home-link btn-designed">Home</button> -->
+    </nav>
+    <div class="section_nav shadow-sm">
+        <ul class="navbar_ul">
+              <li class="nav-item active">
+                <a class="nav-link" href="https://sarojkumar007.github.io">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about/">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact/">Contact</a>
+              </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+      <div id="search_container">
+        <br>
+        <div class="col-lg-4" style="float: left;">
+          <span style="font-size: 28px;">Search GitHub User</span><br>
+          <span style="font-size: 14px;">Enter a username to fetch a users profile info and repos.</span>
+        </div>
+        <div class="col-lg-8" style="float: left;"><input type="text" name="userInput" class="form-control" id="searchUser" placeholder="GitHub username"></div>
+      </div><div style="clear: both;"></div><hr>
+
+      <div id="profile"></div>
+      <div id="repos">
+
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#searchUser").on('keyup paste', function(key) {
+          let username = key.target.value;
+          //make request to GitHub
+          $.ajax({
+            url:'https://api.github.com/users/'+username,
+            data:{
+              client_id: 'f79c30a6574acc5bbbfb',
+              client_secret: 'ed8ff78a245b916ecc5818a58dcc13c5a0360cf9'
+            }
+          }).done(function(user){
+            $.ajax({
+              url:'https://api.github.com/users/'+username+'/repos',
+              data:{
+                client_id: 'f79c30a6574acc5bbbfb',
+                client_secret: 'ed8ff78a245b916ecc5818a58dcc13c5a0360cf9',
+                sort: 'created: asc',
+                per_page: 10
+              }
+            }).done(function(repos){
+                $('#repos').html('<h2><center>:: Repositories in Detail ::</center></h2>');
+              $.each(repos, function(index, repo){
+                $('#repos').append(`
+                  <div class="well">
+                    <div class="row">
+                    <div class="col-md-7 col-lg-7 col-sm-12">
+                    <div class="alert alert-info" role="alert">
+                      <strong>${repo.name}</strong> : ${repo.description}
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-12">
+                      <div class="row" id="counters"><center>
+                      <span class="badge badge-secondary"></span>
+                      <span class="badge badge-secondary">Forks: ${repo.forks_count}</span>
+                      <span class="badge badge-warning">Watchers: ${repo.watchers_count}</span>
+                      <span class="badge badge-success">Stars: ${repo.stargazers_count}</span>
+                      <center></div>
+                    </div>
+                    <div class="col-md-1 col-lg-2 col-sm-12">
+                      <a href="${repo.html_url}" target="_blank">Repo Page</a>
+                    </div>
+                    </div>
+                  </div>
+                `);
+              });
+              var rest_repo = user.public_repos - 10;
+              if(rest_repo <= 0){ rest_repo = 0;}
+              $('#repos').append(`<br><h4 class="lead add_info"> and ${rest_repo} More ...(<a href="https://github.com/${user.login}?tab=repositories" target="_blank">View Full Repo list</a>)</h4><br><br>`);
+              if(rest_repo <= 0){$('.add_info').fadeOut();}
+            });
+            $('#profile').html(`
+              <div class="panel panel-default">
+                <div class="panel-heading"><h3>${user.name}<br>(${user.login})</h3></div>
+                <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-3">
+                  <img class="thumbnail" style="width:100%" src="${user.avatar_url}" alt="user_avatar">
+                <br><br><a class="btn btn-info btn-sm btn-block btn-designed" href="${user.html_url}" target="_blank">View Profile</a><br>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="btn-toolbar justify-content-between" role="toolbar">
+
+                      <a type="button" class="btn btn-warning col-sm-12 col-md-5 col-lg-3">Public Repositories: ${user.public_repos}</a>
+                      <a type="button" class="btn btn-success col-sm-12 col-md-5 col-lg-3">Public Gists: ${user.public_gists}</a>
+                      <a type="button" class="btn btn-secondary col-sm-12 col-md-5 col-lg-3">Followers: ${user.followers}</a>
+                      <a type="button" class="btn btn-primary col-sm-12 col-md-5 col-lg-3">Following: ${user.following}</a>
+
+                  </div>
+                  <ul class="list-group">
+                    <li class="list-group-item">Company: ${user.company}</li>
+                    <li class="list-group-item">Website/Blog: <a href="${user.blog}">${user.blog}</a></li>
+                    <li class="list-group-item">Location: ${user.location}</li>
+                    <li class="list-group-item">Member Since: ${user.created_at}</li>
+                  </ul>
+                </div>
+                </div>
+              </div><hr>
+            `);
+          });
+        });
+      });
+    </script>
+    <!-- <script>
+      function goto_home() {
+        var url= "https://sarojkumar007.github.io";
+        window.location = url;
+      }
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,218 @@
+:root{
+  --grad: linear-gradient(to top , #1e88e5,#0d47a1);
+  --header-color: #efefef;
+  --background: #ddd;
+}
+
+@font-face {
+    font-family: 'Google';
+    src: url(https://sarojkumar007.github.io/doc/fonts/google-sans-light.woff2);
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Copyright 2013 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.icon {
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.icon-offline {
+  content: -webkit-image-set( url(assets/default_100_percent/100-error-offline.png) 1x, url(assets/default_200_percent/200-error-offline.png) 2x);
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Offline page */
+
+.offline .interstitial-wrapper {
+  color: #2b2b2b;
+  font-size: 1em;
+  line-height: 1.55;
+  margin: 0 auto;
+  max-width: 600px;
+  /*padding-top: 50px;*/
+  width: 100%;
+  background-color: var(--background);
+}
+
+.offline .runner-container {
+  height: 150px;
+  max-width: 600px;
+  /*overflow: hidden;*/
+  /*position: absolute;*/
+  /*top: 35px;*/
+  width: 44px;
+}
+
+.offline .runner-canvas {
+  height: 150px;
+  max-width: 600px;
+  opacity: 1;
+  filter:contrast(200%);
+  /*overflow: hidden;*/
+  /*position: absolute;*/
+  top: 0;
+  z-index: 2;
+}
+
+.offline .controller {
+  background: rgba(247, 247, 247, .1);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+#offline-resources {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .suggested-left > #control-buttons, .suggested-right > #control-buttons {
+    float: none;
+  }
+  .snackbar {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-height: 350px) {
+  h1 {
+    margin: 0 0 15px;
+  }
+  .icon-offline {
+    margin: 0 0 10px;
+  }
+  .interstitial-wrapper {
+    margin-top: 5%;
+  }
+  .nav-wrapper {
+    margin-top: 30px;
+  }
+}
+
+/*@media (min-width: 600px) and (max-width: 736px) and (orientation: landscape) {
+  .offline .interstitial-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}*/
+
+@media (min-width: 420px) and (max-width: 736px) and (min-height: 240px) and (max-height: 420px) and (orientation:landscape) {
+  .interstitial-wrapper {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-height: 240px) and (orientation: landscape) {
+  .offline .interstitial-wrapper {
+    margin-bottom: 90px;
+  }
+  .icon-offline {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-height: 320px) and (orientation: landscape) {
+  .icon-offline {
+    margin-bottom: 0;
+  }
+  .offline .runner-container {
+    top: 10px;
+  }
+}
+
+@media (max-width: 240px) {
+  .interstitial-wrapper {
+    overflow: inherit;
+    padding: 0 8px;
+  }
+}
+
+/*****************************/
+
+header{
+  /*height: 220px;*/
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #999;
+  background-color: var(--header-color);
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Stylish',Google, cursive;
+  font-weight: 100;
+  background-image: var(--grad);
+  text-align: center;
+  color: #efefef;
+  padding: 20px;
+  box-shadow: 0 3px 6px #757575;
+}
+.heading{
+  font-size: 35px;
+}
+.audio-btn{
+  font-family: Google,sans-serif;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+  font-size: 16px;
+  background-color: #fff;
+  color: #1e88e5;
+  cursor: pointer;
+}
+#play{
+  display: none;
+}
+.desc{
+  padding: 15px 20px;
+}
+.desc h3 {
+  font-family: Google,sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: #333;
+}
+.desc ul{
+  margin-left: 40px;
+  font-family: Google,sans-serif;
+  font-weight: 100;
+  font-size: .8rem;
+  color:#444;
+}
+.desc ul li {
+  line-height: 1.8;
+}
+code{
+  color: transparent;
+  background-image: var(--grad);
+  -webkit-background-clip:text;
+  background-clip:text;
+}

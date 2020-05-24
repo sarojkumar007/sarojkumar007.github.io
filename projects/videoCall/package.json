@@ -1,0 +1,14 @@
+{
+  "name": "videocall",
+  "version": "1.0.0",
+  "description": "Live videocall",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js:bundle.js"
+  },
+  "author": "\"Saroj Kumar Sahoo\"",
+  "license": "ISC",
+  "dependencies": {
+    "simple-peer": "^9.2.0"
+  }
+}

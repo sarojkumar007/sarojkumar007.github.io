@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .dark-scheme{
+            max-width: 600px;
+            height: 200px;
+            background-color: #ccc;
+            color: #333;
+        }
+        @media (prefers-color-scheme: dark) {
+          .dark-scheme   { background:  #333; color: #FFF; }
+        }
+        *{
+            font-family: -apple-system,system-ui;
+        }
+        select{width: 100px;}
+    </style>
+</head>
+<body>
+    <h1>This is a big heading as you can see.</h1>
+    <p>I am trying to make the fonts acessible to everyone with there respective fonts.</p>
+    <span>Great Work!</span>
+    <input type="text" value="My name is Saroj">
+    <button>Test Button</button>
+    <a href="#">A test link</a>
+    <ul>
+        <li>Test item of UL</li>
+    </ul>
+    <form action="" id="myForm">
+        <select name="form" id="mySelect" multiple="multiple">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </form>
+    <div class="dark-scheme"></div>
+</body>
+</html>
