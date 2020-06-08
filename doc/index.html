@@ -51,6 +51,7 @@
     <button onclick="notifyMe()">Notify me!</button>
 
     <script>
+        navigator.serviceWorker.register('sw.js');
         function notifyMe() {
           // Let's check if the browser supports notifications
           if (!("Notification" in window)) {
