@@ -102,7 +102,7 @@
 
         function performMapAction(state) {
           console.log('Permission ' + state);
-          if(state === 'granted'){
+          if(state === 'granted' || state === 'prompt'){
             navigator.geolocation.getCurrentPosition((pos) => {
               const crd = pos.coords;
               console.log('Your current position is:');
@@ -113,9 +113,9 @@
               console.warn(err);
             }, locationOptions);
           }
-          else if(state=== 'prompt'){
-            // request access
-          }
+          // else if(state=== 'prompt'){
+          //   // request access
+          // }
           else{
             console.log('Enable Location Access to View Events. It only is used to run Google API');
           }
