@@ -24,16 +24,16 @@
             left: 0;
             width: 0px;
             height: 100%;
-            border: 3px dashed #aaa;
+            border: 3px dashed #ccc;
         }
         & li {
             position: relative;
             margin: 8rem 0rem 8rem 6rem;
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             max-width: 60rem;
-            padding: 3rem;
-            background-color: #eee;
-            border-radius: 1rem;
+            padding: 1.6rem 2.4rem;
+            background-color: #e9e9e9;
+            border-radius: 8px;
         }
         & li > span {
             content: "";
@@ -42,13 +42,13 @@
             left: -6rem;
             width: 0px;
             height: 100%;
-            border: 3px solid #aaa;
+            border: 3px solid #ccc;
 
             &:before, &:after {
                 content: "";
                 width: 2rem;
                 height: 2rem;
-                border: .6rem solid #aaa;
+                border: .6rem solid #ccc;
                 background: $grad-color-orange;
                 position: absolute;
                 border-radius: 50%;

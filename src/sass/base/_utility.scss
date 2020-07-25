@@ -1,0 +1,42 @@
+// @keyframes load{
+// 	0%{
+// 		transform: scale(1);
+// 	}
+// 	33%{
+// 		transform: scale(1.3);
+// 	}
+// 	67%{
+// 		transform: scale(1);
+// 	}
+// 	100%{
+// 		transform: scale(.8);
+// 	}
+// }
+// .sp-loader{
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 1005;
+// 	width: 100vw;
+// 	height: 100vh;
+// 	background-color: #fff;
+// 	display: grid;
+// 	place-items: center;
+// 	&.loaded{
+// 		opacity: 0;
+// 		visibility: hidden;
+// 	}
+// }
+// .sp-loading{
+// 	// padding: 1rem 2rem;
+// 	font-size: 1.6rem;
+// 	z-index: 1006;
+// 	display: grid;
+// 	place-items: center;
+// 	animation: load 1s linear infinite;
+// 	// animation-fill-mode: backwards;
+// 	& svg{
+// 		width: 3rem;
+// 		height: 3rem;
+// 	}
+// }

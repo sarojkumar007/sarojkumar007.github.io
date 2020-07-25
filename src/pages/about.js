@@ -36,8 +36,9 @@ export default () => {
                   <use href={solidSprite + "#building"}></use>
                 </svg> Govt. M.E. School, Odagaon
             </div>
-              <div className="timel-details">After the primary education from std. 1, I joined this school for rest of my classes from std. 2 to std. 7. I was curious to learn. I got my 5th and 7th std. scholarship there.
-            </div>
+            {/* <div className="timel-details">
+                After the primary education from std. 1, I joined this school for rest of my classes from std. 2 to std. 7. I was curious to learn. I got my 5th and 7th std. scholarship there.
+            </div> */}
               <div className="time">
                 <span>2003</span>
                 <span>2009</span>
@@ -51,8 +52,8 @@ export default () => {
                   <use href={solidSprite + "#building"}></use>
                 </svg> Raghunath Bidyapitha, Odagaon
             </div>
-              <div className="timel-details">This was the best schooling life, I ever had. I studied 8th to 10th here. I had a lot of friends and teachers were super friendly. I had my times with Junior Red Cross and got chance to join campus training at Bhubaneswar. I was the best cadet in my final year.
-            </div>
+            {/* <div className="timel-details">This was the best schooling life, I ever had. I studied 8th to 10th here. I had a lot of friends and teachers were super friendly. I had my times with Junior Red Cross and got chance to join campus training at Bhubaneswar. I was the best cadet in my final year.
+            </div> */}
               <div className="time">
                 <span>2009</span>
                 <span>2013</span>
@@ -66,8 +67,8 @@ export default () => {
                   <use href={solidSprite + "#building"}></use>
                 </svg> Nayagarh Junior College, Nayagarh
             </div>
-              <div className="timel-details">After my High school, I went to town for my intermediate +2. It was quite the experience about everything that will change your life. I learned a lot and did all stuff I can do with my friends. the final year was all about geting your career set, we all focused towards competitives.
-            </div>
+            {/* <div className="timel-details">After my High school, I went to town for my intermediate +2. It was quite the experience about everything that will change your life. I learned a lot and did all stuff I can do with my friends. the final year was all about geting your career set, we all focused towards competitives.
+            </div> */}
               <div className="time">
                 <span>2013</span>
                 <span>2015</span>
@@ -81,8 +82,8 @@ export default () => {
                   <use href={solidSprite + "#building"}></use>
                 </svg> Govt. College of Engineering, Bhawanipatna
             </div>
-              <div className="timel-details">I came here for my graduation after 1 year of JEE preparation. This college taught me how to tackle life situations being an engineer.
-            </div>
+            {/* <div className="timel-details">I came here for my graduation after 1 year of JEE preparation. This college taught me how to tackle life situations being an engineer.
+            </div> */}
               <div className="time">
                 <span>2016</span>
                 <span>2020</span>

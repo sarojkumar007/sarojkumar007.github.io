@@ -22,27 +22,27 @@ export default (props) => {
 					<svg>
 						<use href={solidSprite + "#bookmark"}></use>
 					</svg>
-					<span className={BlogStyles.popular}>Currently, few posts are being published. But, you will see more soon. Reply me your topic of interest in contact section.</span>
+					<span className={BlogStyles.text}>Currently few posts are being published. I will be adding more soon. Reply me your topic of interest in contact section.</span>
 				</div>
 				<h2 className="sp-heading-3">Spread the Word</h2>
 				<div className={BlogStyles.shareBtnContainer}>
 					<a href={`https://www.facebook.com/sharer/sharer.php?u=https://sarojkumar007.github.io${props.shareURL}&ref=plugin&src=share_button`} className={BlogStyles.shareBtn}>
-						<svg>
+						<svg className={BlogStyles.facebook}>
 							<use href={brandSprite + "#facebook"}></use>
 						</svg>
 					</a>
 					<a href={`https://web.whatsapp.com/send?text=https://sarojkumar007.github.io${props.shareURL}`} className={`${BlogStyles.shareBtn} ${BlogStyles.waDesktop}`}>
-						<svg>
+						<svg className={BlogStyles.whatsapp}>
 							<use href={brandSprite + "#whatsapp"}></use>
 						</svg>
 					</a>
 					<a href={`whatsapp://send?text=https://sarojkumar007.github.io${props.shareURL}`} className={`${BlogStyles.shareBtn} ${BlogStyles.waMobile}`}>
-						<svg>
+						<svg className={BlogStyles.whatsapp}>
 							<use href={brandSprite + "#whatsapp"}></use>
 						</svg>
 					</a>
 					<a href={`https://twitter.com/share?text="${props.shareTitle}" - &url=https://sarojkumar007.github.io${props.shareURL}`} className={BlogStyles.shareBtn}>
-						<svg>
+						<svg className={BlogStyles.twitter}>
 							<use href={brandSprite + "#twitter"}></use>
 						</svg>
 					</a>

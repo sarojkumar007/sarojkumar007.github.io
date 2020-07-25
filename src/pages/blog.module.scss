@@ -109,7 +109,7 @@
 	letter-spacing: 1px;
 }
 .popular{
-	padding: .3rem;
+	// padding: .3rem;
 	text-decoration: none;
 	color: var(--color-p);
 	font-size: 1.5rem;
@@ -120,6 +120,10 @@
 		background-clip: text;
 		color: transparent;
 	}
+}
+.text{
+	font-size: 1.5rem;
+	color: #616161;
 }
 .popular-post-container{
 	display: flex;
@@ -154,6 +158,15 @@
 
 	&:hover,&:focus,&:active{
 		transform: scale(1.1);
+		& .facebook {
+			fill: #4267B2;
+		}
+		& .whatsapp{
+			fill: #25D366;
+		}
+		& .twitter{
+			fill: #1DA1F2;
+		}
 	}
 	
 	&:not(:last-child){
@@ -162,6 +175,7 @@
 	& svg{
 		width: 3rem;
 		height: 3rem;
+		transition: 300ms;
 	}
 }
 

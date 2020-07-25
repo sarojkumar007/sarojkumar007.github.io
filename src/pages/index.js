@@ -8,6 +8,7 @@ import SolidSprite from "../images/sprites/solid.svg"
 
 export default () => {
   return (
+    <>
     <Layout>
       <SEO title="Home" />
       <section className="sp-section sp-section-hero">
@@ -113,5 +114,6 @@ export default () => {
         </div>
       </section>
     </Layout>
+    </>
   )
 }
