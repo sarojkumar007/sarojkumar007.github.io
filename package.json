@@ -16,7 +16,9 @@
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/styles/style.comp.css -o src/styles/style.prefix.css",
     "compress:css": "node-sass src/styles/style.prefix.css src/styles/style_v1.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "saroj",
@@ -42,7 +44,8 @@
     "prismjs": "^1.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "snyk": "^1.373.1"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
@@ -62,5 +65,6 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "snyk": true
 }
