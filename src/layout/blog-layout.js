@@ -12,14 +12,14 @@ export default (props) => {
 			<div className={BlogStyles.pageSidebar}>
 				<h2 className="sp-heading-3">Most Popular</h2>
 				<div className={BlogStyles.popularPostContainer}>
-					<svg>
+					<svg fill="url(#l-grad)">
 						<use href={solidSprite + "#award"}></use>
 					</svg>
 					<Link to="/blog/how-to-start-front-end-web-development" className={BlogStyles.popular} activeClassName={BlogStyles.active}>How to Start Front-end Web Development</Link>
 				</div>
 				<h2 className="sp-heading-3">Message for Readers</h2>
 				<div className={BlogStyles.popularPostContainer}>
-					<svg>
+					<svg fill="url(#l-grad)">
 						<use href={solidSprite + "#bookmark"}></use>
 					</svg>
 					<span className={BlogStyles.text}>Currently few posts are being published. I will be adding more soon. Reply me your topic of interest in contact section.</span>

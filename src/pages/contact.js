@@ -25,8 +25,8 @@ const Contact = () => {
                 <label htmlFor="email" className="sp-contact-label">Email Address*</label>
               </div>
               <div className="sp-contact-group">
-                <input className="sp-contact-input" type="text" name="subject" id="subject" placeholder="Subject" aria-label="Subject" spellCheck="false" />
-                <label htmlFor="subject" className="sp-contact-label">Subject</label>
+                <input className="sp-contact-input" type="text" name="subject" id="subject" placeholder="Subject (Optional)" aria-label="Subject" spellCheck="false" />
+                <label htmlFor="subject" className="sp-contact-label">Subject (Optional)</label>
               </div>
               <div className="sp-contact-group">
                 <textarea className="sp-contact-input" rows="4" cols="30" name="msg" id="msg" placeholder="Your Message*" aria-label="Message" required spellCheck="false" ></textarea>

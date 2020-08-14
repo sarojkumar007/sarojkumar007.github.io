@@ -2,7 +2,10 @@
 @import "../sass/abstracts/mixins";
 
 .blog{
-	width: 100%;
+	width: calc(100% - 35rem); //sidebar+sidebarLeftMargin
+	@include respond(tab){
+		width: 100%;
+	}
 }
 .title{
 	font-family: $font-2;

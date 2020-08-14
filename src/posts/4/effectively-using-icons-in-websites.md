@@ -93,8 +93,8 @@ Which turns into an icon after Render.
 ```
 Which turns into an svg element.
 
->**Note:**
-`<use xlink:href="/path/to/vendorSpite.svg#iconName"></use>` is deprecated. How ever some browsers still support it.
+>**Note:**<br>
+*`<use xlink:href=""></use>`* is deprecated. How ever some browsers still support it.
 ><br>Check compatibility table before using it.
 
 # Resources

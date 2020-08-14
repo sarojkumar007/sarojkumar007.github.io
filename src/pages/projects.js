@@ -21,12 +21,12 @@ export default () => {
           />
           <Project
             title="Smart Irrigation System"
-            date="On Going ..."
+            date="July 23rd '20"
             tag1="Python"
             tag2="ML,IoT"
             desc="A Smart Irrigation System that collects soli parameters like Temperature, Humidity and automates the irrigation process in Crops. It also predicts Weather Conditions and Uses UI to display data to the Users. More on github ..."
             liveLink={false}
-            gitLink="https://github.com/GCEK-CSE-Devs/sis"
+            gitLink={false}
           />
         </div>
       </section>
@@ -41,7 +41,7 @@ export default () => {
             desc="A simple application that uses GitHub API and finds users with there details on the Go just by using there github username!"
             liveLink="https://sarojkumar007.github.io/projects/github-finder"
             liveLinkText="See Live"
-            gitLink="https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/github-finder"
+            gitLink="https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/projects/github-finder"
           />
 
           <Project
@@ -52,7 +52,7 @@ export default () => {
             desc="A simple chat application that uses WebRTC to peer to peer communication, will be updating instructions on how to use!"
             liveLink="https://sarojkumar007.github.io/projects/chat"
             liveLinkText="See Live"
-            gitLink="https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/github-finder"
+            gitLink="https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/projects/chat"
           />
 
           <Project
@@ -63,7 +63,7 @@ export default () => {
             desc="Google's Offline Game, redesigned with cool background song. Lets you play anytime anywhere!!"
             liveLink="https://sarojkumar007.github.io/projects/dino"
             liveLinkText="See Live"
-            gitLink="https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/github-finder"
+            gitLink="https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/projects/dino"
           />
 
           <Project
@@ -74,7 +74,7 @@ export default () => {
             desc="A simple Video Call Application that uses the same technique of peer to peer connection, and lets you video chat your favourite ones."
             liveLink="https://sarojkumar007.github.io/projects/videoCall"
             liveLinkText="See Live"
-            gitLink="https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/github-finder"
+            gitLink="https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/projects/videoCall"
           />
 
           <Project
@@ -176,6 +176,17 @@ export default () => {
             liveLink="https://sarojkumar007.github.io/budgy-app/"
             liveLinkText="See Live"
             gitLink="https://github.com/sarojkumar007/budgy-app/"
+          />
+
+          <Project
+            title="Forkify"
+            date="Aug 13th '20"
+            tag1="JS"
+            tag2="API"
+            desc="A model Food App that search over 10,000,000 foods and finds suitable recipe for you. Add to your list for preferred sevings and crave your hunger."
+            liveLink="https://forkify-sarojkumar007.netlify.app/"
+            liveLinkText="See Live"
+            gitLink="https://github.com/sarojkumar007/forkify/"
           />
         </div>
       </section>

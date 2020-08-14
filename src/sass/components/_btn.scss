@@ -1,4 +1,5 @@
 .sp-btn,a.sp-btn{
+    font-family: inherit;
     user-select: none;
     text-decoration: none;
     display: flex;
@@ -19,5 +20,14 @@
         border: 2px solid var(--color-black);
         background-color: var(--color-black);
         color: #fff;
+    }
+
+    &.disabled{
+        &,&:hover,&:focus,&:active{
+            border-color: #999;
+            background-color: transparent;
+            color: #999;
+            cursor: not-allowed;
+        }
     }
 }

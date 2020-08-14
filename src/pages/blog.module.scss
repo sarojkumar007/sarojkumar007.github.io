@@ -156,19 +156,20 @@
 	align-items: center;
 	transition: transform .3s;
 
+	& .facebook {
+		fill: #4267B2;
+	}
+	& .whatsapp{
+		fill: #25D366;
+	}
+	& .twitter{
+		fill: #1DA1F2;
+	}
+
 	&:hover,&:focus,&:active{
 		transform: scale(1.1);
-		& .facebook {
-			fill: #4267B2;
-		}
-		& .whatsapp{
-			fill: #25D366;
-		}
-		& .twitter{
-			fill: #1DA1F2;
-		}
 	}
-	
+
 	&:not(:last-child){
 		margin-right: 2rem;
 	}

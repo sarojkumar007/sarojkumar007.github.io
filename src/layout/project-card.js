@@ -27,12 +27,17 @@ export default (props) => {
       </div>
       <div className="sp-project--cta">
         {props.liveLink ? <a href={props.liveLink} target="_blank" rel="noopener noreferrer" className="sp-link">{props.liveLinkText}</a> : ""}
-        <a href={props.gitLink} target="_blank" rel="noopener noreferrer" className="sp-btn">
+        {props.gitLink ? <a href={props.gitLink} target="_blank" rel="noopener noreferrer" className="sp-btn">
           <svg className="sp-btn--icon">
             <use href={brandsSprite + "#github"}></use>
           </svg>
           GitHub
-        </a>
+        </a> : <button className="sp-btn disabled" disabled>
+            <svg className="sp-btn--icon">
+              <use href={brandsSprite + "#github"}></use>
+            </svg>
+          Private Repo
+        </button>}
       </div>
     </div>
   )

@@ -16,16 +16,16 @@ export default () => {
 						<Link to="/" activeClassName="active">Home</Link>
 					</li>
 					<li>
-						<Link to="/about" activeClassName="active">About</Link>
+						<Link to="/about/" activeClassName="active">About</Link>
 					</li>
 					<li>
-						<Link to="/projects" activeClassName="active">Projects</Link>
+						<Link to="/projects/" activeClassName="active">Projects</Link>
 					</li>
 					<li>
-						<Link to="/contact" activeClassName="active">Contact</Link>
+						<Link to="/contact/" activeClassName="active">Contact</Link>
 					</li>
 					<li>
-						<Link to="/blog" activeClassName="active">Blog</Link>
+						<Link to="/blog/" activeClassName="active">Blog</Link>
 					</li>
 				</ul>
 			</div>

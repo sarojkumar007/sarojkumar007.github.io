@@ -49,7 +49,7 @@ export default () => {
         <h2 className="sp-heading">About Me</h2>
         <div>
           <img src="/profile.webp" alt="Saroj Kumar" className="sp-section-about--img" />
-          <p className="sp-section-about--text">Hey! Thanks for being here.<br />I am a graduate in Computer Science and Engineering, studied in Govt. College of Engineering Kalahandi, Bhawanipatna.<br />My main domain is Web. I love JavaScript and currently working on Web Optimization and SEO. I love to design pixel perfect websites that are interactive and eye catching. I have hands-on experience in Node.js along with MongoDB. <Link to="/about" className="sp-link">Read More</Link></p>
+          <p className="sp-section-about--text">Hey! Thanks for being here.<br />I am a graduate in Computer Science and Engineering, studied in Govt. College of Engineering Kalahandi, Bhawanipatna.<br />My main domain is Web. I love JavaScript and currently working on Web Optimization and SEO. I love to design pixel perfect websites that are interactive and eye catching. I have hands-on experience in Node.js along with MongoDB. <Link to="/about/" className="sp-link">Read More</Link></p>
         </div>
       </section>
       <section className="sp-section sp-section-loves">
