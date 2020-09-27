@@ -22,3 +22,7 @@ patch:
         patched: '2020-08-12T16:12:50.436Z'
     - gatsby-transformer-remark > sanitize-html > lodash:
         patched: '2020-08-14T15:37:00.322Z'
+    - snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
+        patched: '2020-09-27T19:47:44.589Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-09-27T19:47:44.589Z'
