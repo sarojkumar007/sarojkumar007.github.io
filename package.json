@@ -29,13 +29,13 @@
   ],
   "author": "Saroj Kumar Sahoo",
   "dependencies": {
-    "gatsby": "^2.24.11",
-    "gatsby-plugin-google-analytics": "^2.3.13",
-    "gatsby-plugin-nprogress": "^2.3.10",
-    "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-sass": "^2.3.12",
-    "gatsby-plugin-sharp": "^2.6.22",
-    "gatsby-remark-images": "^3.3.21",
+    "gatsby": "^2.24.15",
+    "gatsby-plugin-google-analytics": "^2.3.14",
+    "gatsby-plugin-nprogress": "^2.3.11",
+    "gatsby-plugin-react-helmet": "^3.3.11",
+    "gatsby-plugin-sass": "^2.3.13",
+    "gatsby-plugin-sharp": "^2.6.24",
+    "gatsby-remark-images": "^3.3.23",
     "gatsby-remark-prismjs": "^3.5.11",
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-source-filesystem": "^2.3.24",
@@ -45,7 +45,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
-    "snyk": "^1.401.0"
+    "snyk": "^1.402.0"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
