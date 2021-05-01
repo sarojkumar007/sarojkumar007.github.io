@@ -50,3 +50,7 @@ patch:
         patched: '2020-09-27T19:49:30.620Z'
     - snyk > snyk-mvn-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
         patched: '2020-09-27T19:49:30.620Z'
+    - gatsby > @typescript-eslint/eslint-plugin > lodash:
+        patched: '2021-05-01T10:07:20.869Z'
+    - gatsby > babel-plugin-lodash > lodash:
+        patched: '2021-05-01T10:07:20.869Z'
