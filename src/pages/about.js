@@ -12,11 +12,10 @@ export default () => {
         <h2 className="sp-heading">About Me</h2>
         <div className="sp-about-container">
           <div className="sp-about-img">
-            <img loading="lazy" src="/saroj-kumar-sahoo.webp" alt="Saroj Kumar Sahoo" />
+            <img loading="lazy" src="/saroj-kumar-sahoo-02.webp" alt="Saroj Kumar Sahoo" style={{ 'border': '8px solid #fff', 'borderRadius': '0' }} />
           </div>
           <div className="sp-about-details">
-            <h4 className="sp-heading-3">About</h4>
-            <p>Hey! Thanks for being here.<br />I'm Saroj Kumar Sahoo, graduate in Computer Science and Engineering from <em><a className="sp-link" href="https://www.gcekbpatna.ac.in/" aria-label="https://www.gcekbpatna.ac.in/">GCEK, Bhawanipatna</a>, Odisha</em>.<br />I make simple and attractive websites, landing pages, Site Optimization and SEO for Businesses.</p>
+            <p>Hey! Thanks for being here.<br />I'm Saroj Kumar Sahoo, an Automation Engineer at <a className="sp-link" href="https://www.hcltech.com/" target="_blank" rel="noreferrer noopener">HCL</a>, Noida, Graduated in Computer Science and Engineering from <em><a className="sp-link" target="_blank" rel="noreferrer noopener" href="https://www.gcekbpatna.ac.in/" aria-label="https://www.gcekbpatna.ac.in/">GCEK, Bhawanipatna</a>, Odisha</em>.<br />I do script for Windows and Linux to automate things. I make simple and attractive websites, landing pages, Site Optimization and SEO for Businesses.</p>
             <h4 className="sp-heading-3">Hobbies</h4>
             <p>In my leisure, I read short news. Painting is my hobby, so I do paint when ever I get time.<br />I love to play Online Games more often. I like to explore a lot about places for inspiration.</p>
             <h4 className="sp-heading-3">Personality</h4>
@@ -36,7 +35,7 @@ export default () => {
                   <use href={solidSprite + "#building"}></use>
                 </svg> Govt. M.E. School, Odagaon
             </div>
-            {/* <div className="timel-details">
+              {/* <div className="timel-details">
                 After the primary education from std. 1, I joined this school for rest of my classes from std. 2 to std. 7. I was curious to learn. I got my 5th and 7th std. scholarship there.
             </div> */}
               <div className="time">
@@ -52,7 +51,7 @@ export default () => {
                   <use href={solidSprite + "#building"}></use>
                 </svg> Raghunath Bidyapitha, Odagaon
             </div>
-            {/* <div className="timel-details">This was the best schooling life, I ever had. I studied 8th to 10th here. I had a lot of friends and teachers were super friendly. I had my times with Junior Red Cross and got chance to join campus training at Bhubaneswar. I was the best cadet in my final year.
+              {/* <div className="timel-details">This was the best schooling life, I ever had. I studied 8th to 10th here. I had a lot of friends and teachers were super friendly. I had my times with Junior Red Cross and got chance to join campus training at Bhubaneswar. I was the best cadet in my final year.
             </div> */}
               <div className="time">
                 <span>2009</span>
@@ -67,7 +66,7 @@ export default () => {
                   <use href={solidSprite + "#building"}></use>
                 </svg> Nayagarh Junior College, Nayagarh
             </div>
-            {/* <div className="timel-details">After my High school, I went to town for my intermediate +2. It was quite the experience about everything that will change your life. I learned a lot and did all stuff I can do with my friends. the final year was all about geting your career set, we all focused towards competitives.
+              {/* <div className="timel-details">After my High school, I went to town for my intermediate +2. It was quite the experience about everything that will change your life. I learned a lot and did all stuff I can do with my friends. the final year was all about geting your career set, we all focused towards competitives.
             </div> */}
               <div className="time">
                 <span>2013</span>
@@ -82,7 +81,7 @@ export default () => {
                   <use href={solidSprite + "#building"}></use>
                 </svg> Govt. College of Engineering, Bhawanipatna
             </div>
-            {/* <div className="timel-details">I came here for my graduation after 1 year of JEE preparation. This college taught me how to tackle life situations being an engineer.
+              {/* <div className="timel-details">I came here for my graduation after 1 year of JEE preparation. This college taught me how to tackle life situations being an engineer.
             </div> */}
               <div className="time">
                 <span>2016</span>
@@ -109,6 +108,7 @@ export default () => {
           <div className="sp-section-exp-item">
             <div><h4 className="sp-heading-3">Works / Responsiblities</h4></div>
             <ul className="sp-section-exp--ul">
+              <li>Graduate Engineer Trainee <b>/</b> HCL Technologies, Noida, UP</li>
               <li>Intern <b>/</b> DRDO, Chandipur</li>
               <li>Voluteer(Group best cadet) <b>/</b> Junior Red Cross</li>
               <li>Committee Member <b>/</b> deCoders, GCEK's Coding Club</li>

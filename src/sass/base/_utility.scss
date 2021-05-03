@@ -40,3 +40,25 @@
 // 		height: 3rem;
 // 	}
 // }
+
+.sp-text-small{
+  font-size: 1.3rem;
+}
+.sp-text-mute{
+  color: #999;
+}
+.sp-icon-link{
+  display: inline-flex;
+  align-items: center;
+  &.active svg, &:hover svg, &:focus svg, &.active svg path, &:hover svg path, &:focus svg path {
+    color: $grad-color-orange !important;
+    // fill: $grad-color-orange;
+    stroke: $grad-color-orange !important;
+  }
+
+  @include respond(phone-sm){
+    & svg {
+      display: none;
+    }
+  }
+}

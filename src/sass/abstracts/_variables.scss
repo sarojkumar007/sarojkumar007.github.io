@@ -4,10 +4,16 @@
     --color-black:#222831;
     --color-grey: #393e46;
     --color-white: #fefefe;
+
+    // @media (prefers-color-scheme: dark) {
+    //     --color-black:#fefefe;
+    //     --color-grey: #999;
+    //     --color-white: #222831;
+    // }
 }
 
 $font-1: "Proxima Nova",sans-serif;
-$font-2: "Sen",sans;
+$font-2: "Tenor Sans",sans;
 
 $grad-color-orange: #EE5522;
 $grad-color-yellow: #FFBB33;

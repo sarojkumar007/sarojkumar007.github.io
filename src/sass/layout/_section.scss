@@ -20,22 +20,27 @@
         background-attachment: fixed;
         background-size: cover;
 
-        @include respond(phone){
-            background-position: bottom;
-            padding: 5rem 0 3rem 3rem;
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
-        }
-
-        font-size: 3rem;
+        font-size: 3.5rem;
         color: #fff;
         font-family: $font-1;
-        font-weight: 800;
+        font-weight: 600;
         padding: 10rem 0 5rem 5rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
         p{
             margin-left: 5rem;
+        }
+
+        @include respond(tab){
+            font-size: 3rem;
+        }
+
+        @include respond(phone){
+            background-position: bottom;
+            padding: 5rem 3rem 3rem;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+            font-size: 2.5rem;
         }
     }
 
@@ -119,6 +124,8 @@
         &--item{
             width: 15rem;
             height: 15rem;
+            text-align: center;
+            margin: 2.5rem;
             svg{
                 width: 15rem;
                 height: 15rem;
@@ -166,8 +173,8 @@
             }
         }
     }
-    &-projects{}
-    &-sideProjects{}
+    // &-projects{}
+    // &-sideProjects{}
 }
 
 .sp-about{

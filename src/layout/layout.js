@@ -1,18 +1,18 @@
 import React from "react"
 import Header from "../layout/header"
 import Footer from "../layout/footer"
-import "../styles/style_v1.css"
+import "../styles/style.min.css"
 
 export default (props) => {
-	return(
+	return (
 		<>
-		<svg style={{width:0,height:0,position: "absolute"}} aria-hidden="true" focusable="false">
+			<svg style={{ width: 0, height: 0, position: "absolute" }} aria-hidden="true" focusable="false">
 				<linearGradient id="l-grad" x2="1" y2="1">
 					<stop offset="0%" stopColor="#EE5522" />
 					<stop offset="100%" stopColor="#FFBB33" />
 				</linearGradient>
 			</svg>
-			<svg style={{width:0,height:0,position: "absolute"}} aria-hidden="true" focusable="false">
+			<svg style={{ width: 0, height: 0, position: "absolute" }} aria-hidden="true" focusable="false">
 				<linearGradient id="insta-grad" x2="1" y2="1">
 					<stop offset="0%" stopColor="#515BD4" />
 					<stop offset="25%" stopColor="#8134AF" />
@@ -21,11 +21,11 @@ export default (props) => {
 					<stop offset="100%" stopColor="#F58529" />
 				</linearGradient>
 			</svg>
-		<Header />
-		<main className="sp-main">
-		{props.children}
-		</main>
-		<Footer />
+			<Header />
+			<main className="sp-main">
+				{props.children}
+			</main>
+			<Footer />
 		</>
 	)
 }

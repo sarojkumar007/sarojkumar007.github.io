@@ -3,46 +3,32 @@
     display: inline-flex;
     margin-left: 5rem;
     margin-top: 2rem;
-
-    & span{
+    
+    & > span{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0.5rem;
-        margin-right: 0.5rem;
+        margin-right: .5rem;
         background-color: #fff;
-        height: 3.5rem;
-        width: 3.5rem;
-        border-radius: 0.6rem;
-        transition: transform .3s;
-        & a {
-            border: none;
-        }
+        padding: 1rem;
+        border-radius: 50%;
+        transition: border-radius .3s;
+
         &:hover,&:focus-within{
-            transform: scale(1.15);
-        }
-        &:focus-within > a{
-            border:none !important;
+            border-radius: .6rem;
         }
     }
 }
 .sp-social{
-    display: inline-block;
+    display: block;
     width: 2.5rem;
     height: 2.5rem;
-    border: 1px solid transparent;
     backface-visibility: hidden;
-    &:hover{
-        text-decoration: none;
-        border-bottom: none;
-    }
-    &:not(:last-child){
-        margin-right: 2rem;
-    }
+    text-decoration: none;
+    outline: none;
+
     svg{
         width: 2.5rem;
         height: 2.5rem;
     }
-
-
 }
