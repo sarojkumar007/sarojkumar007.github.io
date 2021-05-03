@@ -29,7 +29,7 @@
   "author": "Saroj Kumar Sahoo",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
-    "gatsby": "^2.19.7",
+    "gatsby": "^3.0.0",
     "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-nprogress": "^2.2.1",
     "gatsby-plugin-react-helmet": "^3.2.1",
