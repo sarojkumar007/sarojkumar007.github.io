@@ -6,7 +6,6 @@ function decToBin(n){
     }
     return parseInt(arr.reverse().join(''));
 }
-s
 
 function binToDec(n){
     let arr = [];
