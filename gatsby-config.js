@@ -99,6 +99,18 @@ module.exports = {
         head: true,
       },
     },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: siteConfig.siteUrl,
+        sitemap: [
+          `${siteConfig.siteUrl}/sitemap/sitemap-index.xml`,
+          `${siteConfig.siteUrl}/sitemap/sitemap-0.xml`
+        ],
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     // Design
     {
       resolve: `gatsby-plugin-nprogress`,
