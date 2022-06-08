@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import Logo from '../images/logo-1x.png'
+import Logo from '../images/SEO_banner.png'
 
 const Seo = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(

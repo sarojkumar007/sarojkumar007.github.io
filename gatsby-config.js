@@ -7,7 +7,7 @@ module.exports = {
       name: siteConfig.author.name,
       summary: siteConfig.author.summary,
     },
-    description: siteConfig.summary,
+    description: siteConfig.description,
     siteUrl: siteConfig.siteUrl,
     social: {
       twitter: siteConfig.twitter,
