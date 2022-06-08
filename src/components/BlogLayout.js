@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBullhorn } from '@fortawesome/free-solid-svg-icons'
 import { Facebook, Twitter, Whatsapp } from '@icons-pack/react-simple-icons'
 import slugify from '../helper/slugify'
+import siteConfig from '../data/config'
 
 export const GetTags = () => {
 	const tags = useStaticQuery(graphql`
@@ -71,13 +72,13 @@ const BlogLayout = ({ shareUrl, shareTitle, children }) => {
 						<h3>Spread the word</h3>
 					</div>
 					<div className="sidebar__content v_center">
-						<a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURI(`https://sarojkumar007.github.io${shareUrl}`)}&ref=plugin&src=share_button`} className="abs_center fb" target="_blank" rel="noreferrer noopener">
+						<a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURI(`${siteConfig.siteUrl}${shareUrl}`)}&ref=plugin&src=share_button`} className="abs_center fb" target="_blank" rel="noreferrer noopener">
 							<Facebook />
 						</a>
-						<a href={`https://api.whatsapp.com/send?text=${encodeURI(`Check out this blog - https://sarojkumar007.github.io${shareUrl}`)}`} className="abs_center wp" target="_blank" rel="noreferrer noopener">
+						<a href={`https://api.whatsapp.com/send?text=${encodeURI(`Check out this blog - ${siteConfig.siteUrl}${shareUrl}`)}`} className="abs_center wp" target="_blank" rel="noreferrer noopener">
 							<Whatsapp />
 						</a>
-						<a href={`https://twitter.com/share?text="${shareTitle}" - &url=${encodeURI(`https://sarojkumar007.github.io${shareUrl}`)}`} className="abs_center tw" target="_blank" rel="noreferrer noopener">
+						<a href={`https://twitter.com/share?text="${shareTitle}" - &url=${encodeURI(`${siteConfig.siteUrl}${shareUrl}`)}`} className="abs_center tw" target="_blank" rel="noreferrer noopener">
 							<Twitter />
 						</a>
 					</div>

@@ -1,15 +1,16 @@
+const siteConfig = require('./src/data/config');
 
 module.exports = {
   siteMetadata: {
-    title: `Saroj Kumar Sahoo`,
+    title: siteConfig.title,
     author: {
-      name: `Saroj Kumar`,
-      summary: `Developer and Automation Engineer`,
+      name: siteConfig.author.name,
+      summary: siteConfig.author.summary,
     },
-    description: `Saroj Kumar Sahoo is a front-end web developer and designer.`,
-    siteUrl: `https://sarojk18.github.io/`,
+    description: siteConfig.summary,
+    siteUrl: siteConfig.siteUrl,
     social: {
-      twitter: `@_sarojk18`,
+      twitter: siteConfig.twitter,
     },
   },
   plugins: [
@@ -94,7 +95,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-159657221-1",
+        trackingId: siteConfig.GA_TRACKING_ID,
         head: true,
       },
     },
@@ -155,7 +156,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Saroj Kumar's Blog RSS Feed",
           },
         ],
       },
