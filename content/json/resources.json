@@ -1,0 +1,14 @@
+{
+	"tools": [
+		{
+			"title": "Visual Studio Code Setup",
+			"description": "My Visual Studio Code Settings",
+			"link": "#!"
+		},
+		{
+			"title": "Codepen",
+			"description": "It's a tool for Practicing HTML,CSS,JS without worrying about the setup",
+			"link": "#!"
+		}
+	]
+}

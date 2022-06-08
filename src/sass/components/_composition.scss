@@ -1,0 +1,40 @@
+.composition{
+	width: 100%;
+	height: 50%;	
+	position: relative;
+
+	&__box{
+		width: 55%;
+		position: absolute;
+		transition: transform $anim-time, top $anim-time, left $anim-time;
+
+		&--1{
+			top: -2rem;
+			left: 0;
+			z-index: 5;
+			transform: scale(1.1);
+		}
+		&--2{
+			top: 2rem;
+			right: 0;
+			z-index: 2;
+			transform: scale(.95);
+		}
+		&--3{
+			top: 12rem;
+			left: 18%;
+			z-index: 2;
+			transform: scale(.95);
+
+			@include respond(tab){
+				top: 7rem;
+			}
+			@include respond(phone){
+				top: 12rem;
+			}
+			@include respond(phone-sm){
+				top: 7rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+<svg width="72" height="112" viewBox="0 0 72 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_113_2)">
+<circle r="4" transform="matrix(-1 0 0 1 60 4)" fill="white" fill-opacity="0.1"/>
+<circle r="4" transform="matrix(-1 0 0 1 60 28)" fill="white" fill-opacity="0.1"/>
+<circle r="4" transform="matrix(-1 0 0 1 60 52)" fill="white" fill-opacity="0.1"/>
+<circle r="4" transform="matrix(-1 0 0 1 60 76)" fill="white" fill-opacity="0.1"/>
+</g>
+<g clip-path="url(#clip1_113_2)">
+<g clip-path="url(#clip2_113_2)">
+<circle r="4" transform="matrix(-1 0 0 1 17.3333 32)" fill="white" fill-opacity="0.1"/>
+</g>
+<g clip-path="url(#clip3_113_2)">
+<circle r="4" transform="matrix(-1 0 0 1 17.3333 56)" fill="white" fill-opacity="0.1"/>
+</g>
+<g clip-path="url(#clip4_113_2)">
+<circle r="4" transform="matrix(-1 0 0 1 17.3333 80)" fill="white" fill-opacity="0.1"/>
+</g>
+<g clip-path="url(#clip5_113_2)">
+<circle r="4" transform="matrix(-1 0 0 1 17.3333 104)" fill="white" fill-opacity="0.1"/>
+</g>
+</g>
+<g clip-path="url(#clip6_113_2)">
+<g clip-path="url(#clip7_113_2)">
+<circle r="4" transform="matrix(-1 0 0 1 38.6667 18)" fill="white" fill-opacity="0.1"/>
+</g>
+<g clip-path="url(#clip8_113_2)">
+<circle r="4" transform="matrix(-1 0 0 1 38.6667 42)" fill="white" fill-opacity="0.1"/>
+</g>
+<g clip-path="url(#clip9_113_2)">
+<circle r="4" transform="matrix(-1 0 0 1 38.6667 66)" fill="white" fill-opacity="0.1"/>
+</g>
+<g clip-path="url(#clip10_113_2)">
+<circle r="4" transform="matrix(-1 0 0 1 38.6667 90)" fill="white" fill-opacity="0.1"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_113_2">
+<rect width="21.3333" height="84" fill="white" transform="matrix(-1 0 0 1 64 0)"/>
+</clipPath>
+<clipPath id="clip1_113_2">
+<rect width="21.3333" height="84" fill="white" transform="matrix(-1 0 0 1 21.3333 28)"/>
+</clipPath>
+<clipPath id="clip2_113_2">
+<rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 21.3333 28)"/>
+</clipPath>
+<clipPath id="clip3_113_2">
+<rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 21.3333 52)"/>
+</clipPath>
+<clipPath id="clip4_113_2">
+<rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 21.3333 76)"/>
+</clipPath>
+<clipPath id="clip5_113_2">
+<rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 21.3333 100)"/>
+</clipPath>
+<clipPath id="clip6_113_2">
+<rect width="21.3333" height="84" fill="white" transform="matrix(-1 0 0 1 42.6667 14)"/>
+</clipPath>
+<clipPath id="clip7_113_2">
+<rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 42.6667 14)"/>
+</clipPath>
+<clipPath id="clip8_113_2">
+<rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 42.6667 38)"/>
+</clipPath>
+<clipPath id="clip9_113_2">
+<rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 42.6667 62)"/>
+</clipPath>
+<clipPath id="clip10_113_2">
+<rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 42.6667 86)"/>
+</clipPath>
+</defs>
+</svg>

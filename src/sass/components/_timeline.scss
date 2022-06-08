@@ -1,0 +1,108 @@
+.container {
+    font-family: var(--font-sans);
+    margin: 8rem 28%;
+    @include respond(tab-land){
+        margin: 8rem 20% 8rem 28%;
+    }
+    @include respond(tab){
+        margin: 8rem 10% 8rem 20%;
+    }
+    @include respond(phone){
+        margin: 8rem 1rem;
+    }
+
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            height: 100%;
+            border: 3px dashed var(--c-g3);
+        }
+        & li {
+            position: relative;
+            margin: 8rem 0rem 8rem 6rem;
+            font-size: 2.4rem;
+            max-width: 60rem;
+            padding: 1.6rem 2.4rem;
+						background-color: var(--c-g2);
+						border: 2px solid var(--c-g3);
+            border-radius: 8px;
+        }
+        & li > span {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: calc(-6rem - 2px);
+            width: 0px;
+            height: 100%;
+            border: 3px solid var(--c-g3);
+
+            &:before, &:after {
+                content: "";
+                width: 2rem;
+                height: 2rem;
+                border: .6rem solid var(--c-g3);
+                background: var(--c-2);
+                position: absolute;
+                border-radius: 50%;
+                left: -1.6rem;
+            }
+            &:before {
+                top: -1.6rem;
+            }
+            &:after {
+                top: 100%;
+            }
+        }
+    }
+}
+
+.time span {
+    position: absolute;
+    font-size: 2rem;
+    left: -20rem;
+    width: 10rem;
+    text-align: right;
+    &:first-child {
+        top: -.7rem;
+    }
+    &:last-child {
+        top: 98%;
+    }
+}
+.timel{
+    &-title {
+        color: var(--default-color);
+        font-weight: var(--fw1-bold);
+        padding: .5rem;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+    &-info {
+        color:  var(--default-color);
+        padding: .5rem;
+        font-size: 1.8rem;
+    }
+    &-details {
+        color:  var(--default-color);
+        font-family: var(--font-serif);
+        padding: .5rem;
+        font-size: 1.5rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    &-icon {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+        margin-right: 1rem;
+        fill: var(--c-2);
+    }
+}

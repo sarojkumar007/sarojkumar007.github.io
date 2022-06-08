@@ -1,0 +1,146 @@
+//
+.abs_center{
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+}
+.v_center{
+	display: flex !important;
+	align-items: center;
+}
+.text_center{text-align: center !important;}
+.or{
+	margin: 2rem 0;
+	line-height: 1;
+}
+.bull{
+	font-size: 2rem !important;
+	margin: 0 1rem;
+	line-height: 1;
+}
+
+.d_f{display: flex !important;}
+
+.tags__wrap{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	& .tag__link{margin: .5rem;}
+}
+.tag__link{
+	text-decoration: none;
+	margin-right: 1rem;
+	padding: .75rem 1.2rem;
+	border: 1px solid transparent;
+	border-radius: 6rem;
+	// background-image: linear-gradient(to bottom, rgba(var(--rgb-2),1), rgba(var(--rgb-1),1));
+	background-color: rgba(var(--rgb-2),.1);
+	color: var(--c-2);
+
+	span{font-size: 1.2rem;letter-spacing: 1px;white-space: nowrap;}
+
+	&:hover{
+		background-color: rgba(var(--rgb-2),.2);
+	}
+	&:focus{
+		border: 1px solid var(--c-2);
+	}
+}
+.tag__icon{
+	display: flex;
+	align-items: center;
+
+	i,svg{margin-right: 1rem;}
+	i{font-size: 2.2rem;}
+	svg{width: 2rem;height: 2rem;}
+}
+
+.center{
+	justify-content: center;
+}
+.cap{
+	text-transform: uppercase !important;
+}
+.scroll-x{overflow-x: auto;}
+.scroll-y{overflow-y: auto;}
+
+// .c-red{color: var(--t-4);}
+// .c-green{color: var(--t-1);}
+.c-orange{color: var(--t-3);}
+// .c-violet{color: var(--t-5);}
+
+.disabled{
+	-webkit-user-select: none !important;
+	   -moz-user-select: none !important;
+	    -ms-user-select: none !important;
+	        user-select: none !important;
+	cursor: not-allowed !important;
+	opacity: 0.7 !important;
+	&:active{
+		pointer-events: none !important;
+	}
+}
+
+// -------------
+
+.code-title {
+	position: relative;
+	margin: 0 auto -4.8rem auto !important;
+  padding: 0.5rem 1rem;
+	font-family: var(--font-mono);
+	max-width: 750px;
+
+	background-image: linear-gradient(to bottom, var(--c-2),var(--c-1));
+  color: #f9f9f9;
+  z-index: 2;
+
+  border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
+	
+	& + pre,
+	& + p pre,
+	& + .gatsby-highlight pre{
+		padding: 4rem 3rem 2rem !important;
+	}
+}
+.gatsby-highlight pre[class*="language-"]{
+	position: relative;
+}
+.gatsby-highlight code[class*="language-"],
+.gatsby-highlight pre[class*="language-"]{
+	font-family: var(--font-mono);
+}
+.gatsby-highlight pre[class*="language-"]::before {
+	position: absolute;
+	right: 15px;
+	top: 0rem;
+	background: rgba(255,255,255,.2);
+  color: #f8f8f8;
+	font-size: 1.6rem;
+	line-height: 1;
+	text-transform: capitalize;
+	text-align: center;
+	border-radius: 0 0 3px 3px;
+	padding: 4px 8px;
+	z-index: 10;
+	letter-spacing: 1px;
+}
+.gatsby-highlight pre[class*=language-html]:before{
+	content: 'HTML';
+}
+.gatsby-highlight pre[class*=language-css]:before{
+	content: 'CSS';
+}
+.gatsby-highlight pre[class*=language-javascript]:before{
+	content: 'JS';
+}
+.gatsby-highlight pre[class*=language-jsx]:before{
+	content: 'jsx';
+}
+.gatsby-highlight pre[class*=language-shell]:before{
+	content: 'shell';
+}
+.gatsby-highlight pre[class*=language-powershell]:before{
+	content: 'PowerShell';
+}

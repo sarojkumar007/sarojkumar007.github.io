@@ -1,0 +1,90 @@
+@-webkit-keyframes fadeIn {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes popDown {
+	from{
+		transform: translateY(-1rem);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+@keyframes popDown {
+	from{
+		transform: translateY(-1rem);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes wideOut{
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}
+
+@keyframes wideOut{
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes hero_head {
+	from{
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes hero_head {
+	from{
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeIn{
+	-webkit-animation: fadeIn $anim-time backwards $anim-timing;
+	        animation: fadeIn $anim-time backwards $anim-timing;
+}
+.popDown{
+	-webkit-animation: popDown $anim-time backwards $anim-timing;
+	        animation: popDown $anim-time backwards $anim-timing;
+}
+.wideOut{
+	-webkit-animation: wideOut $anim-time backwards $anim-timing;
+	        animation: wideOut $anim-time backwards $anim-timing;
+}
+
+.hero_head{
+	-webkit-animation: hero_head $anim-time backwards $anim-timing;
+	        animation: hero_head $anim-time backwards $anim-timing;
+}

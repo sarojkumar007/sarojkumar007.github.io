@@ -1,0 +1,263 @@
+.hero{
+
+	@include respond(tab){
+		height: 65vh;
+		max-height: 64rem;
+	}
+	@include respond(tab){
+		height: 56vh;
+		max-height: 50rem;
+	}
+	
+	.hero__img{
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url(../images/turnado.svg) no-repeat center;
+		background-size: cover;
+	}
+
+	figure{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+
+		svg{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 10rem;
+			@include respond(tab){
+				height: 8rem;
+			}
+			@include respond(tab){
+				height: 5rem;
+			}
+		}
+	}
+
+	&__content{
+		padding: 6rem;
+		font-family: var(--font-serif);
+		color: #f8f8f8;
+		z-index: 1;
+
+		.cta{
+			margin-top: 3rem;
+
+			&__btn{
+				display: inline-flex;
+				text-decoration: none;
+				padding: 1rem 2rem;
+				align-items: center;
+				background-color: #f9f9f9;
+				border-radius: $border-radius;
+				color: var(--c-2);
+				font-family: var(--font-sans);
+				font-weight: var(--fw1-light);
+				cursor: pointer;
+				transition: transform $transition-time;
+
+				svg{
+					margin-right: 1rem;
+					width: 2rem;
+					height: 2rem;
+					stroke-width: 2px;
+				}
+				span{
+					font-size: 1.4rem;
+					letter-spacing: 1px;
+				}
+
+				&:active{
+					transform: translateY(3px);
+				}
+			}
+		}
+	}
+}
+
+.about{
+	&__content{
+		// padding: 0 6rem;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(16rem,1fr));
+		grid-gap: 4rem;
+
+		@include respond(phone){
+			grid-template-columns: minmax(16rem, 1fr);
+		}
+
+		&--info{
+			font-size: 1.8rem;
+			@include respond(phone){
+				grid-row: 2/3;
+				font-size: 1.4rem;
+			}
+
+			p{
+				margin-bottom: 1rem;
+			}
+
+			& .about__tags{
+				display: flex;
+				align-items: center;
+				margin-top: 2rem;
+
+				& .about__tag{
+					@include spclBg;
+
+					display: inline-flex;
+					align-items: center;
+					font-family: var(--font-mono);
+					font-size: 1.4rem;
+					margin: 0;
+
+					&:not(:last-of-type){
+						margin-right: 1rem;
+					}
+					& .h{
+						font-size: 1.5em;
+					}
+				}
+			}
+		}
+		&--picture{
+			width: 100%;
+			padding: 1rem;
+
+			img{
+				width: 100% !important;
+				max-width: 32rem;
+				max-height: 32rem;
+				@include respond(phone){
+					max-width: 24rem;
+					max-height: 24rem;
+				}
+			}
+		}
+	}
+}
+
+.interest{
+	& .sec_dots{
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateY(-2rem);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 7.2rem;
+		height: 9rem;
+
+		background-image: url(../images/assets/dots01_light.svg);
+
+		@include onSiteDark(){
+			background-image: url(../images/assets/dots01_dark.svg);
+		}
+	}
+
+	& h2{
+		position: relative;
+		z-index: 2;
+	}
+
+	&__content{
+		display: grid;
+		grid-template-columns: repeat(2, minmax(16rem, 1fr));
+		grid-gap: 4rem;
+		padding: 3rem 6rem 6rem;
+		
+		@include respond(phone){
+			grid-template-columns: minmax(16rem, 1fr);
+			padding: .5rem .5rem 3rem;
+		}
+
+		&__comp{
+			min-height: 32rem;
+			padding: 3rem;
+
+			@include respond(phone){
+				min-height: 28rem;
+			}
+		}
+
+		&__details{
+			min-height: 40rem;
+			padding: 4rem;
+			
+			@include respond(tab){
+				padding: 1.5rem;
+			}
+			@include respond(phone){
+				padding: 1rem;
+				min-height: 32rem;
+			}
+		}
+
+		&__art{
+			display: none;
+
+			&.current{
+				display: block;
+				-webkit-animation: fadeIn $anim-time $anim-timing;
+				        animation: fadeIn $anim-time $anim-timing;
+			}
+		}
+	}
+}
+
+.skills{
+
+	.sk{
+		position: relative;
+		background-image: var(--lGrad);
+		transform: skewY(3deg);
+		padding: 2rem 6rem 6rem;
+
+		@include respond(phone){
+			padding: 2rem 2rem 6rem;
+		}
+
+		& > * {
+			transform: skewY(-3deg);
+		}
+
+		& .dots_base{
+			position: absolute;
+			top: 3rem;
+			right: 3rem;
+
+			width: 7.2rem;
+			height: 9rem;
+			background-image: url(../images/assets/dots01_base.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	&__content{
+		margin-top: 4rem;
+	}
+}
+
+.concept{
+	background: var(--default-bg-color) url(../images/layered_waves.svg) no-repeat center;
+	background-size: cover;
+	background-position: bottom;
+
+	&__content{
+		display: grid;
+		grid-template-columns: repeat(2, minmax(16rem, 1fr));
+		grid-gap: 4rem;
+		padding: 3rem 1rem;
+		
+		@include respond(phone){
+			grid-template-columns: minmax(16rem, 1fr);
+			padding: .5rem;
+		}
+	}
+}

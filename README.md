@@ -1,3 +1,3 @@
-# SAROJK18
+<h1 align="center">SAROJK18.GITHUB.IO</h1>
 
-Portfolio and Blog
+My Portfolio and Blog

@@ -1,0 +1,61 @@
+// Others
+$border-radius: 5px;
+$transition-time: 300ms;
+$transition-timing: ease-in-out;//cubic-bezier(0.68, -0.55, 0.27, 1.55);
+$anim-time: 1s;
+$anim-timing: ease-in-out;
+
+$line-height: 1.5;
+
+:root,
+:root[dark-mode="false"]{
+	// Fonts
+	--font-sans: 'Google Sans', sans;
+	--font-serif: 'Sailec', sans-serif;
+	--font-mono: 'Source Code Pro', monospace;
+	--fw1-light: 400;
+	--fw1-bold: 700;
+	--fw2-light: 400;
+	--fw2-medium: 600;
+	--fw2-bold: 700;
+	// Sizes
+	--fz: 1.5rem;
+	// Colors
+	--default-bg-color: #fff;
+	--default-color: #323232;
+	--c-g2: #f5f5f5;
+	--c-g3: #eaeaea;
+	--c-g4: #afafb4;
+	--c-g5: #999999;
+
+	--c-1: #021B79;
+	--c-2: #0575E6;
+	--s-1: #ff9800;
+
+	--t-1: #388e3c;
+	--t-2: #fdd835;
+	--t-3: #f57c00;
+	--t-4: #d32f2f;
+	--t-5: #7b1fa2;
+
+	--rgb-1: 15,52,67;
+	--rgb-2: 5,117,230;
+	--rgb-black: 20,20,20;
+	--rgb-white: 220,220,220;
+
+	--lGrad: linear-gradient(to left,var(--c-1),var(--c-2));
+}
+	// @include onDark() {
+:root[dark-mode="true"] {
+	--default-bg-color: #212121;
+	--default-color: #f8f8f8;
+	--c-g2: #323232;
+	--c-g3: #424242;
+	--c-g4: #777777;
+	--c-g5: #8e8fa0;
+
+	// --c-1:#0225a9;
+
+	--rgb-white: 240,240,240;
+	--rgb-black: 50,50,50;
+}
