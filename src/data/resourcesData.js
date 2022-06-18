@@ -20,7 +20,7 @@ export const resources = [
 			{
 				"title": "Dev CheatSheats",
 				"description": "Collected Developer's CheatSheat of different languages and tools.",
-				"link": `https://github.com/sarojk18/Dev-Cheatsheets`
+				"link": `https://github.com/sarojkumar007/Dev-Cheatsheets`
 			}
 		]
 	},

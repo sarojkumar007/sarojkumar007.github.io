@@ -1,5 +1,5 @@
 {
-  "name": "sarojk18.github.io",
+  "name": "sarojkumar007.github.io",
   "private": true,
   "description": "Creative front-end designer and developer",
   "version": "2.0.0",
@@ -56,19 +56,19 @@
     "postcss-cli": "^9.1.0",
     "prettier": "^2.4.1"
   },
-  "homepage": "https://sarojk18.github.io",
+  "homepage": "https://sarojkumar007.github.io",
   "keywords": [
     "saroj",
-    "sarojk18",
+    "sarojkumar007",
     "sarojkumar github",
-    "sarojk18 github",
+    "sarojkumar007 github",
     "saroj kumar sahoo"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sarojk18/sarojk18.github.io.git"
+    "url": "https://github.com/sarojkumar007/sarojkumar007.github.io.git"
   },
   "scripts": {
     "start": "npm-run-all --parallel develop watch:sass",
