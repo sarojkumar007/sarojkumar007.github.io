@@ -23,7 +23,7 @@ const config = {
 		summary: `Developer and Automation Engineer`
 	},
 	description: `Saroj Kumar Sahoo is a front-end web developer and designer.`,
-	siteUrl: `https://sarojkumar007.github.io`, // no trailing slash
+	siteUrl: `https://sarojkumar.dev`, // no trailing slash
 }
 
 module.exports = config

@@ -1,3 +1,5 @@
+const config = require('./config');
+
 import { Gnubash, Html5, Php, Powershell, Python, CssThree, Sass, Javascript, Bootstrap, Nodedotjs, ReactJs, Angular, Gatsby, Mysql, Mongodb, Git, Github, Bitbucket, Jenkins, Docker, Markdown, Visualstudiocode, Sublimetext, Pycharm, Atom, Figma, Adobexd } from '@icons-pack/react-simple-icons';
 import { faBuilding, faSchool, faUniversity } from '@fortawesome/free-solid-svg-icons';
 
@@ -16,7 +18,7 @@ import MagicNavImg from '../images/project/magic_nav.webp'
 import MemGameImg from '../images/project/memory_game.webp'
 import NodeAuthImg from '../images/project/node_auth.webp'
 import NodeBlogImg from '../images/project/node_blog.webp'
-import Portfolio2Img from '../images/project/portfolio2.webp'
+// import Portfolio2Img from '../images/project/portfolio2.webp'
 import QGameImg from '../images/project/quiz_app.webp'
 import RanColorImg from '../images/project/random_color.webp'
 import RPSImg from '../images/project/rps.webp'
@@ -322,11 +324,11 @@ export const projectsList = {
 			id: 'g-u-f',
 			name: 'GitHub UserFinder App',
 			date: '05-Sep-2018',
-			tags: ['JavaScript', 'AJAX'],
+			tags: ['API', 'AJAX'],
 			image: GUFImg,
 			desc: `A simple application that uses GitHub API and finds users with there details on the Go just by using there github username!`,
-			liveLink: `https://sarojkumar007.github.io/projects/github-finder`,
-			gitLink: `https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/projects/github-finder`
+			liveLink: `${config.siteUrl}/Mini-Projects/GithubFinder`,
+			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/GithubFinder`
 		},
 		{
 			id: "simple-chat",
@@ -335,8 +337,8 @@ export const projectsList = {
 			tags: ['JavaScript', 'WebRTC'],
 			image: SChatImg,
 			desc: `A simple chat application that uses WebRTC to peer to peer communication, will be updating instructions on how to use!`,
-			liveLink: `https://sarojkumar007.github.io/projects/chat`,
-			gitLink: `https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/projects/chat`
+			liveLink: `${config.siteUrl}/Mini-Projects/chat`,
+			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/chat`
 		},
 		{
 			id: "simple-video",
@@ -345,8 +347,8 @@ export const projectsList = {
 			tags: ['JavaScript', 'WebRTC'],
 			image: SVideoImg,
 			desc: `A simple Video Call Application that uses the same technique of peer to peer connection, and lets you video chat your favourite ones.`,
-			liveLink: `https://sarojkumar007.github.io/projects/videoCall`,
-			gitLink: `https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/projects/videoCall`
+			liveLink: `${config.siteUrl}/Mini-Projects/videoCall`,
+			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/videoCall`
 		},
 		{
 			id: "todo-js",
@@ -355,19 +357,19 @@ export const projectsList = {
 			tags: ['JavaScript', 'CSS'],
 			image: TodoImg,
 			desc: `A Programmer's must have development, a ToDo app that lets you work smoothly and sequencially.`,
-			liveLink: `https://sarojkumar007.github.io/todo-js`,
+			liveLink: `${config.siteUrl}/todo-js`,
 			gitLink: `https://github.com/sarojkumar007/todo-js`
 		},
-		{
-			id: "portfolio-2",
-			name: 'Portfolio 2.0',
-			date: '02-Jul-2019',
-			tags: ['UX', 'CSS'],
-			image: Portfolio2Img,
-			desc: `An archived Portfolio, that describes the UX principles and a little CSS work of me. Its Nice to be Upgraded!!`,
-			liveLink: `https://sarojkumar007.github.io/portfolio-2.0`,
-			gitLink: `https://github.com/sarojkumar007/portfolio-2.0`
-		},
+		// {
+		// 	id: "portfolio-2",
+		// 	name: 'Portfolio 2.0',
+		// 	date: '02-Jul-2019',
+		// 	tags: ['UX', 'CSS'],
+		// 	image: Portfolio2Img,
+		// 	desc: `An archived Portfolio, that describes the UX principles and a little CSS work of me. Its Nice to be Upgraded!!`,
+		// 	liveLink: `${config.siteUrl}/portfolio-2.0`,
+		// 	gitLink: `https://github.com/sarojkumar007/portfolio-2.0`
+		// },
 		{
 			id: 'b-l-p',
 			name: 'Business Landing Page',
@@ -375,7 +377,7 @@ export const projectsList = {
 			tags: ['UX', 'CSS'],
 			image: BLPImg,
 			desc: `A beautiful business landing template that perfect fits into any business landing page creation, built with modern UX and CSS techniques.`,
-			liveLink: `https://sarojkumar007.github.io/business-landing-page/`,
+			liveLink: `${config.siteUrl}/business-landing-page/`,
 			gitLink: `https://github.com/sarojkumar007/business-landing-page`
 		},
 		{
@@ -415,7 +417,7 @@ export const projectsList = {
 			tags: ['CSS', 'SCSS'],
 			image: AdelleImg,
 			desc: `An attractive and fast landing page for adelle international. I used modern CSS techniques like Sass(SCSS) to build this beautiful site with audit rate of 97%.`,
-			liveLink: `https://sarojkumar007.github.io/adelle-home/`,
+			liveLink: `${config.siteUrl}/adelle-home/`,
 			gitLink: `https://github.com/sarojkumar007/adelle-home`
 		},
 		{
@@ -435,7 +437,7 @@ export const projectsList = {
 			tags: ['CSS', 'JavaScript'],
 			image: BudgyImg,
 			desc: `A simple app that keeps track of your expenses. Add incomes and expenses, keep your budget tight!`,
-			liveLink: `https://sarojkumar007.github.io/budgy-app/`,
+			liveLink: `${config.siteUrl}/budgy-app/`,
 			gitLink: `https://github.com/sarojkumar007/budgy-app/`
 		},
 		{
@@ -452,10 +454,10 @@ export const projectsList = {
 			id: "glass-effect",
 			name: 'Glass Effect (Only CSS)',
 			date: '28-Dec-2021',
-			tags: ['CSS'],
+			tags: ['HTML', 'CSS'],
 			image: GlassEffectImg,
 			desc: `A new CSS property used to create glass effect, and with respect to new design system`,
-			liveLink: `https://sarojkumar007.github.io/Mini-Projects/GlassEffect/`,
+			liveLink: `${config.siteUrl}/Mini-Projects/GlassEffect/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/GlassEffect`
 		},
 		{
@@ -465,7 +467,7 @@ export const projectsList = {
 			tags: ['CSS', 'JavaScript'],
 			image: MagicNavImg,
 			desc: `An approachable mobile nav with magic transition. You can take this idea for navigations and create your own styling. :)`,
-			liveLink: `https://sarojkumar007.github.io/Mini-Projects/MagicNav/`,
+			liveLink: `${config.siteUrl}/Mini-Projects/MagicNav/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/MagicNav`
 		},
 		{
@@ -475,7 +477,7 @@ export const projectsList = {
 			tags: ['CSS', 'JavaScript'],
 			image: RanColorImg,
 			desc: `A simple and handy application for designer/developers which provides random colors for your next projects while maintaining a record of colors. Its sort of a DJ itself, you know!`,
-			liveLink: `https://sarojkumar007.github.io/Mini-Projects/RandomColor/`,
+			liveLink: `${config.siteUrl}/Mini-Projects/RandomColor/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/RandomColor`
 		},
 		{
@@ -485,7 +487,7 @@ export const projectsList = {
 			tags: ['CSS', 'JavaScript'],
 			image: DemoRestImg,
 			desc: `A model restaurant page for beginners who want to learn modern design and theme changing.`,
-			liveLink: `https://sarojkumar007.github.io/Mini-Projects/RestaurantMenu/`,
+			liveLink: `${config.siteUrl}/Mini-Projects/RestaurantMenu/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/RestaurantMenu`
 		},
 	],
@@ -498,8 +500,8 @@ export const projectsList = {
 			tags: ['CSS', 'JavaScript'],
 			image: DinoImg,
 			desc: `Google's Offline Game, redesigned with cool background song. Lets you play anytime anywhere!!`,
-			liveLink: `https://sarojkumar007.github.io/projects/dino`,
-			gitLink: `https://github.com/sarojkumar007/sarojkumar007.github.io/tree/master/projects/dino`
+			liveLink: `${config.siteUrl}/Mini-Projects/DinoGame`,
+			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/DinoGame`
 		},
 		{
 			id: "dice-game",
@@ -508,37 +510,37 @@ export const projectsList = {
 			tags: ['CSS', 'JavaScript'],
 			image: DiceGameImg,
 			desc: `A simple two player fun dice game. Be the first one to hold highest points.`,
-			liveLink: `https://sarojkumar007.github.io/dice-game/`,
+			liveLink: `${config.siteUrl}/dice-game/`,
 			gitLink: `https://github.com/sarojkumar007/dice-game/`
 		},
 		{
 			id: "memory-game",
 			name: 'Memory Game',
 			date: '30-Dec-2021',
-			tags: ['CSS', 'JavaScript'],
+			tags: ['HTML', 'CSS', 'JavaScript'],
 			image: MemGameImg,
 			desc: `A classic memory game to test your memory and react time. Give it a try through! ;)`,
-			liveLink: `https://sarojkumar007.github.io/Mini-Projects/MemoryGame/`,
+			liveLink: `${config.siteUrl}/Mini-Projects/MemoryGame/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/MemoryGame`
 		},
 		{
 			id: "quiz-game",
 			name: 'Quiz Game',
 			date: '05-Jan-2022',
-			tags: ['SPA', 'JavaScript', 'AJAX'],
+			tags: ['CSS', 'JavaScript', 'AJAX'],
 			image: QGameImg,
 			desc: `A quiz game for knowledge and fun, implemented as a Single Page Application (SPA).`,
-			liveLink: `https://sarojkumar007.github.io/Mini-Projects/QuizApp/`,
+			liveLink: `${config.siteUrl}/Mini-Projects/QuizApp/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/QuizApp`
 		},
 		{
 			id: "rps",
 			name: 'Rock Paper Scissors',
 			date: '06-Dec-2021',
-			tags: ['JavaScript', 'CSS'],
+			tags: ['HTML', 'JavaScript', 'CSS'],
 			image: RPSImg,
 			desc: `The classic Rock Paper Scissors Game implemented with JavaScript. Lets see who has the luck, you or the Computer!`,
-			liveLink: `https://sarojkumar007.github.io/Mini-Projects/RockPaperScissors/`,
+			liveLink: `${config.siteUrl}/Mini-Projects/RockPaperScissors/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/RockPaperScissors`
 		},
 		{
@@ -548,17 +550,17 @@ export const projectsList = {
 			tags: ['JavaScript', 'CSS'],
 			image: TTTImg,
 			desc: `Have nothing to do with your friend? Try this one, anytime, anywhere.`,
-			liveLink: `https://sarojkumar007.github.io/Mini-Projects/TicTacToe/`,
+			liveLink: `${config.siteUrl}/Mini-Projects/TicTacToe/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/TicTacToe`
 		},
 		{
 			id: "word-game",
 			name: 'Word Game',
 			date: '28-Dec-2021',
-			tags: ['CSS', 'JavaScript'],
+			tags: ['HTML', 'CSS', 'JavaScript'],
 			image: WGImg,
 			desc: `Guess the word. Yes, that's the Game. Use your hint and other perks wisely to make a high score.`,
-			liveLink: `https://sarojkumar007.github.io/Mini-Projects/WordGame/`,
+			liveLink: `${config.siteUrl}/Mini-Projects/WordGame/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/WordGame`
 		},
 	]

@@ -114,8 +114,8 @@ module.exports = {
       options: {
         host: config.siteUrl,
         sitemap: [
-          `${config.siteUrl}/sitemap/sitemap-index.xml`,
-          `${config.siteUrl}/sitemap/sitemap-0.xml`
+          `${config.siteUrl}/sitemap-index.xml`,
+          `${config.siteUrl}/sitemap-0.xml`
         ],
         policy: [{ userAgent: '*', allow: '/' }]
       }
