@@ -1,16 +1,16 @@
-const siteConfig = require('./src/data/config');
+const config = require('./src/data/config');
 
 module.exports = {
   siteMetadata: {
-    title: siteConfig.title,
+    title: config.title,
     author: {
-      name: siteConfig.author.name,
-      summary: siteConfig.author.summary,
+      name: config.author.name,
+      summary: config.author.summary,
     },
-    description: siteConfig.description,
-    siteUrl: siteConfig.siteUrl,
+    description: config.description,
+    siteUrl: config.siteUrl,
     social: {
-      twitter: siteConfig.twitter,
+      twitter: config.twitter,
     },
   },
   plugins: [
@@ -95,7 +95,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: siteConfig.GA_TRACKING_ID,
+        trackingId: config.GA_TRACKING_ID,
         head: true,
       },
     },
@@ -103,10 +103,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: siteConfig.siteUrl,
+        host: config.siteUrl,
         sitemap: [
-          `${siteConfig.siteUrl}/sitemap/sitemap-index.xml`,
-          `${siteConfig.siteUrl}/sitemap/sitemap-0.xml`
+          `${config.siteUrl}/sitemap/sitemap-index.xml`,
+          `${config.siteUrl}/sitemap/sitemap-0.xml`
         ],
         policy: [{ userAgent: '*', allow: '/' }]
       }
