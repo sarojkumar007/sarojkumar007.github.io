@@ -167,7 +167,7 @@ const Contact = () => {
 								</textarea>
 							</div>
 							<div className="input__group">
-								<div className="g-recaptcha" data-sitekey="6Ld6V-EeAAAAAEptNoCI8g5wzGJ_j58tOkw9yKkI" data-callback="setCaptchaValid"></div>
+								<div className="g-recaptcha" data-sitekey="6Ldt034gAAAAAGPsnv_iAJZkPppnv0LX3zSTVjZU" data-callback="setCaptchaValid"></div>
 							</div>
 							<div className="input__cta v_center">
 								{submitStat === 'success' ? (<>
