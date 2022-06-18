@@ -1,6 +1,6 @@
 import React from 'react'
 import { Heart, Coffee, Twitter, Codepen, Youtube, Zap } from 'react-feather'
-import { social } from '../data/siteData'
+import config from '../data/config'
 
 const Footer = ({ type }) => {
 	return (
@@ -12,7 +12,7 @@ const Footer = ({ type }) => {
 						<Heart style={{ 'margin': '0 .5rem', 'width': '2rem', 'height': '2rem' }} />
 						<span>and</span>
 						<Coffee style={{ 'margin': '0 .5rem', 'width': '2rem', 'height': '2rem' }} />
-						<span>by <a href={social.githubLink} className="global__link" style={{ 'color': 'var(--c-2)' }} target="_blank" rel="noreferrer noopener">Saroj Kumar</a></span>
+						<span>by <a href={config.githubLink} className="global__link" style={{ 'color': 'var(--c-2)' }} target="_blank" rel="noreferrer noopener">Saroj Kumar</a></span>
 					</div>
 					<div className="abs_center mute" style={{ 'flexWrap': 'wrap' }}>
 						<Zap />
@@ -20,13 +20,13 @@ const Footer = ({ type }) => {
 					</div>
 				</div>
 				<div className="footer__social">
-					<a href={social.twitterLink} className="" target="_blank" rel="noreferrer noopener">
+					<a href={config.twitterLink} className="" target="_blank" rel="noreferrer noopener">
 						<Twitter />
 					</a>
-					<a href={social.codepenLink} className="" target="_blank" rel="noreferrer noopener">
+					<a href={config.codepenLink} className="" target="_blank" rel="noreferrer noopener">
 						<Codepen />
 					</a>
-					<a href={social.youtubeLink} className="" target="_blank" rel="noreferrer noopener">
+					<a href={config.youtubeLink} className="" target="_blank" rel="noreferrer noopener">
 						<Youtube />
 					</a>
 				</div>

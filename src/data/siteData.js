@@ -28,15 +28,6 @@ import TodoImg from '../images/project/todo.webp'
 import TTTImg from '../images/project/ttt.webp'
 import WGImg from '../images/project/word_game.webp'
 
-export const social = {
-	twitterLink: `https://twitter.com/_sarojk18`,
-	githubLink: `https://github.com/sarojkumar007`,
-	instagramLink: `https://www.instagram.com/saroj_smiley/`,
-	linkedinLink: `https://www.linkedin.com/in/sarojk18/`,
-	youtubeLink: `#!`,//`https://www.youtube.com/channel/UCyG5IZIwPxKiG9tmM-SoCtg`,
-	codepenLink: `https://codepen.io/sarojk18`,
-	hackerrankLink: `https://www.hackerrank.com/sarojk18`
-}
 export const resumeLink = `#!`;
 
 export const otherLinks = {

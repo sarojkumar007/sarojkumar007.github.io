@@ -7,7 +7,7 @@ import { Link as GLink } from "gatsby";
 import { Info, Award, Home, Mail, Edit3, Sun, Moon, Link } from 'react-feather'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faToggleOff, faToggleOn } from "@fortawesome/free-solid-svg-icons";
-import { social } from '../data/siteData';
+import config from '../data/config';
 import { Github, Instagram, Linkedin } from "@icons-pack/react-simple-icons";
 
 const Layout = ({ fType = "0", children }) => {
@@ -99,14 +99,14 @@ const Layout = ({ fType = "0", children }) => {
           <div className="bottom">
 
             <div className="sideBar_social">
-              <a href={social.instagramLink} target="_blank" rel="noreferrer noopener">
+              <a href={config.instagramLink} target="_blank" rel="noreferrer noopener">
                 <Instagram title="" size={24} />
 
               </a>
-              <a href={social.githubLink} target="_blank" rel="noreferrer noopener">
+              <a href={config.githubLink} target="_blank" rel="noreferrer noopener">
                 <Github title="" size={24} />
               </a>
-              <a href={social.linkedinLink} target="_blank" rel="noreferrer noopener">
+              <a href={config.linkedinLink} target="_blank" rel="noreferrer noopener">
                 <Linkedin title="" size={24} />
               </a>
             </div>

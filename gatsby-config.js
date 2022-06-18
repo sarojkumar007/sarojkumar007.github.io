@@ -93,13 +93,22 @@ module.exports = {
     },
     // SEO
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: config.GA_TRACKING_ID,
-        head: true,
+        trackingIds: [
+          config.GA4_MEASUREMENT_ID
+        ],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: `/`
+      }
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {

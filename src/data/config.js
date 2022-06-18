@@ -1,12 +1,20 @@
 const social = {
-	twitter: `@_sarojk18`
+	twitter: `_sarojk18`,
+	twitterLink: `https://twitter.com/_sarojk18`,
+	githubLink: `https://github.com/sarojkumar007`,
+	instagramLink: `https://www.instagram.com/saroj_smiley/`,
+	linkedinLink: `https://www.linkedin.com/in/sarojk18/`,
+	youtubeLink: `#!`,//`https://www.youtube.com/channel/UCyG5IZIwPxKiG9tmM-SoCtg`,
+	codepenLink: `https://codepen.io/sarojk18`,
+	hackerrankLink: `https://www.hackerrank.com/sarojk18`
 }
 
 const seo = {
-	GA_TRACKING_ID: `UA-159657221-1`
+	// GA_TRACKING_ID: `UA-159657221-1`,
+	GA4_MEASUREMENT_ID: 'G-E427YCY03W'
 }
 
-const siteConfig = {
+const config = {
 	...social,
 	...seo,
 	title: `Saroj Kumar Sahoo`,
@@ -18,4 +26,4 @@ const siteConfig = {
 	siteUrl: `https://sarojkumar007.github.io`, // no trailing slash
 }
 
-module.exports = siteConfig
+module.exports = config
