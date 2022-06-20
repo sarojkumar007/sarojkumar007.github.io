@@ -33,6 +33,10 @@ const Seo = ({ description, lang, meta, title }) => {
       titleTemplate={defaultTitle ? `%s` : null}
       meta={[
         {
+          name: `robots`,
+          content: `index, follow`,
+        },
+        {
           name: `description`,
           content: metaDescription,
         },
