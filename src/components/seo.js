@@ -37,6 +37,10 @@ const Seo = ({ description, lang, meta, title }) => {
           content: `index, follow`,
         },
         {
+          name: `canonical`,
+          content: `https://sarojkumar007.github.io`,
+        },
+        {
           name: `description`,
           content: metaDescription,
         },
