@@ -65,13 +65,14 @@ const About = () => {
 											<h3 className="exp_title__pos">{e.role}</h3>
 											<span className="exp_title__loc">{e.location}</span>
 										</div>
-										{e.duration.from && e.duration.to ? (<>
+										{e.duration.from && e.duration.to && (<>
 											<div className="exp_meta">
 												<div className="exp_meta__item v_center">
 													<span>{e.duration.from} - {e.duration.to}</span>
 												</div>
 											</div>
-										</>) : (<></>)}
+										</>)}
+										{e.desc && (<p style={{ margin: '1rem 0 0' }} className='text'>{e.desc}</p>)}
 									</div>
 								</li>
 							))}

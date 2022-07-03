@@ -1,34 +1,33 @@
-const config = require('./config');
-
-import { Gnubash, Html5, Php, Powershell, Python, CssThree, Sass, Javascript, Bootstrap, Nodedotjs, ReactJs, Angular, Gatsby, Mysql, Mongodb, Git, Github, Bitbucket, Jenkins, Docker, Markdown, Visualstudiocode, Sublimetext, Pycharm, Atom, Figma, Adobexd } from '@icons-pack/react-simple-icons';
+import { Gnubash, Html5, Php, Powershell, Python, CssThree, Sass, Javascript, Bootstrap, Nodedotjs, ReactJs, Angular, Gatsby, Mysql, Mongodb, Git, Jenkins, Docker, Markdown, Visualstudiocode, Sublimetext, Pycharm, Atom, Figma, Adobexd, Nextdotjs, Firebase, Typescript, Ansible } from '@icons-pack/react-simple-icons';
 import { faBuilding, faSchool, faUniversity } from '@fortawesome/free-solid-svg-icons';
 
 import AdelleImg from '../images/project/adelle.webp'
-import BLPImg from '../images/project/blp.webp'
+// import BLPImg from '../images/project/blp.webp'
 import BudgyImg from '../images/project/budgy.webp'
 import DataSimImg from '../images/project/data_sim.webp'
-import DemoRestImg from '../images/project/demo_rest.webp'
 import DiceGameImg from '../images/project/dice_game.webp'
 import ForkifyImg from '../images/project/forkify.webp'
-import GlassEffectImg from '../images/project/glass_effect.webp'
+// import GlassEffectImg from '../images/project/glass_effect.webp'
 import DinoImg from '../images/project/google_dino.webp'
 import GUFImg from '../images/project/guf.webp'
 import ImgGalleryImg from '../images/project/img_gallery.webp'
 import MagicNavImg from '../images/project/magic_nav.webp'
 import MemGameImg from '../images/project/memory_game.webp'
 import NodeAuthImg from '../images/project/node_auth.webp'
-import NodeBlogImg from '../images/project/node_blog.webp'
+// import NodeBlogImg from '../images/project/node_blog.webp'
 // import Portfolio2Img from '../images/project/portfolio2.webp'
 import QGameImg from '../images/project/quiz_app.webp'
 import RanColorImg from '../images/project/random_color.webp'
 import RPSImg from '../images/project/rps.webp'
-import SChatImg from '../images/project/s_chat.webp'
-import SVideoImg from '../images/project/s_video.webp'
-import SaleDMMBImg from '../images/project/sale_dmmb.webp'
+// import SChatImg from '../images/project/s_chat.webp'
+// import SVideoImg from '../images/project/s_video.webp'
+// import SaleDMMBImg from '../images/project/sale_dmmb.webp'
 import SISImg from '../images/project/sis.webp'
 import TodoImg from '../images/project/todo.webp'
 import TTTImg from '../images/project/ttt.webp'
 import WGImg from '../images/project/word_game.webp'
+
+const config = require('./config');
 
 export const resumeLink = `#!`;
 
@@ -66,7 +65,7 @@ export const skills = {
 		{
 			icon: Gnubash,
 			skill: 'Bash',
-			level: 'Intermediate'
+			level: 'Expert'
 		},
 		{
 			icon: Php,
@@ -96,6 +95,11 @@ export const skills = {
 			level: 'Expert'
 		},
 		{
+			icon: Typescript,
+			skill: 'TypeScript',
+			level: 'Expert'
+		},
+		{
 			icon: Bootstrap,
 			skill: 'Bootstrap',
 			level: 'Expert'
@@ -103,21 +107,26 @@ export const skills = {
 		{
 			icon: Nodedotjs,
 			skill: 'Node.js',
-			level: 'Intermediate'
+			level: 'Expert'
 		},
 		{
 			icon: ReactJs,
 			skill: 'ReactJS',
-			level: 'Intermediate'
+			level: 'Expert'
 		},
 		{
 			icon: Angular,
 			skill: 'Angular',
-			level: 'Beginner'
+			level: 'Expert'
 		},
 		{
 			icon: Gatsby,
 			skill: 'Gatsby',
+			level: 'Expert'
+		},
+		{
+			icon: Nextdotjs,
+			skill: 'Next.js',
 			level: 'Expert'
 		}
 	],
@@ -130,7 +139,7 @@ export const skills = {
 		{
 			icon: Mongodb,
 			skill: 'MongoDB',
-			level: 'Beginner'
+			level: 'Expert'
 		}
 	],
 	"DevOps and Others": [
@@ -140,24 +149,24 @@ export const skills = {
 			level: 'Expert'
 		},
 		{
-			icon: Github,
-			skill: 'GitHub',
-			level: 'Expert'
-		},
-		{
-			icon: Bitbucket,
-			skill: 'BitBucket',
-			level: 'Expert'
-		},
-		{
 			icon: Jenkins,
 			skill: 'Jenkins',
 			level: 'Intermediate'
 		},
 		{
+			icon: Ansible,
+			skill: 'Ansible',
+			level: 'Expert'
+		},
+		{
 			icon: Docker,
 			skill: 'Docker',
 			level: 'Beginner'
+		},
+		{
+			icon: Firebase,
+			skill: 'Firebase',
+			level: 'Intermediate'
 		},
 		{
 			icon: Markdown,
@@ -184,14 +193,14 @@ export const skills = {
 		{
 			icon: Atom,
 			skill: 'Atom',
-			level: 'Intermediate'
+			level: 'Expert'
 		}
 	],
 	"Design": [
 		{
 			icon: Figma,
 			skill: 'Figma',
-			level: 'Intermediate'
+			level: 'Expert'
 		},
 		{
 			icon: Adobexd,
@@ -246,12 +255,22 @@ export const edu = [
 
 export const exp = [
 	{
+		role: `Analyst / Automation Engineer`,
+		location: `HCL Technologies, Noida`,
+		duration: {
+			from: `Jan 2022`,
+			to: `Present`
+		},
+		desc: `Promoted to senior role where I manage the automation perspective as a engineer, helping in solving customer facing tasks, workload acheivements and more. Worked on AD, Wintel Tools, Python, PowerShell Advanced, Ansible, AWS Services.`
+	},
+	{
 		role: `Graduate Engineer Trainee`,
 		location: `HCL Technologies, Noida`,
 		duration: {
 			from: `Oct 2020`,
-			to: `Present`
-		}
+			to: `Jan 2022`
+		},
+		desc: `Worked on scripting technologies like PowerShell and Bash. Providing solutions to automate repeatitive and time consuming tasks. Learned a lot of tools and methods in the process.`
 	},
 	{
 		role: `Developer Intern`,
@@ -259,7 +278,8 @@ export const exp = [
 		duration: {
 			from: 'May 2020',
 			to: `Jul 2020`
-		}
+		},
+		desc: `Developed multi functionality website/webapp having features like blogs, audio/video players, forums, chat feature, content posting, podcasts, profile management, authentication and more. Learned technologies like socket, CORS and frameworks like Vue, SASS and more.`
 	},
 	{
 		role: `Summer Intern`,
@@ -267,7 +287,8 @@ export const exp = [
 		duration: {
 			from: 'Jun 2019',
 			to: `Jul 2019`
-		}
+		},
+		desc: `Built a Graphical User Interface for cursor/pointer movement in 2D/3D space. Technologies used: Python.`
 	},
 	{
 		role: `Committee Member`,
@@ -275,7 +296,8 @@ export const exp = [
 		duration: {
 			from: `Aug 2017`,
 			to: `Apr 2020`
-		}
+		},
+		desc: ``
 	},
 	{
 		role: `T & P Member (CSE)`,
@@ -283,7 +305,8 @@ export const exp = [
 		duration: {
 			from: `Aug 2016`,
 			to: `Apr 2020`
-		}
+		},
+		desc: ``
 	},
 	{
 		role: `Voluteer(Group Best Cadet)`,
@@ -291,7 +314,8 @@ export const exp = [
 		duration: {
 			from: null,
 			to: null
-		}
+		},
+		desc: ``
 	}
 ]
 
@@ -330,26 +354,26 @@ export const projectsList = {
 			liveLink: `${config.siteUrl}/Mini-Projects/GithubFinder`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/GithubFinder`
 		},
-		{
-			id: "simple-chat",
-			name: 'Simple Chat App',
-			date: '17-Jul-2018',
-			tags: ['JavaScript', 'WebRTC'],
-			image: SChatImg,
-			desc: `A simple chat application that uses WebRTC to peer to peer communication, will be updating instructions on how to use!`,
-			liveLink: `${config.siteUrl}/Mini-Projects/chat`,
-			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/chat`
-		},
-		{
-			id: "simple-video",
-			name: 'Simple VideoCall App',
-			date: '05-Feb-2019',
-			tags: ['JavaScript', 'WebRTC'],
-			image: SVideoImg,
-			desc: `A simple Video Call Application that uses the same technique of peer to peer connection, and lets you video chat your favourite ones.`,
-			liveLink: `${config.siteUrl}/Mini-Projects/videoCall`,
-			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/videoCall`
-		},
+		// {
+		// 	id: "simple-chat",
+		// 	name: 'Simple Chat App',
+		// 	date: '17-Jul-2018',
+		// 	tags: ['JavaScript', 'WebRTC'],
+		// 	image: SChatImg,
+		// 	desc: `A simple chat application that uses WebRTC to peer to peer communication, will be updating instructions on how to use!`,
+		// 	liveLink: `${config.siteUrl}/Mini-Projects/chat`,
+		// 	gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/chat`
+		// },
+		// {
+		// 	id: "simple-video",
+		// 	name: 'Simple VideoCall App',
+		// 	date: '05-Feb-2019',
+		// 	tags: ['JavaScript', 'WebRTC'],
+		// 	image: SVideoImg,
+		// 	desc: `A simple Video Call Application that uses the same technique of peer to peer connection, and lets you video chat your favourite ones.`,
+		// 	liveLink: `${config.siteUrl}/Mini-Projects/videoCall`,
+		// 	gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/videoCall`
+		// },
 		{
 			id: "todo-js",
 			name: 'ToDo - JS',
@@ -370,16 +394,16 @@ export const projectsList = {
 		// 	liveLink: `${config.siteUrl}/portfolio-2.0`,
 		// 	gitLink: `https://github.com/sarojkumar007/portfolio-2.0`
 		// },
-		{
-			id: 'b-l-p',
-			name: 'Business Landing Page',
-			date: '12-Jul-2019',
-			tags: ['UX', 'CSS'],
-			image: BLPImg,
-			desc: `A beautiful business landing template that perfect fits into any business landing page creation, built with modern UX and CSS techniques.`,
-			liveLink: `${config.siteUrl}/business-landing-page/`,
-			gitLink: `https://github.com/sarojkumar007/business-landing-page`
-		},
+		// {
+		// 	id: 'b-l-p',
+		// 	name: 'Business Landing Page',
+		// 	date: '12-Jul-2019',
+		// 	tags: ['UX', 'CSS'],
+		// 	image: BLPImg,
+		// 	desc: `A beautiful business landing template that perfect fits into any business landing page creation, built with modern UX and CSS techniques.`,
+		// 	liveLink: `${config.siteUrl}/business-landing-page/`,
+		// 	gitLink: `https://github.com/sarojkumar007/business-landing-page`
+		// },
 		{
 			id: "img-gallery",
 			name: 'Image Gallery',
@@ -400,16 +424,16 @@ export const projectsList = {
 			liveLink: null,
 			gitLink: `https://github.com/sarojkumar007/nodeAuth`
 		},
-		{
-			id: "node-blog",
-			name: 'Node Blog System',
-			date: '06-Jan-2020',
-			tags: ['Node.js', 'MongoDB'],
-			image: NodeBlogImg,
-			desc: `A beautiful and interactive blog system, that uses MongoDB to host images, and create blog pages. Has a feature to categorize posts based on tags and authors.`,
-			liveLink: null,
-			gitLink: `https://github.com/sarojkumar007/nodeBlog`
-		},
+		// {
+		// 	id: "node-blog",
+		// 	name: 'Node Blog System',
+		// 	date: '06-Jan-2020',
+		// 	tags: ['Node.js', 'MongoDB'],
+		// 	image: NodeBlogImg,
+		// 	desc: `A beautiful and interactive blog system, that uses MongoDB to host images, and create blog pages. Has a feature to categorize posts based on tags and authors.`,
+		// 	liveLink: null,
+		// 	gitLink: `https://github.com/sarojkumar007/nodeBlog`
+		// },
 		{
 			id: "lp-adelle",
 			name: 'Landing Page for Adelle International',
@@ -420,16 +444,16 @@ export const projectsList = {
 			liveLink: `${config.siteUrl}/adelle-home/`,
 			gitLink: `https://github.com/sarojkumar007/adelle-home`
 		},
-		{
-			id: "sale-dmmb",
-			name: 'Sales Page | DMMB',
-			date: '05-Mar-2020',
-			tags: ['CSS', 'UX'],
-			image: SaleDMMBImg,
-			desc: `A Digital Marketing Mastery Bundle Sales Page, created just for Marketing and Demonstration purpose.`,
-			liveLink: `http://dmm-abhishek.surge.sh/`,
-			gitLink: `https://github.com/sarojkumar007/DMMB`
-		},
+		// {
+		// 	id: "sale-dmmb",
+		// 	name: 'Sales Page | DMMB',
+		// 	date: '05-Mar-2020',
+		// 	tags: ['CSS', 'UX'],
+		// 	image: SaleDMMBImg,
+		// 	desc: `A Digital Marketing Mastery Bundle Sales Page, created just for Marketing and Demonstration purpose.`,
+		// 	liveLink: `http://dmm-abhishek.surge.sh/`,
+		// 	gitLink: `https://github.com/sarojkumar007/DMMB`
+		// },
 		{
 			id: "budgy-app",
 			name: 'Budgy App',
@@ -451,16 +475,6 @@ export const projectsList = {
 			gitLink: `https://github.com/sarojkumar007/forkify/`
 		},
 		{
-			id: "glass-effect",
-			name: 'Glass Effect (Only CSS)',
-			date: '28-Dec-2021',
-			tags: ['HTML', 'CSS'],
-			image: GlassEffectImg,
-			desc: `A new CSS property used to create glass effect, and with respect to new design system`,
-			liveLink: `${config.siteUrl}/Mini-Projects/GlassEffect/`,
-			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/GlassEffect`
-		},
-		{
 			id: "magic-nav",
 			name: 'Magic Navigation Bar',
 			date: '29-Dec-2021',
@@ -479,17 +493,7 @@ export const projectsList = {
 			desc: `A simple and handy application for designer/developers which provides random colors for your next projects while maintaining a record of colors. Its sort of a DJ itself, you know!`,
 			liveLink: `${config.siteUrl}/Mini-Projects/RandomColor/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/RandomColor`
-		},
-		{
-			id: "demo-rest",
-			name: 'Demo Restaurant Page',
-			date: '28-Dec-2021',
-			tags: ['CSS', 'JavaScript'],
-			image: DemoRestImg,
-			desc: `A model restaurant page for beginners who want to learn modern design and theme changing.`,
-			liveLink: `${config.siteUrl}/Mini-Projects/RestaurantMenu/`,
-			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/RestaurantMenu`
-		},
+		}
 	],
 
 	'miniGames': [
