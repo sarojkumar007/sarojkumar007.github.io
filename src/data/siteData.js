@@ -261,7 +261,7 @@ export const exp = [
 			from: `Jan 2022`,
 			to: `Present`
 		},
-		desc: `Promoted to senior role where I manage the automation perspective as a engineer, helping in solving customer facing tasks, workload acheivements and more. Worked on AD, Wintel Tools, Python, PowerShell Advanced, Ansible, AWS Services.`
+		desc: `Promoted to senior role where I manage the automation perspective as a engineer, helping in solving customer facing tasks, workload achievements and more. Worked on AD, Wintel Tools, Python, PowerShell Advanced, Ansible, AWS Services.`
 	},
 	{
 		role: `Graduate Engineer Trainee`,
@@ -270,10 +270,10 @@ export const exp = [
 			from: `Oct 2020`,
 			to: `Jan 2022`
 		},
-		desc: `Worked on scripting technologies like PowerShell and Bash. Providing solutions to automate repeatitive and time consuming tasks. Learned a lot of tools and methods in the process.`
+		desc: `Worked on scripting technologies like PowerShell and Bash. Providing solutions to automate repetitive  and time consuming tasks. Learned a lot of tools and methods in the process.`
 	},
 	{
-		role: `Developer Intern`,
+		role: `Development Intern`,
 		location: 'Cometa Intellect LLP',
 		duration: {
 			from: 'May 2020',
@@ -283,7 +283,7 @@ export const exp = [
 	},
 	{
 		role: `Summer Intern`,
-		location: 'DRDO, Chandipur',
+		location: 'Defence Research and Development Organisation (DRDO), Chandipur',
 		duration: {
 			from: 'Jun 2019',
 			to: `Jul 2019`
