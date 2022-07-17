@@ -10,7 +10,7 @@ export const resources = [
 				"title": "Visual Studio Code Setup",
 				"description": "My Visual Studio Code Settings",
 				// "image": `/r/vscode.svg`,
-				"link": "#!"
+				"link": "https://gist.github.com/sarojkumar007/fc60bb1dc87d02aac899d2c82e08c6ea"
 			},
 			{
 				"title": "Codepen",
