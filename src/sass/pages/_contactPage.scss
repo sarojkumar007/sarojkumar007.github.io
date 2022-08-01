@@ -12,6 +12,7 @@
 			grid-template-columns: 1fr;
 			grid-template-rows: 24rem 1fr;
 			justify-items: center;
+			margin: 2rem 0 0;
 		}
 	}
 	&__design{
@@ -56,7 +57,11 @@
 		background-image: var(--lGrad);
 		border-radius: 1rem;
 		box-shadow: 0 .4rem .4rem rgba(var(--rgb-black),.5);
-		padding: 4rem;
+		padding: 3rem 2.5rem 3rem 4rem;
+
+		@include respond(tab){
+			padding: 4rem 2.5rem 2.5rem 2.5rem;
+		}
 
 		form{
 			width: 100%;

@@ -3,29 +3,30 @@ import { faBuilding, faSchool, faUniversity } from '@fortawesome/free-solid-svg-
 
 import AdelleImg from '../images/project/adelle.webp'
 // import BLPImg from '../images/project/blp.webp'
-import BudgyImg from '../images/project/budgy.webp'
-import DataSimImg from '../images/project/data_sim.webp'
+// import BudgyImg from '../images/project/budgy.webp'
+// import DataSimImg from '../images/project/data_sim.webp'
 import DiceGameImg from '../images/project/dice_game.webp'
-import ForkifyImg from '../images/project/forkify.webp'
+// import ForkifyImg from '../images/project/forkify.webp'
 // import GlassEffectImg from '../images/project/glass_effect.webp'
 import DinoImg from '../images/project/google_dino.webp'
 import GUFImg from '../images/project/guf.webp'
 import ImgGalleryImg from '../images/project/img_gallery.webp'
 import MagicNavImg from '../images/project/magic_nav.webp'
 import MemGameImg from '../images/project/memory_game.webp'
-import NodeAuthImg from '../images/project/node_auth.webp'
+// import NodeAuthImg from '../images/project/node_auth.webp'
 // import NodeBlogImg from '../images/project/node_blog.webp'
 // import Portfolio2Img from '../images/project/portfolio2.webp'
 import QGameImg from '../images/project/quiz_app.webp'
 import RanColorImg from '../images/project/random_color.webp'
 import RPSImg from '../images/project/rps.webp'
 // import SChatImg from '../images/project/s_chat.webp'
-// import SVideoImg from '../images/project/s_video.webp'
+import SVideoImg from '../images/project/s_video.webp'
 // import SaleDMMBImg from '../images/project/sale_dmmb.webp'
-import SISImg from '../images/project/sis.webp'
+// import SISImg from '../images/project/sis.webp'
 import TodoImg from '../images/project/todo.webp'
 import TTTImg from '../images/project/ttt.webp'
 import WGImg from '../images/project/word_game.webp'
+import WNImg from '../images/project/webNote.webp'
 
 const config = require('./config');
 
@@ -320,35 +321,35 @@ export const exp = [
 ]
 
 export const projectsList = {
-	'academic': [
-		{
-			id: 'data-simulator',
-			name: 'Data Simulator',
-			date: '18-Jul-2019',
-			tags: ['Python', 'tkinter-gui'],
-			image: DataSimImg,
-			desc: `A data simulator gui that collects data from any input object, i.e. Mouse, JoyStick etc. and sends the data to the system which can be used as various purposes like object mapping. I did this project during an internship under Scientist-C.`,
-			liveLink: null,
-			gitLink: `https://github.com/sarojkumar007/Data-Simulator--Internship-Project`
-		},
-		{
-			id: 's-i-s',
-			name: 'Smart Irrigation System',
-			date: '23-Jul-2020',
-			tags: ['Python', 'ML', 'IoT'],
-			image: SISImg,
-			desc: `A Smart Irrigation System that collects soli parameters like Temperature, Humidity and automates the irrigation process in Crops. It also predicts Weather Conditions and Uses UI to display data to the Users.`,
-			liveLink: null,
-			gitLink: null
-		}
-	],
+	// 'academic': [
+	// 	{
+	// 		id: 'data-simulator',
+	// 		name: 'Data Simulator',
+	// 		date: '18-Jul-2019',
+	// 		tags: ['Python', 'tkinter-gui'],
+	// 		image: DataSimImg,
+	// 		desc: `A data simulator gui that collects data from any input object, i.e. Mouse, JoyStick etc. and sends the data to the system which can be used as various purposes like object mapping. I did this project during an internship under Scientist-C.`,
+	// 		liveLink: null,
+	// 		gitLink: `https://github.com/sarojkumar007/Data-Simulator--Internship-Project`
+	// 	},
+	// 	{
+	// 		id: 's-i-s',
+	// 		name: 'Smart Irrigation System',
+	// 		date: '23-Jul-2020',
+	// 		tags: ['Python', 'ML', 'IoT'],
+	// 		image: SISImg,
+	// 		desc: `A Smart Irrigation System that collects soli parameters like Temperature, Humidity and automates the irrigation process in Crops. It also predicts Weather Conditions and Uses UI to display data to the Users.`,
+	// 		liveLink: null,
+	// 		gitLink: null
+	// 	}
+	// ],
 
 	'sideProjects': [
 		{
 			id: 'g-u-f',
 			name: 'GitHub UserFinder App',
 			date: '05-Sep-2018',
-			tags: ['API', 'AJAX'],
+			tags: ['REST API', 'AJAX'],
 			image: GUFImg,
 			desc: `A simple application that uses GitHub API and finds users with there details on the Go just by using there github username!`,
 			liveLink: `${config.siteUrl}/Mini-Projects/GithubFinder`,
@@ -364,16 +365,16 @@ export const projectsList = {
 		// 	liveLink: `${config.siteUrl}/Mini-Projects/chat`,
 		// 	gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/chat`
 		// },
-		// {
-		// 	id: "simple-video",
-		// 	name: 'Simple VideoCall App',
-		// 	date: '05-Feb-2019',
-		// 	tags: ['JavaScript', 'WebRTC'],
-		// 	image: SVideoImg,
-		// 	desc: `A simple Video Call Application that uses the same technique of peer to peer connection, and lets you video chat your favourite ones.`,
-		// 	liveLink: `${config.siteUrl}/Mini-Projects/videoCall`,
-		// 	gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/videoCall`
-		// },
+		{
+			id: "simple-video",
+			name: 'Simple VideoCall App',
+			date: '05-Feb-2019',
+			tags: ['JavaScript', 'WebRTC'],
+			image: SVideoImg,
+			desc: `A simple Video Call Application that uses the same technique of peer to peer connection, and lets you video chat your favourite ones.`,
+			liveLink: `${config.siteUrl}/Mini-Projects/videoCall`,
+			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/videoCall`
+		},
 		{
 			id: "todo-js",
 			name: 'ToDo - JS',
@@ -384,26 +385,6 @@ export const projectsList = {
 			liveLink: `${config.siteUrl}/todo-js`,
 			gitLink: `https://github.com/sarojkumar007/todo-js`
 		},
-		// {
-		// 	id: "portfolio-2",
-		// 	name: 'Portfolio 2.0',
-		// 	date: '02-Jul-2019',
-		// 	tags: ['UX', 'CSS'],
-		// 	image: Portfolio2Img,
-		// 	desc: `An archived Portfolio, that describes the UX principles and a little CSS work of me. Its Nice to be Upgraded!!`,
-		// 	liveLink: `${config.siteUrl}/portfolio-2.0`,
-		// 	gitLink: `https://github.com/sarojkumar007/portfolio-2.0`
-		// },
-		// {
-		// 	id: 'b-l-p',
-		// 	name: 'Business Landing Page',
-		// 	date: '12-Jul-2019',
-		// 	tags: ['UX', 'CSS'],
-		// 	image: BLPImg,
-		// 	desc: `A beautiful business landing template that perfect fits into any business landing page creation, built with modern UX and CSS techniques.`,
-		// 	liveLink: `${config.siteUrl}/business-landing-page/`,
-		// 	gitLink: `https://github.com/sarojkumar007/business-landing-page`
-		// },
 		{
 			id: "img-gallery",
 			name: 'Image Gallery',
@@ -414,76 +395,46 @@ export const projectsList = {
 			liveLink: null,
 			gitLink: `https://github.com/sarojkumar007/imageGallery`
 		},
-		{
-			id: "node-auth",
-			name: 'Node Auth System',
-			date: '18-Dec-2019',
-			tags: ['Node.js', 'MongoDB'],
-			image: NodeAuthImg,
-			desc: `An Authentication system using Node.js that logs in users based on local DB data or using Google/Facebook (Needs Code Extension)`,
-			liveLink: null,
-			gitLink: `https://github.com/sarojkumar007/nodeAuth`
-		},
 		// {
-		// 	id: "node-blog",
-		// 	name: 'Node Blog System',
-		// 	date: '06-Jan-2020',
-		// 	tags: ['Node.js', 'MongoDB'],
-		// 	image: NodeBlogImg,
-		// 	desc: `A beautiful and interactive blog system, that uses MongoDB to host images, and create blog pages. Has a feature to categorize posts based on tags and authors.`,
-		// 	liveLink: null,
-		// 	gitLink: `https://github.com/sarojkumar007/nodeBlog`
+		// 	id: "lp-adelle",
+		// 	name: 'Landing Page for Adelle International',
+		// 	date: '22-Jan-2020',
+		// 	tags: ['CSS', 'SCSS'],
+		// 	image: AdelleImg,
+		// 	desc: `An attractive and fast landing page for adelle international. I used modern CSS techniques like Sass(SCSS) to build this beautiful site with audit rate of 97%.`,
+		// 	liveLink: `${config.siteUrl}/adelle-home/`,
+		// 	gitLink: `https://github.com/sarojkumar007/adelle-home`
 		// },
-		{
-			id: "lp-adelle",
-			name: 'Landing Page for Adelle International',
-			date: '22-Jan-2020',
-			tags: ['CSS', 'SCSS'],
-			image: AdelleImg,
-			desc: `An attractive and fast landing page for adelle international. I used modern CSS techniques like Sass(SCSS) to build this beautiful site with audit rate of 97%.`,
-			liveLink: `${config.siteUrl}/adelle-home/`,
-			gitLink: `https://github.com/sarojkumar007/adelle-home`
-		},
 		// {
-		// 	id: "sale-dmmb",
-		// 	name: 'Sales Page | DMMB',
-		// 	date: '05-Mar-2020',
-		// 	tags: ['CSS', 'UX'],
-		// 	image: SaleDMMBImg,
-		// 	desc: `A Digital Marketing Mastery Bundle Sales Page, created just for Marketing and Demonstration purpose.`,
-		// 	liveLink: `http://dmm-abhishek.surge.sh/`,
-		// 	gitLink: `https://github.com/sarojkumar007/DMMB`
+		// 	id: "budgy-app",
+		// 	name: 'Budgy App',
+		// 	date: '18-Mar-2020',
+		// 	tags: ['CSS', 'JavaScript'],
+		// 	image: BudgyImg,
+		// 	desc: `A simple app that keeps track of your expenses. Add incomes and expenses, keep your budget tight!`,
+		// 	liveLink: `${config.siteUrl}/budgy-app/`,
+		// 	gitLink: `https://github.com/sarojkumar007/budgy-app/`
 		// },
-		{
-			id: "budgy-app",
-			name: 'Budgy App',
-			date: '18-Mar-2020',
-			tags: ['CSS', 'JavaScript'],
-			image: BudgyImg,
-			desc: `A simple app that keeps track of your expenses. Add incomes and expenses, keep your budget tight!`,
-			liveLink: `${config.siteUrl}/budgy-app/`,
-			gitLink: `https://github.com/sarojkumar007/budgy-app/`
-		},
-		{
-			id: "forkify-app",
-			name: 'Forkify',
-			date: '13-Aug-2020',
-			tags: ['REST API', 'JavaScript'],
-			image: ForkifyImg,
-			desc: `A model Food App that search over 10,000,000 foods and finds suitable recipe for you. Add to your list for preferred sevings and crave your hunger.`,
-			liveLink: `https://forkify-sarojkumar007.netlify.app/`,
-			gitLink: `https://github.com/sarojkumar007/forkify/`
-		},
-		{
-			id: "magic-nav",
-			name: 'Magic Navigation Bar',
-			date: '29-Dec-2021',
-			tags: ['CSS', 'JavaScript'],
-			image: MagicNavImg,
-			desc: `An approachable mobile nav with magic transition. You can take this idea for navigations and create your own styling. :)`,
-			liveLink: `${config.siteUrl}/Mini-Projects/MagicNav/`,
-			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/MagicNav`
-		},
+		// {
+		// 	id: "forkify-app",
+		// 	name: 'Forkify',
+		// 	date: '13-Aug-2020',
+		// 	tags: ['REST API', 'JavaScript'],
+		// 	image: ForkifyImg,
+		// 	desc: `A model Food App that search over 10,000,000 foods and finds suitable recipe for you. Add to your list for preferred sevings and crave your hunger.`,
+		// 	liveLink: `https://forkify-sarojkumar007.netlify.app/`,
+		// 	gitLink: `https://github.com/sarojkumar007/forkify/`
+		// },
+		// {
+		// 	id: "magic-nav",
+		// 	name: 'Magic Navigation Bar',
+		// 	date: '29-Dec-2021',
+		// 	tags: ['CSS', 'JavaScript'],
+		// 	image: MagicNavImg,
+		// 	desc: `An approachable mobile nav with magic transition. You can take this idea for navigations and create your own styling. :)`,
+		// 	liveLink: `${config.siteUrl}/Mini-Projects/MagicNav/`,
+		// 	gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/MagicNav`
+		// },
 		{
 			id: "random-color",
 			name: 'Random Color Generater',
@@ -493,6 +444,16 @@ export const projectsList = {
 			desc: `A simple and handy application for designer/developers which provides random colors for your next projects while maintaining a record of colors. Its sort of a DJ itself, you know!`,
 			liveLink: `${config.siteUrl}/Mini-Projects/RandomColor/`,
 			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/RandomColor`
+		},
+		{
+			id: "web-note",
+			name: 'Web Note',
+			date: '21-Jul-2022',
+			tags: ['HTML', 'CSS', 'JavaScript'],
+			image: WNImg,
+			desc: `A simple sticky note of your own on the web. Personalize with theme. adjust sizes, spell check and save your note easily.`,
+			liveLink: `${config.siteUrl}/Mini-Projects/WebNote/`,
+			gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/WebNote/`
 		}
 	],
 

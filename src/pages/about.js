@@ -48,6 +48,7 @@ const About = () => {
 					<p className="display">Hi, <small>I'm Saroj Kumar.</small></p>
 					<p><span className="c-orange">Automation Engineer</span>, <span className="">DevOps Enthusiast</span>, <span className="c-orange">Web Developer</span>, <span className="">Freelancer</span>.</p>
 					<p>I love to automate stuff. I make simple and attractive websites, landing pages, Site Optimization and SEO for Businesses.</p>
+					<p>Besides automating and spreading web, I like to play Badminton 🏸, Chess ♟, and read Comics 📚</p>
 				</div>
 			</section>
 			<section className="sec about about__exp">

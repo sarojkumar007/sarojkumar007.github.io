@@ -2,7 +2,7 @@ const social = {
 	twitter: `_sarojk18`,
 	twitterLink: `https://twitter.com/_sarojk18`,
 	githubLink: `https://github.com/sarojkumar007`,
-	instagramLink: `https://www.instagram.com/saroj_smiley/`,
+	instagramLink: `https://www.instagram.com/_sarojk18/`,
 	linkedinLink: `https://www.linkedin.com/in/sarojk18/`,
 	youtubeLink: `#!`,//`https://www.youtube.com/channel/UCyG5IZIwPxKiG9tmM-SoCtg`,
 	codepenLink: `https://codepen.io/sarojk18`,

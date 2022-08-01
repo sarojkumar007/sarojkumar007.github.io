@@ -9,6 +9,7 @@
 	align-items: center;
 }
 .text_center{text-align: center !important;}
+.text_justify{text-align: justify !important;}
 .or{
 	margin: 2rem 0;
 	line-height: 1;
@@ -20,14 +21,14 @@
 }
 
 .d_f{display: flex !important;}
+.fx1{flex: 1 !important;}
 
-.tags__wrap{
+.f_wrap, .tags__wrap{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-
-	& .tag__link{margin: .5rem;}
 }
+.tags__wrap .tag__link{margin: .5rem;}
 .tag__link{
 	text-decoration: none;
 	margin-right: 1rem;

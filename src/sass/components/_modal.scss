@@ -41,8 +41,8 @@
 		flex-direction: column;
 
 		@include respond(phone){
-			max-width: 85%;
-			width: 85%; // Only For Projects Section
+			max-width: 95%;
+			width: 95%; // Only For Projects Section
 			max-height: 85%;
 		}
 	}
