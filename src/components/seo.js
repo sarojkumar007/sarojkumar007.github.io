@@ -88,6 +88,10 @@ const Seo = ({ description, lang, meta, title }) => {
           name: `color-scheme`,
           content: `light dark`,
         },
+        {
+          name: `keywords`,
+          content: ['sarojkumar007', 'saroj kumar', 'saroj kumar sahoo', 'saroj sahoo', 'sarojk18', 'saroj github', 'saroj kumar github', 'saroj kumar sahoo github', 'saroj kumar dev', 'saroj kumar sahooo dev', 'saroj dev', 'dev saroj kumar'].join(', '),
+        },
       ].concat(meta)}
     />
   )
