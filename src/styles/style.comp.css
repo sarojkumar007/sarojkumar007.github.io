@@ -188,6 +188,7 @@
   padding: 0;
   box-sizing: inherit;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -213,7 +214,10 @@ body {
   overflow-y: scroll;
 }
 
-section, header, main, footer {
+section,
+header,
+main,
+footer {
   max-width: 100vw;
 }
 
@@ -520,10 +524,10 @@ h3 {
   font-weight: bold;
   font-size: 4.2rem !important;
   letter-spacing: 1px;
-  color: #3c3c3c !important;
+  color: rgb(60, 60, 60) !important;
 }
 :root[dark-mode=true] .display {
-  color: #e6e6e6 !important;
+  color: rgb(230, 230, 230) !important;
 }
 @media screen and (max-width: 768px) {
   .display {
@@ -850,8 +854,8 @@ h3 {
 .btn-f {
   padding-right: 2rem;
   padding-left: 2rem;
-  border: 2px solid #f3f3f3e6;
-  background-color: #f8f8f8e6;
+  border: 2px solid rgba(243, 243, 243, 0.9019607843);
+  background-color: rgba(248, 248, 248, 0.9019607843);
   color: #323232;
   text-decoration: none;
   font-size: 1.5rem;

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: inherit;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 html {
   font-size: 62.5%; // 10px
@@ -10,7 +11,7 @@ html {
   scroll-padding-top: 19rem; // 6rem header + (8+ pad 4)rem resources tags + 1rem gutter
   // scroll-behavior: smooth;
 
-  @include respond(tab){
+  @include respond(tab) {
     font-size: 56.25%; // 9px
   }
 }
@@ -25,18 +26,21 @@ body {
   min-height: 100vh;
   overflow-y: scroll;
 }
-section,header,main,footer{
+section,
+header,
+main,
+footer {
   max-width: 100vw;
 }
-button:not([disabled]){
+button:not([disabled]) {
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-code.language-text{
+code.language-text {
   color: #f8f8f8 !important;
   border-radius: 3px !important;
   padding: 2px 4px !important;
@@ -47,16 +51,16 @@ code.language-text{
   width: 1rem;
 }
 ::-webkit-scrollbar:horizontal {
-  height: .7rem;
+  height: 0.7rem;
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 
-  @include onSiteDark(){
+  @include onSiteDark() {
     background: #343434;
   }
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background: #757575;
   border-radius: 1rem;
@@ -82,8 +86,10 @@ code.language-text{
 //   // color: var(--color-white);
 // }
 
-.global__link{
-  &,&:link,&:visited{
+.global__link {
+  &,
+  &:link,
+  &:visited {
     @include spclBg;
     display: inline-block;
     text-decoration: none;
@@ -92,20 +98,23 @@ code.language-text{
     font-weight: var(--fw2-medium);
     font-size: inherit;
 
-    svg{
+    svg {
       color: var(--c-2);
     }
   }
-  &:hover,&:focus{
+  &:hover,
+  &:focus {
     border-bottom: 2px dotted var(--c-2);
   }
-  &:active{
+  &:active {
     border-bottom: 2px solid var(--c-2);
   }
 }
 
-.global__link2{
-  &,&:link,&:visited{
+.global__link2 {
+  &,
+  &:link,
+  &:visited {
     display: inline-block;
     color: var(--c-2);
     text-decoration: none;
@@ -113,47 +122,48 @@ code.language-text{
     font-weight: var(--fw2-medium);
     font-size: inherit;
 
-    svg{
+    svg {
       color: var(--c-2);
     }
   }
-  &:hover,&:focus{
+  &:hover,
+  &:focus {
     -webkit-text-decoration: underline dotted;
-            text-decoration: underline dotted;
+    text-decoration: underline dotted;
   }
-  &:active{
+  &:active {
     -webkit-text-decoration: underline solid;
-            text-decoration: underline solid;
+    text-decoration: underline solid;
   }
 }
 
-.icon_link{
+.icon_link {
   display: inline-flex !important;
   align-items: center;
 
-  span{
+  span {
     line-height: 1em;
   }
 
-  svg{
+  svg {
     width: 1.1em;
     height: 1.1em;
   }
 
-  &:not(.right) svg{
-    margin-right: .3rem;
+  &:not(.right) svg {
+    margin-right: 0.3rem;
   }
-  &.right svg{
-    margin-left: .3rem;
+  &.right svg {
+    margin-left: 0.3rem;
   }
 
-  &.link_ext svg{
+  &.link_ext svg {
     stroke-width: 2.5px;
-    padding-bottom: .1em;
+    padding-bottom: 0.1em;
   }
 }
 
-.announce{
+.announce {
   display: flex;
   align-items: center;
   padding: 2rem;
@@ -165,47 +175,50 @@ code.language-text{
   border-color: var(--c-1);
   border-radius: 8px;
 
-  @include respond(phone-sm){
+  @include respond(phone-sm) {
     flex-direction: column;
     align-items: flex-start;
   }
-  .content{ 
-    @include respond(phone-sm){
+  .content {
+    @include respond(phone-sm) {
       margin: 1rem 1rem 0 1rem;
     }
   }
 
-  &_icon{
+  &_icon {
     color: #fff;
     margin-right: 2rem;
     line-height: inherit;
     width: 2.4rem !important;
     height: 2.4rem !important;
 
-    @include respond(phone-sm){
+    @include respond(phone-sm) {
       margin: 0 1rem;
       align-self: flex-start;
     }
   }
-  &_link{
+  &_link {
     display: inline-flex;
     align-items: center;
     outline: none;
     text-decoration: underline;
     border: none;
     border-radius: 5px;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     color: #fff;
     font-weight: var(--fw2-medium);
     white-space: nowrap;
 
-    svg{
+    svg {
       width: 1.4rem;
       height: 1.4rem;
       margin-left: 2px;
       opacity: 0;
     }
 
-    &:hover svg,&:focus svg{opacity: 1;}
+    &:hover svg,
+    &:focus svg {
+      opacity: 1;
+    }
   }
 }
