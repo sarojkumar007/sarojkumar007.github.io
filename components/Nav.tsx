@@ -12,6 +12,7 @@ import {
   SiInstagram,
   SiLinkedin,
 } from '@icons-pack/react-simple-icons';
+
 import { usePathname } from 'next/navigation';
 
 const Nav = () => {
@@ -266,15 +267,17 @@ const Nav = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/blog`}
+                <a
+                  href={`//blog.sarojkumar.dev`}
+                  target={`_blank`}
+                  rel="noreferrer noopener"
                   className={`mobile_nav_link ${
                     pathname.startsWith('/blog') ? 'active' : ''
                   }`}
                 >
                   <span className="material-symbols-rounded">draw</span>
                   <span>Blog</span>
-                </Link>
+                </a>
               </li>
               <li>
                 <Link
