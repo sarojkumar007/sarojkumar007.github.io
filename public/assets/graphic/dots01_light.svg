@@ -1,0 +1,29 @@
+<svg width="96" height="120" viewBox="0 0 96 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_78_275)" style="--f:#999;">
+<circle cx="12" cy="12" r="4" fill="var(--f)"/>
+<circle cx="36" cy="12" r="4" fill="var(--f)"/>
+<circle cx="60" cy="12" r="4" fill="var(--f)"/>
+<circle cx="84" cy="12" r="4" fill="var(--f)"/>
+<circle cx="12" cy="36" r="4" fill="var(--f)"/>
+<circle cx="36" cy="36" r="4" fill="var(--f)"/>
+<circle cx="60" cy="36" r="4" fill="var(--f)"/>
+<circle cx="84" cy="36" r="4" fill="var(--f)"/>
+<circle cx="12" cy="60" r="4" fill="var(--f)"/>
+<circle cx="36" cy="60" r="4" fill="var(--f)"/>
+<circle cx="60" cy="60" r="4" fill="var(--f)"/>
+<circle cx="84" cy="60" r="4" fill="var(--f)"/>
+<circle cx="12" cy="84" r="4" fill="var(--f)"/>
+<circle cx="36" cy="84" r="4" fill="var(--f)"/>
+<circle cx="60" cy="84" r="4" fill="var(--f)"/>
+<circle cx="84" cy="84" r="4" fill="var(--f)"/>
+<circle cx="12" cy="108" r="4" fill="var(--f)"/>
+<circle cx="36" cy="108" r="4" fill="var(--f)"/>
+<circle cx="60" cy="108" r="4" fill="var(--f)"/>
+<circle cx="84" cy="108" r="4" fill="var(--f)"/>
+</g>
+<defs>
+<clipPath id="clip0_78_275">
+<rect width="80" height="104" fill="white" transform="translate(8 8)"/>
+</clipPath>
+</defs>
+</svg>

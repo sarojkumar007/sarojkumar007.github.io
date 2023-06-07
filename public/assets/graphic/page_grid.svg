@@ -1,0 +1,33 @@
+<svg width="724" height="244" viewBox="0 0 724 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_40_2)">
+<path d="M40 180L40 60" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M80 220L80 20" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M120 240L120 1.46771e-06" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M200 240L200 1.46771e-06" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M160 160V20" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M240 220L240 60" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M320 240V1.46771e-06" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M560 240V1.46771e-06" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M680 180V60" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M640 220V20" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M600 240V1.46771e-06" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M520 140V20" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M280 240V1.46771e-06" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M360 100V6.11544e-07" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M400 240V1.46771e-06" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M440 240V1.46771e-06" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M480 240V1.46771e-06" stroke="#757575" stroke-linecap="round" stroke-linejoin="bevel"/>
+<line x1="60" y1="39.5" x2="660" y2="39.5" stroke="#757575"/>
+<line x1="-0.000350952" y1="79.5" x2="720" y2="79.5" stroke="#757575"/>
+<line x1="-0.000350952" y1="119.5" x2="720" y2="119.5" stroke="#757575"/>
+<line x1="-0.000350952" y1="159.5" x2="360" y2="159.5" stroke="#757575"/>
+<line x1="420" y1="159.5" x2="720" y2="159.5" stroke="#757575"/>
+<line x1="60" y1="199.5" x2="660" y2="199.5" stroke="#757575"/>
+<line x1="359.5" y1="240" x2="359.5" y2="140" stroke="#757575"/>
+</g>
+<defs>
+<clipPath id="clip0_40_2">
+<rect width="724" height="244" fill="white"/>
+</clipPath>
+</defs>
+</svg>

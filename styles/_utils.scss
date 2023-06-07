@@ -1,0 +1,101 @@
+@mixin grad_text {
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.1;
+}
+
+.gradient_orange {
+  background-image: linear-gradient(
+    to right,
+    rgb(var(--grad-orange-c1)) 0%,
+    rgb(var(--grad-orange-c2)) 100%
+  );
+}
+.gradient_orange_text {
+  @include grad_text;
+  background-image: linear-gradient(
+    to right,
+    rgb(var(--grad-orange-c1)) 0%,
+    rgb(var(--grad-orange-c2)) 100%
+  );
+}
+
+.gradient_blue {
+  background-image: linear-gradient(
+    to right,
+    rgb(var(--grad-blue-c1)) 0%,
+    rgb(var(--grad-blue-c2)) 100%
+  );
+}
+.gradient_blue_text {
+  @include grad_text;
+  background-image: linear-gradient(
+    to right,
+    rgb(var(--grad-blue-c1)) 0%,
+    rgb(var(--grad-blue-c2)) 100%
+  );
+}
+
+.gradient_multi {
+  background-color: rgb(var(--grad-multi-c1));
+  background-image: linear-gradient(
+    43deg,
+    rgb(var(--grad-multi-c1)) 0%,
+    rgb(var(--grad-multi-c2)) 100%
+  );
+}
+// rgb(var(--grad-multi-c2)) 46%,
+
+.gradient_multi_text {
+  @include grad_text;
+  background-color: rgb(var(--grad-multi-c1));
+  background-image: linear-gradient(
+    43deg,
+    rgb(var(--grad-multi-c1)) 0%,
+    rgb(var(--grad-multi-c2)) 100%
+  );
+}
+
+// ---------------
+
+.dots_base {
+  @apply h-24 w-16;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+}
+.dots_base_light {
+  background-image: url(../public/assets/graphic/dots01_light.svg);
+}
+.dots_base_dark {
+  background-image: url(../public/assets/graphic/dots01_dark.svg);
+}
+
+.tag__icon {
+  @apply flex items-center;
+
+  .material-symbol-rounded,
+  svg {
+    @apply mr-2;
+  }
+  .material-symbol-rounded {
+    @apply text-2xl;
+  }
+  svg {
+    @apply w-4 h-4;
+  }
+}
+
+.tag__link {
+  @apply no-underline mr-2 px-4 py-2 border border-transparent rounded bg-multi-c1/10 text-multi-c1 hover:bg-multi-c1/20 focus:border-multi-c1;
+
+  span {
+    @apply text-sm tracking-wider whitespace-nowrap;
+  }
+}
