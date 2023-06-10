@@ -15,6 +15,8 @@ import {
 
 import { usePathname } from 'next/navigation';
 
+const validPaths = ['/', '/about', '/projects', '/contact', '/resources'];
+
 const Nav = () => {
   const pathname = usePathname();
   const [offsetY, setOffSetY] = useState(0);
@@ -74,68 +76,146 @@ const Nav = () => {
             />
           </button>
         </div>
-        <ul className="hidden md:flex md:items-center gap-1">
-          <li>
-            <Link
-              href={`/`}
-              className={`nav_link ${pathname === '/' ? 'active' : ''}`}
-            >
-              <span className="material-symbols-rounded">house</span>
-              <span className="slide_hide hm">Home</span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={`/about`}
-              className={`nav_link ${pathname === '/about' ? 'active' : ''}`}
-            >
-              <span className="material-symbols-rounded">badge</span>
-              <span className="slide_hide ab">About</span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={`/projects`}
-              className={`nav_link ${pathname === '/projects' ? 'active' : ''}`}
-            >
-              <span className="material-symbols-rounded">
-                social_leaderboard
-              </span>
-              <span className="slide_hide pj">Projects</span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={`/contact`}
-              className={`nav_link ${pathname === '/contact' ? 'active' : ''}`}
-            >
-              <span className="material-symbols-rounded">deskphone</span>
-              <span className="slide_hide co">Contact</span>
-            </Link>
-          </li>
-          <li>
-            <a
-              href={`//blog.sarojkumar.dev`}
-              target={`_blank`}
-              rel="noreferrer noopener"
-              className={`nav_link`}
-            >
-              <span className="material-symbols-rounded">draw</span>
-              <span className="slide_hide bl">Blog</span>
-            </a>
-          </li>
-          <li>
-            <Link
-              href={`/resources`}
-              className={`nav_link ${
-                pathname.startsWith('/resources') ? 'active' : ''
-              }`}
-            >
-              <span className="material-symbols-rounded">tips_and_updates</span>
-              <span className="slide_hide rs">Resources</span>
-            </Link>
-          </li>
-        </ul>
+
+        {validPaths.includes(pathname) ? (
+          <ul className="hidden md:flex md:items-center gap-1">
+            <li>
+              <Link
+                href={`/`}
+                className={`nav_link ${pathname === '/' ? 'active' : ''}`}
+              >
+                <span className="material-symbols-rounded">house</span>
+                <span className="slide_hide hm">Home</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/about`}
+                className={`nav_link ${pathname === '/about' ? 'active' : ''}`}
+              >
+                <span className="material-symbols-rounded">badge</span>
+                <span className="slide_hide ab">About</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/projects`}
+                className={`nav_link ${
+                  pathname === '/projects' ? 'active' : ''
+                }`}
+              >
+                <span className="material-symbols-rounded">
+                  social_leaderboard
+                </span>
+                <span className="slide_hide pj">Projects</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/contact`}
+                className={`nav_link ${
+                  pathname === '/contact' ? 'active' : ''
+                }`}
+              >
+                <span className="material-symbols-rounded">deskphone</span>
+                <span className="slide_hide co">Contact</span>
+              </Link>
+            </li>
+            <li>
+              <a
+                href={`//blog.sarojkumar.dev`}
+                target={`_blank`}
+                rel="noreferrer noopener"
+                className={`nav_link`}
+              >
+                <span className="material-symbols-rounded">draw</span>
+                <span className="slide_hide bl">Blog</span>
+              </a>
+            </li>
+            <li>
+              <Link
+                href={`/resources`}
+                className={`nav_link ${
+                  pathname.startsWith('/resources') ? 'active' : ''
+                }`}
+              >
+                <span className="material-symbols-rounded">
+                  tips_and_updates
+                </span>
+                <span className="slide_hide rs">Resources</span>
+              </Link>
+            </li>
+          </ul>
+        ) : (
+          <ul className="hidden md:flex md:items-center gap-1">
+            <li>
+              <a
+                href={`/`}
+                className={`nav_link ${pathname === '/' ? 'active' : ''}`}
+              >
+                <span className="material-symbols-rounded">house</span>
+                <span className="slide_hide hm">Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/about`}
+                className={`nav_link ${pathname === '/about' ? 'active' : ''}`}
+              >
+                <span className="material-symbols-rounded">badge</span>
+                <span className="slide_hide ab">About</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/projects`}
+                className={`nav_link ${
+                  pathname === '/projects' ? 'active' : ''
+                }`}
+              >
+                <span className="material-symbols-rounded">
+                  social_leaderboard
+                </span>
+                <span className="slide_hide pj">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/contact`}
+                className={`nav_link ${
+                  pathname === '/contact' ? 'active' : ''
+                }`}
+              >
+                <span className="material-symbols-rounded">deskphone</span>
+                <span className="slide_hide co">Contact</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={`//blog.sarojkumar.dev`}
+                target={`_blank`}
+                rel="noreferrer noopener"
+                className={`nav_link`}
+              >
+                <span className="material-symbols-rounded">draw</span>
+                <span className="slide_hide bl">Blog</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={`/resources`}
+                className={`nav_link ${
+                  pathname.startsWith('/resources') ? 'active' : ''
+                }`}
+              >
+                <span className="material-symbols-rounded">
+                  tips_and_updates
+                </span>
+                <span className="slide_hide rs">Resources</span>
+              </a>
+            </li>
+          </ul>
+        )}
 
         <IconLogo className="mx-4 w-12 h-12 logo" />
 
@@ -217,78 +297,153 @@ const Nav = () => {
             </button>
           </div>
           <div>
-            <ul className="flex flex-col gap-2">
-              <li>
-                <Link
-                  href={`/`}
-                  className={`mobile_nav_link ${
-                    pathname === '/' ? 'active' : ''
-                  }`}
-                >
-                  <span className="material-symbols-rounded">house</span>
-                  <span>Home</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/about`}
-                  className={`mobile_nav_link ${
-                    pathname === '/about' ? 'active' : ''
-                  }`}
-                >
-                  <span className="material-symbols-rounded">badge</span>
-                  <span>About</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/projects`}
-                  className={`mobile_nav_link ${
-                    pathname === '/projects' ? 'active' : ''
-                  }`}
-                >
-                  <span className="material-symbols-rounded">
-                    social_leaderboard
-                  </span>
-                  <span>Projects</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/contact`}
-                  className={`mobile_nav_link ${
-                    pathname === '/contact' ? 'active' : ''
-                  }`}
-                >
-                  <span className="material-symbols-rounded">deskphone</span>
-                  <span>Contact</span>
-                </Link>
-              </li>
-              <li>
-                <a
-                  href={`//blog.sarojkumar.dev`}
-                  target={`_blank`}
-                  rel="noreferrer noopener"
-                  className={`mobile_nav_link`}
-                >
-                  <span className="material-symbols-rounded">draw</span>
-                  <span>Blog</span>
-                </a>
-              </li>
-              <li>
-                <Link
-                  href={`/resources`}
-                  className={`mobile_nav_link ${
-                    pathname.startsWith('/resources') ? 'active' : ''
-                  }`}
-                >
-                  <span className="material-symbols-rounded">
-                    tips_and_updates
-                  </span>
-                  <span>Resources</span>
-                </Link>
-              </li>
-            </ul>
+            {validPaths.includes(pathname) ? (
+              <ul className="flex flex-col gap-2">
+                <li>
+                  <Link
+                    href={`/`}
+                    className={`mobile_nav_link ${
+                      pathname === '/' ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">house</span>
+                    <span>Home</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/about`}
+                    className={`mobile_nav_link ${
+                      pathname === '/about' ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">badge</span>
+                    <span>About</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/projects`}
+                    className={`mobile_nav_link ${
+                      pathname === '/projects' ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">
+                      social_leaderboard
+                    </span>
+                    <span>Projects</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/contact`}
+                    className={`mobile_nav_link ${
+                      pathname === '/contact' ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">deskphone</span>
+                    <span>Contact</span>
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href={`//blog.sarojkumar.dev`}
+                    target={`_blank`}
+                    rel="noreferrer noopener"
+                    className={`mobile_nav_link`}
+                  >
+                    <span className="material-symbols-rounded">draw</span>
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li>
+                  <Link
+                    href={`/resources`}
+                    className={`mobile_nav_link ${
+                      pathname.startsWith('/resources') ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">
+                      tips_and_updates
+                    </span>
+                    <span>Resources</span>
+                  </Link>
+                </li>
+              </ul>
+            ) : (
+              <ul className="flex flex-col gap-2">
+                <li>
+                  <a
+                    href={`/`}
+                    className={`mobile_nav_link ${
+                      pathname === '/' ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">house</span>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`/about`}
+                    className={`mobile_nav_link ${
+                      pathname === '/about' ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">badge</span>
+                    <span>About</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`/projects`}
+                    className={`mobile_nav_link ${
+                      pathname === '/projects' ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">
+                      social_leaderboard
+                    </span>
+                    <span>Projects</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`/contact`}
+                    className={`mobile_nav_link ${
+                      pathname === '/contact' ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">deskphone</span>
+                    <span>Contact</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`//blog.sarojkumar.dev`}
+                    target={`_blank`}
+                    rel="noreferrer noopener"
+                    className={`mobile_nav_link`}
+                  >
+                    <span className="material-symbols-rounded">draw</span>
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`/resources`}
+                    className={`mobile_nav_link ${
+                      pathname.startsWith('/resources') ? 'active' : ''
+                    }`}
+                  >
+                    <span className="material-symbols-rounded">
+                      tips_and_updates
+                    </span>
+                    <span>Resources</span>
+                  </a>
+                </li>
+              </ul>
+            )}
           </div>
         </aside>
       </div>
