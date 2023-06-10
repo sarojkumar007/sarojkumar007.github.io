@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 import { social } from '@config';
@@ -15,7 +14,7 @@ import {
 
 import { usePathname } from 'next/navigation';
 
-const Nav = () => {
+const NavSecond = () => {
   const pathname = usePathname();
   const [offsetY, setOffSetY] = useState(0);
   const [darkTheme, setDarkTheme] = useState<boolean | null>(null);
@@ -76,25 +75,25 @@ const Nav = () => {
         </div>
         <ul className="hidden md:flex md:items-center gap-1">
           <li>
-            <Link
+            <a
               href={`/`}
               className={`nav_link ${pathname === '/' ? 'active' : ''}`}
             >
               <span className="material-symbols-rounded">house</span>
               <span className="slide_hide hm">Home</span>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href={`/about`}
               className={`nav_link ${pathname === '/about' ? 'active' : ''}`}
             >
               <span className="material-symbols-rounded">badge</span>
               <span className="slide_hide ab">About</span>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href={`/projects`}
               className={`nav_link ${pathname === '/projects' ? 'active' : ''}`}
             >
@@ -102,16 +101,16 @@ const Nav = () => {
                 social_leaderboard
               </span>
               <span className="slide_hide pj">Projects</span>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href={`/contact`}
               className={`nav_link ${pathname === '/contact' ? 'active' : ''}`}
             >
               <span className="material-symbols-rounded">deskphone</span>
               <span className="slide_hide co">Contact</span>
-            </Link>
+            </a>
           </li>
           <li>
             <a
@@ -125,7 +124,7 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <Link
+            <a
               href={`/resources`}
               className={`nav_link ${
                 pathname.startsWith('/resources') ? 'active' : ''
@@ -133,7 +132,7 @@ const Nav = () => {
             >
               <span className="material-symbols-rounded">tips_and_updates</span>
               <span className="slide_hide rs">Resources</span>
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -219,7 +218,7 @@ const Nav = () => {
           <div>
             <ul className="flex flex-col gap-2">
               <li>
-                <Link
+                <a
                   href={`/`}
                   className={`mobile_nav_link ${
                     pathname === '/' ? 'active' : ''
@@ -227,10 +226,10 @@ const Nav = () => {
                 >
                   <span className="material-symbols-rounded">house</span>
                   <span>Home</span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={`/about`}
                   className={`mobile_nav_link ${
                     pathname === '/about' ? 'active' : ''
@@ -238,10 +237,10 @@ const Nav = () => {
                 >
                   <span className="material-symbols-rounded">badge</span>
                   <span>About</span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={`/projects`}
                   className={`mobile_nav_link ${
                     pathname === '/projects' ? 'active' : ''
@@ -251,10 +250,10 @@ const Nav = () => {
                     social_leaderboard
                   </span>
                   <span>Projects</span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={`/contact`}
                   className={`mobile_nav_link ${
                     pathname === '/contact' ? 'active' : ''
@@ -262,7 +261,7 @@ const Nav = () => {
                 >
                   <span className="material-symbols-rounded">deskphone</span>
                   <span>Contact</span>
-                </Link>
+                </a>
               </li>
               <li>
                 <a
@@ -276,7 +275,7 @@ const Nav = () => {
                 </a>
               </li>
               <li>
-                <Link
+                <a
                   href={`/resources`}
                   className={`mobile_nav_link ${
                     pathname.startsWith('/resources') ? 'active' : ''
@@ -286,7 +285,7 @@ const Nav = () => {
                     tips_and_updates
                   </span>
                   <span>Resources</span>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -296,4 +295,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavSecond;

@@ -1,3 +1,5 @@
+'use client';
+
 import type { Metadata } from 'next';
 
 import { FooterMain } from '@components/Footer';
@@ -8,8 +10,11 @@ import { Rubik } from 'next/font/google';
 
 import 'prismjs/themes/prism-tomorrow.min.css';
 
+import NavSecond from '@components/NavSecond';
 import GoogleAnalytics from '@components/site/GoogleAnalytics';
 import '@styles/globals.scss';
+import { usePathname } from 'next/navigation';
+import { useEffect } from 'react';
 
 const fontSerif = Rubik({
   weight: ['300', '400', '500', '700'],
@@ -61,11 +66,34 @@ export const metadata: Metadata = {
   ],
 };
 
+const validPaths = ['/', '/about', '/projects', '/contact', '/resources'];
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    console.log('Path', pathname);
+  }, [pathname]);
+
+  if (!validPaths.includes(pathname))
+    return (
+      <>
+        <html lang="en" className="scroll-pt-48">
+          <body
+            className={`${fontSerif.className} bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-50`}
+          >
+            <NavSecond />
+            <main className="main">{children}</main>
+            <FooterMain />
+          </body>
+        </html>
+      </>
+    );
+
   return (
     <html lang="en" className="scroll-pt-48">
       <GoogleAnalytics />

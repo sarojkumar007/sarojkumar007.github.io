@@ -174,3 +174,9 @@
     @apply bg-gray-400;
   }
 }
+
+// SVG Overrides
+
+.NotFound_svg__bg {
+  @apply fill-gray-200 dark:fill-gray-700/50;
+}
