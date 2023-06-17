@@ -232,7 +232,7 @@ const Nav = () => {
           </li>
           <li className="hidden md:inline-block">
             <a
-              href={`https://instagram.com/${social.github}`}
+              href={`https://github.com/${social.github}`}
               target={`_blank`}
               rel={`noreferrer noopener`}
               className="nav_icon_link"
@@ -242,7 +242,7 @@ const Nav = () => {
           </li>
           <li className="hidden md:inline-block">
             <a
-              href={`https://instagram.com/${social.linkedin}`}
+              href={`https://www.linkedin.com/in/${social.linkedin}`}
               target={`_blank`}
               rel={`noreferrer noopener`}
               className="nav_icon_link"
@@ -305,6 +305,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname === '/' ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">house</span>
                     <span>Home</span>
@@ -316,6 +317,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname === '/about' ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">badge</span>
                     <span>About</span>
@@ -327,6 +329,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname === '/projects' ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">
                       social_leaderboard
@@ -340,6 +343,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname === '/contact' ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">deskphone</span>
                     <span>Contact</span>
@@ -351,6 +355,7 @@ const Nav = () => {
                     target={`_blank`}
                     rel="noreferrer noopener"
                     className={`mobile_nav_link`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">draw</span>
                     <span>Blog</span>
@@ -362,6 +367,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname.startsWith('/resources') ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">
                       tips_and_updates
@@ -378,6 +384,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname === '/' ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">house</span>
                     <span>Home</span>
@@ -389,6 +396,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname === '/about' ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">badge</span>
                     <span>About</span>
@@ -400,6 +408,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname === '/projects' ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">
                       social_leaderboard
@@ -413,6 +422,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname === '/contact' ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">deskphone</span>
                     <span>Contact</span>
@@ -424,6 +434,7 @@ const Nav = () => {
                     target={`_blank`}
                     rel="noreferrer noopener"
                     className={`mobile_nav_link`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">draw</span>
                     <span>Blog</span>
@@ -435,6 +446,7 @@ const Nav = () => {
                     className={`mobile_nav_link ${
                       pathname.startsWith('/resources') ? 'active' : ''
                     }`}
+                    tabIndex={isNavOpen ? 0 : -1}
                   >
                     <span className="material-symbols-rounded">
                       tips_and_updates
