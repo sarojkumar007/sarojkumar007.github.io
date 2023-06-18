@@ -14,10 +14,10 @@ import IconSublimeText from '@components/svgs/IconSublimeText';
 
 // prettier-ignore
 import {
-    SiAngular, SiAnsible, SiBootstrap, SiCss3, SiDocker, SiGatsby, SiGit,
-    SiHtml5, SiJavascript, SiJenkins, SiMarkdown, SiMongodb, SiNextdotjs,
-    SiNodedotjs, SiPhp, SiPowershell, SiReact, SiSass, SiTypescript, SiVisualstudiocode
-} from '@icons-pack/react-simple-icons/dist';
+  SiAngular, SiAnsible, SiBootstrap, SiCss3, SiDocker, SiGatsby, SiGit,
+  SiHtml5, SiJavascript, SiJenkins, SiMarkdown, SiMongodb, SiNextdotjs,
+  SiNodedotjs, SiPhp, SiPowershell, SiReact, SiSass, SiTypescript, SiVisualstudiocode
+} from '@icons-pack/react-simple-icons';
 
 import { siteConfig } from '@config';
 
