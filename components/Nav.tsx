@@ -13,7 +13,7 @@ import {
   SiLinkedin,
 } from '@icons-pack/react-simple-icons';
 
-import { usePathname } from 'next/navigation';
+import { notFound, usePathname } from 'next/navigation';
 
 const validPaths = ['/', '/about', '/projects', '/contact', '/resources'];
 
@@ -21,6 +21,10 @@ const Nav = () => {
   const pathname = usePathname();
   const [offsetY, setOffSetY] = useState(0);
   const [darkTheme, setDarkTheme] = useState<boolean | null>(null);
+
+  if (!validPaths.includes(pathname)) {
+    notFound();
+  }
 
   const navBackdrop = useRef<HTMLDivElement>(null);
   const [isNavOpen, setIsNavOpen] = useState(false);
