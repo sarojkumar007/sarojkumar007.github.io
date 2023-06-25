@@ -12,6 +12,7 @@ const GoogleAds: FC<any> = (props: any) => {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9840063743847527"
           crossOrigin="anonymous"
         ></script>
+        {/* SidebarAds */}
         <ins
           className="adsbygoogle"
           style={{ display: "block" }}
@@ -20,7 +21,7 @@ const GoogleAds: FC<any> = (props: any) => {
           data-ad-format="auto"
           data-full-width-responsive="true"
         ></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <script>{`(adsbygoogle = window.adsbygoogle || []).push({});`}</script>
       </div>
     </>
   )
