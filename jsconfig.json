@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@config/*": ["src/config/*"],
+      "@lib/*": ["src/lib/*"]
+    }
+  },
+  "checkJs": true,
+  "exclude": ["dist", "node_modules", ".cache", "public"]
+}

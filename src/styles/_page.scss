@@ -1,0 +1,295 @@
+.header {
+  background-color: rgb(var(--grad-multi-c2));
+  background-image: url(../images/assets/graphic/blurry-gradient-haikei.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header_about {
+  background-color: rgb(var(--grad-multi-c2));
+  background: linear-gradient(
+      43deg,
+      rgba(var(--grad-multi-c1), 0.75) 0%,
+      rgba(var(--grad-multi-c2), 0.75) 100%
+    ),
+    url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23c850c0' fill-opacity='0.2'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+      repeat 50%;
+}
+
+.header_projects {
+  background-color: rgb(var(--grad-multi-c2));
+  background: linear-gradient(
+      43deg,
+      rgba(var(--grad-multi-c1), 0.75) 0%,
+      rgba(var(--grad-multi-c2), 0.75) 100%
+    ),
+    url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23c850c0' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E")
+      repeat 50%;
+}
+
+.header_contact {
+  background: rgb(var(--grad-multi-c2))
+    url(../images/assets/graphic/blurry-gradient-haikei.svg) no-repeat center;
+  background-size: cover;
+}
+
+.header_resources {
+  background-color: rgb(var(--grad-multi-c2));
+  background: linear-gradient(
+      43deg,
+      rgba(var(--grad-multi-c1), 0.75) 0%,
+      rgba(var(--grad-multi-c2), 0.75) 100%
+    ),
+    url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23c850c0' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E")
+      repeat 50%;
+}
+
+.header_blog {
+  background-color: rgb(var(--grad-multi-c2));
+  background: linear-gradient(
+      43deg,
+      rgba(var(--grad-multi-c1), 0.75) 0%,
+      rgba(var(--grad-multi-c2), 0.75) 100%
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23c850c0' fill-opacity='0.2' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E")
+      repeat 50%;
+}
+
+.skill_icon {
+  @apply h-10 w-10 p-1;
+}
+.footer_icon_link {
+  @apply inline-block w-6 h-6 text-gray-500 dark:text-gray-400 hover:text-blue-c1 dark:hover:text-blue-c1;
+}
+.tag1 {
+  @apply px-3 py-2 inline-flex items-center rounded border border-gray-300 text-gray-600 dark:border-gray-700 dark:text-gray-300 space-x-2;
+
+  svg {
+    @apply w-5 h-5;
+  }
+
+  .material-symbols-rounded {
+    @apply text-xl leading-none;
+  }
+
+  span {
+    @apply text-sm;
+  }
+}
+
+.tag2 {
+  @apply inline-block px-1 py-[2px] m-[2px] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-500 rounded;
+}
+
+.project_card {
+  @apply px-4 py-4 border border-gray-300 dark:border-gray-500 rounded-2xl flex flex-col z-[2] backdrop-blur-sm;
+}
+.design {
+  @apply relative rounded-2xl grid grid-cols-1 overflow-hidden;
+
+  &::before {
+    content: "";
+    @apply absolute inset-0 w-full h-full z-0;
+    background: url(../images/assets/graphic/card_bg.svg) no-repeat center;
+    background-size: cover;
+  }
+}
+
+.blog__container {
+  @apply relative flex space-y-4 gap-8 p-8;
+
+  @include respond(lg) {
+    @apply flex-wrap justify-center;
+  }
+}
+
+.blog_card_back {
+  @apply bg-gray-300 dark:bg-gray-700;
+}
+.blog_card {
+  &:hover,
+  &:focus {
+    @apply shadow-md;
+    .blog_card_back {
+      @apply gradient_multi;
+    }
+  }
+}
+
+.blog_content article {
+  @apply mt-4 dark:font-light;
+
+  & > * {
+    @apply my-4;
+  }
+  h1 {
+    @apply text-xl md:text-2xl font-medium;
+  }
+  h2 {
+    @apply text-lg md:text-xl font-medium;
+  }
+  h3,
+  h4,
+  h5 {
+    @apply text-base md:text-lg font-medium;
+  }
+  h6,
+  p {
+    @apply text-base tracking-wide text-gray-700 dark:text-gray-300;
+  }
+
+  p ul,
+  p ol,
+  ul,
+  ol {
+    @apply font-[inherit] space-y-1 ml-2 md:ml-4;
+  }
+
+  p ol,
+  ol {
+    list-style-type: auto;
+  }
+
+  p ul,
+  ul {
+    li {
+      @apply flex;
+
+      align-items: flex-start;
+
+      &::before {
+        content: "directions_alt";
+
+        @apply gradient_blue_text mr-2;
+
+        font-family: "Material Symbols Rounded";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "liga";
+      }
+    }
+  }
+  p blockquote,
+  p q,
+  blockquote,
+  q {
+    @apply italic px-4 py-2 bg-multi-c1/20 border-l-4 border-l-multi-c1 rounded-md;
+  }
+  img {
+    @apply block rounded-md;
+  }
+  table {
+    @apply w-full my-2 mx-auto shadow;
+  }
+  table,
+  th,
+  td {
+    @apply border border-gray-600 border-collapse;
+  }
+  th,
+  td {
+    @apply px-2 py-1;
+  }
+  th {
+    @apply bg-gray-300 dark:bg-gray-600;
+  }
+  tr:nth-child(even) {
+    @apply bg-gray-300 dark:bg-gray-700;
+  }
+  tr > td:first-child {
+    @apply text-center;
+  }
+  td {
+    @apply min-w-[12rem];
+  }
+  p code {
+    @apply p-1;
+  }
+  a {
+    @apply inline-block no-underline font-[inherit] text-sm text-multi-c1;
+
+    &:hover,
+    &:focus {
+      @apply text-multi-c2 decoration-dotted underline underline-offset-4;
+    }
+  }
+
+  p pre,
+  pre {
+    @apply tracking-wide rounded-lg px-6 py-8 max-w-full relative;
+  }
+
+  .code-title {
+    @apply -mb-3 px-2 text-sm italic tracking-wide break-words flex items-center;
+
+    &::before {
+      content: "draft";
+
+      margin-right: 4px;
+
+      font-family: "Material Symbols Rounded";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      font-feature-settings: "liga";
+    }
+  }
+
+  .gatsby-highlight pre[class*="language-"]::before {
+    @apply bg-multi-c2 text-white text-xs leading-none absolute right-4 uppercase top-0 rounded-b-md py-1 px-2;
+  }
+  pre[class*="language-javascript"]:before {
+    content: "javascript";
+  }
+  pre[class*="language-js"]:before {
+    content: "js";
+  }
+  pre[class*="language-jsx"]:before {
+    content: "jsx";
+  }
+  pre[class*="language-html"]:before {
+    content: "html";
+  }
+  pre[class*="language-css"]:before {
+    content: "css";
+  }
+  pre[class*="language-powershell"]:before {
+    content: "ps";
+  }
+  pre[class*="language-bash"]:before {
+    content: "bash";
+  }
+  pre[class*="language-sh"]:before {
+    content: "bash";
+  }
+}
+
+.blog_link {
+  @apply inline-block no-underline font-[inherit] text-sm text-multi-c1;
+
+  &:hover,
+  &:focus {
+    @apply text-multi-c2 decoration-dotted underline underline-offset-4;
+  }
+}
+
+// Override

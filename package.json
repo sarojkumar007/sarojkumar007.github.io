@@ -1,0 +1,68 @@
+{
+  "name": "sarojkumar007.github.io",
+  "private": true,
+  "description": "Portfolio and Blog of Saroj Kumar Sahoo, Creative front-end designer and developer",
+  "version": "3.1.0",
+  "author": "Saroj Kumar Sahoo <dev.sarojkumar18@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/sarojkumar007/sarojkumar007.github.io/issues"
+  },
+  "homepage": "https://sarojkumar.dev",
+  "keywords": [
+    "saroj",
+    "sarojkumar007",
+    "sarojkumar github",
+    "sarojkumar007 github",
+    "saroj kumar sahoo"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarojkumar007/sarojkumar007.github.io.git"
+  },
+  "dependencies": {
+    "@fontsource/rubik": "^5.0.3",
+    "@icons-pack/react-simple-icons": "^8.0.1",
+    "gatsby": "^5.11.0",
+    "gatsby-plugin-feed": "^5.11.0",
+    "gatsby-plugin-google-gtag": "^5.11.0",
+    "gatsby-plugin-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^5.11.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-plugin-sitemap": "^6.11.0",
+    "gatsby-remark-code-titles": "^1.1.0",
+    "gatsby-remark-images": "^7.11.0",
+    "gatsby-remark-prismjs": "^7.11.0",
+    "gatsby-remark-responsive-iframe": "^6.11.0",
+    "gatsby-source-filesystem": "^5.11.0",
+    "gatsby-transformer-remark": "^6.11.0",
+    "gatsby-transformer-sharp": "^5.11.0",
+    "material-symbols": "^0.8.1",
+    "prismjs": "^1.29.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-feather": "^2.0.10",
+    "react-google-recaptcha": "^3.1.0",
+    "reading-time": "^1.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "gatsby-plugin-postcss": "^6.11.0",
+    "gatsby-plugin-sass": "^6.11.0",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "sass": "^1.63.6",
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  }
+}

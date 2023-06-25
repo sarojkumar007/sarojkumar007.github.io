@@ -1,0 +1,167 @@
+$anim-time: 1s;
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(120deg);
+  }
+  67% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circular_wrap {
+  --size: 300px;
+
+  position: relative;
+
+  width: var(--size);
+  height: var(--size);
+  transform-origin: center;
+  transition: transform 0.7s linear;
+
+  animation: rotate 12s ease infinite;
+  animation-delay: 5s;
+
+  @include respond(md) {
+    --size: 240px;
+  }
+  @include respond(sm) {
+    --size: 160px;
+  }
+}
+
+.circular {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--size);
+  height: var(--size);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: transform 0.7s linear;
+
+  &_1 {
+    transform: rotate(0deg);
+  }
+  &_2 {
+    transform: rotate(120deg);
+  }
+  &_3 {
+    transform: rotate(240deg);
+  }
+
+  &_box {
+    --child: calc(var(--size) - (var(--size) / 3));
+
+    position: absolute;
+    width: var(--child);
+    height: var(--child);
+    top: calc(-1 * var(--child) / 2); /* -child size/2 */
+    left: calc(
+      (var(--size) / 2) - (var(--child) / 2)
+    ); /* parent size/2 - child size/2 */
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+
+    img {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+
+// ACCORDION
+
+.accordion {
+  @apply border border-gray-400 dark:border-gray-500 rounded-2xl p-4 my-2;
+  // bg
+
+  &__head {
+    @apply flex select-none cursor-pointer;
+
+    &_anchor {
+      @apply self-center text-sm ml-auto transition-transform leading-[0];
+
+      svg {
+        @apply w-6 h-6 text-gray-500 dark:text-gray-400;
+      }
+    }
+  }
+  &__body {
+    @apply h-0 overflow-hidden;
+
+    figure {
+      @apply mb-4 w-full h-40 md:h-60 max-h-40 md:max-h-60 rounded-md overflow-hidden;
+
+      img {
+        @apply block w-[inherit] h-[inherit] max-h-[inherit] object-cover object-center;
+      }
+    }
+  }
+
+  &.active &__head_anchor {
+    @apply rotate-180;
+  }
+  &.active &__body {
+    @apply h-full mt-4 border-t border-t-gray-300 dark:border-t-gray-600 pt-4;
+  }
+}
+
+// BANNER
+
+.banner {
+  @apply relative rounded-xl md:rounded-3xl grid grid-cols-1 overflow-hidden;
+
+  &::before {
+    content: "";
+    @apply absolute inset-0 w-full h-full z-0;
+    background: rgba(var(--grad-multi-c2))
+      url(../images/assets/graphic/banner_bg.svg) no-repeat center;
+    background-size: cover;
+  }
+  &_content {
+    @apply px-2 md:px-4 py-2 md:py-4 rounded-xl md:rounded-3xl z-[2] backdrop-blur-sm overflow-hidden;
+  }
+}
+
+// SLIDE Button
+
+.slide_button {
+  @apply px-3 py-2.5 bg-gray-800 dark:bg-gray-100 text-white  dark:text-gray-700 rounded-xl flex items-center font-light tracking-wide;
+
+  & .icon {
+    @apply w-5 h-5;
+  }
+  & .slide_hide {
+    @apply w-0 overflow-hidden transition-[width] duration-200;
+  }
+
+  &:hover .slide_hide {
+    @apply ml-2 w-12;
+  }
+}
+
+.button_2 {
+  @apply pointer-events-auto rounded-xl px-3 py-2 text-[0.8125rem] font-semibold leading-5 flex items-center bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700;
+
+  &:hover,
+  &:focus {
+    @apply bg-gray-100 dark:bg-gray-700/50;
+  }
+}
+
+// FORMS
+
+.input {
+  @apply block w-full rounded-bl-2xl rounded-tr-2xl border-0 py-2.5 px-4 text-gray-900 dark:text-gray-200 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-multi-c3 dark:focus:ring-multi-c3 sm:leading-6 dark:bg-gray-700 md:text-lg outline-none invalid:focus:ring-multi-c2 invalid:dark:focus:ring-multi-c2 placeholder:font-normal;
+}
+.label {
+  @apply block text-base font-medium leading-6 text-gray-900 dark:text-gray-300;
+}

@@ -1,0 +1,192 @@
+// LEAST SPECIFICITY, so imported at Top
+@import "material-symbols/rounded.css";
+
+// TAILWIND Default
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Variables
+
+@layer base {
+  :root {
+    --grad-orange-c1: 250, 112, 154;
+    --grad-orange-c2: 254, 225, 64;
+
+    --grad-multi-c1: 65, 88, 208;
+    --grad-multi-c2: 200, 80, 192;
+    --grad-multi-c3: 255, 204, 112;
+
+    --grad-blue-c1: 79, 172, 254;
+    --grad-blue-c2: 0, 242, 254;
+  }
+}
+
+// Imports
+
+@import "./abstract";
+@import "./mixins";
+@import "./utils";
+@import "./components";
+@import "./page";
+@import "./loader";
+
+// BASE
+
+html {
+  @apply scroll-pt-48;
+}
+
+body {
+  @apply font-rubik bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-50;
+}
+
+// Overrides
+
+.ul {
+  @apply font-[inherit] space-y-1;
+
+  li {
+    @apply flex;
+
+    align-items: flex-start;
+
+    &::before {
+      content: "directions_alt";
+
+      @apply gradient_blue_text mr-2;
+
+      font-family: "Material Symbols Rounded";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      font-feature-settings: "liga";
+    }
+  }
+}
+
+.global_link {
+  @apply gradient_blue_text hover:text-multi-c1 focus:text-multi-c1 hover:underline focus:underline;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration-style: wavy;
+  }
+}
+
+.nav_link {
+  @apply inline-flex items-center font-medium cursor-pointer px-2 py-1 rounded bg-transparent transition-colors duration-200;
+
+  &:hover,
+  &:focus,
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    @apply bg-white;
+
+    span {
+      @apply gradient_multi_text;
+    }
+
+    .slide_hide {
+      @apply ml-2;
+    }
+    .slide_hide.hm {
+      @apply w-12;
+    }
+    .slide_hide.ab {
+      @apply w-12;
+    }
+    .slide_hide.pj {
+      @apply w-16;
+    }
+    .slide_hide.co {
+      @apply w-16;
+    }
+    .slide_hide.bl {
+      @apply w-12;
+    }
+    .slide_hide.rs {
+      @apply w-20;
+    }
+  }
+
+  & .slide_hide {
+    @apply w-0 overflow-hidden transition-[width] duration-200;
+  }
+}
+
+.mobile_nav_link {
+  @apply font-medium cursor-pointer px-6 py-2 bg-transparent transition-colors duration-200 border-l-4 border-l-transparent flex items-center space-x-2;
+
+  &:hover,
+  &:focus {
+    @apply bg-gray-200 dark:bg-gray-600 border-l-gray-400;
+  }
+
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    @apply bg-multi-c1/10 text-multi-c1 border-l-multi-c1 dark:bg-multi-c2/10 dark:text-multi-c2 dark:border-l-multi-c2;
+  }
+}
+
+.nav_icon_link {
+  @apply cursor-pointer dark:text-white;
+
+  &:hover,
+  &:focus {
+    @apply text-multi-c1 dark:text-multi-c1;
+  }
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+::-webkit-scrollbar:horizontal {
+  @apply h-1.5;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-500 rounded-md;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
+::-webkit-scrollbar-thumb:horizontal:hover {
+  @apply bg-gray-600;
+}
+.dark {
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-700;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+  ::-webkit-scrollbar-thumb:horizontal:hover {
+    @apply bg-gray-400;
+  }
+}
+
+// SVG Overrides
+
+.NotFound_svg__bg {
+  @apply fill-gray-200 dark:fill-gray-700/50;
+}
