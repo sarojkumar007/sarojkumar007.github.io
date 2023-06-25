@@ -70,6 +70,11 @@ const Seo = ({ description, title, children }: SEOProps) => {
       <meta name="author" content="Saroj Kumar Sahoo" />
       <meta id="robots" name="robots" content="index, follow" />
       {children}
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9840063743847527"
+        crossOrigin="anonymous"
+      ></script>
     </>
   )
 }

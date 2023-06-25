@@ -96,7 +96,7 @@
 }
 
 .blog__container {
-  @apply relative flex space-y-4 gap-8 p-8;
+  @apply relative flex my-4 gap-8 p-8;
 
   @include respond(lg) {
     @apply flex-wrap justify-center;

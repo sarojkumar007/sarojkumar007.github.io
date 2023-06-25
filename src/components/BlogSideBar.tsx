@@ -10,6 +10,7 @@ import {
 import slugify from "@lib/slugify"
 
 import { Link, graphql, useStaticQuery } from "gatsby"
+import GoogleAds from "./short/GoogleAds"
 import SideBarSection from "./short/SideBarSection"
 
 interface BlogSideBarProps {
@@ -122,6 +123,7 @@ const BlogSideBar = ({ shareLink }: BlogSideBarProps) => {
             </div>
           </SideBarSection>
         </div>
+        <GoogleAds className="p-8 border rounded-md mt-4" />
       </div>
     </>
   )
