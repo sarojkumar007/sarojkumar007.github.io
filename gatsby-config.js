@@ -101,7 +101,7 @@ module.exports = {
         host: siteConfig.homepage,
         sitemap: [
           `${siteConfig.homepage}/sitemap-index.xml`,
-          `${siteConfig.homepage}/sitemap-0.xml`,
+          `${siteConfig.homepage}/sitemap.xml`,
         ],
         policy: [{ userAgent: "*", allow: "/" }],
       },
@@ -127,7 +127,8 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.nodes.map(node => {
                 return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
+                  readingTime: node.fields.readingTime.text,
+                  description: node.frontmatter.description,
                   date: node.frontmatter.date,
                   url: `${site.siteMetadata.siteUrl}/blog/${node.fields.slug}`,
                   guid: `${site.siteMetadata.siteUrl}/blog/${node.fields.slug}`,
@@ -138,14 +139,18 @@ module.exports = {
             query: `{
               allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
                 nodes {
-                  excerpt
                   html
                   fields {
                     slug
+                    readingTime{
+                      text
+                    }
                   }
                   frontmatter {
                     title
                     date
+                    description
+                    tags
                   }
                 }
               }
