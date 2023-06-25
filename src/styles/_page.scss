@@ -226,7 +226,7 @@
 
   p pre,
   pre {
-    @apply tracking-wide rounded-lg px-6 py-8 max-w-full relative;
+    @apply tracking-wide rounded-lg px-6 py-8 max-w-full;
   }
 
   .code-title {
@@ -252,6 +252,26 @@
       text-rendering: optimizeLegibility;
       font-feature-settings: "liga";
     }
+  }
+
+  .gatsby-highlight {
+    @apply relative;
+  }
+
+  .gatsby-highlight pre[class*="language-"] {
+    position: initial;
+  }
+
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    @apply pl-10 pr-4 text-sm;
+    line-height: 170%;
+  }
+
+  .gatsby-highlight pre[class*="language-"].line-numbers .line-numbers-rows {
+    @apply top-8 border-none;
+    right: calc(100% - 40px);
+    background: #1e1e1e;
+    z-index: 3;
   }
 
   .gatsby-highlight pre[class*="language-"]::before {

@@ -47,17 +47,17 @@ const BlogPostTemplate = ({
             <h2 className="text-gray-50 text-3xl md:text-5xl font-medium text-center">
               {post.frontmatter.title}
             </h2>
-            <div className="flex items-center justify-center text-white space-x-2 mt-8">
+            <div className="flex items-center justify-center flex-wrap text-white gap-2 mt-8">
               <div className="flex items-center text-white">
                 <Calendar className="w-4 h-4 mr-1" />
                 <span>{post.frontmatter.date}</span>
               </div>
-              <span>&bull;</span>
+              {/* <span>&bull;</span> */}
               <div className="flex items-center text-white">
                 <BookOpen className="w-4 h-4 mr-1" />
                 <span>{post.fields.readingTime.text}</span>
               </div>
-              <span>&bull;</span>
+              {/* <span>&bull;</span> */}
               <div className="flex flex-wrap items-center text-sm space-x-1">
                 <Tag className="w-4 h-4 mr-1" />
                 {post.frontmatter.tags.map(t => (

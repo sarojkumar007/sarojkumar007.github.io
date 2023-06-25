@@ -7,4 +7,5 @@ import "@fontsource/rubik/700.css"
 import "./src/styles/global.scss"
 
 // Highlighting for code blocks
+import "prismjs/plugins/line-numbers/prism-line-numbers.css"
 import "./src/styles/prism-themes/prism-vsc-dark-plus.css"

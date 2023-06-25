@@ -72,7 +72,16 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: true,
+              noInlineHighlight: false,
+            },
+          },
           // CHECK Later: gatsby-remark-copy-linked-files
         ],
       },
@@ -101,7 +110,7 @@ module.exports = {
         host: siteConfig.homepage,
         sitemap: [
           `${siteConfig.homepage}/sitemap-index.xml`,
-          `${siteConfig.homepage}/sitemap.xml`,
+          `${siteConfig.homepage}/sitemap-0.xml`,
         ],
         policy: [{ userAgent: "*", allow: "/" }],
       },
