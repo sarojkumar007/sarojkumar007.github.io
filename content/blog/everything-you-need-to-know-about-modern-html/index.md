@@ -1,7 +1,7 @@
 ---
 title: "Everything you need to know about modern HTML"
 description: "For web dev. HTML is a must. Here's how you can learn and use modern HTML in your projects."
-date: "2020-05-22"
+date: "2021-05-22"
 author: "Saroj Kumar"
 tags: ["Tips & Tricks","Web"]
 ---

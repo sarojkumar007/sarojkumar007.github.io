@@ -1,7 +1,7 @@
 ---
 title: "How to Start Front-end Web Development"
 description: "This post is perfect for you, if you want to start Front-end Web Development. It gives you a head-start, roadmap and resources to start your web dev journey."
-date: "2020-04-03"
+date: "2021-04-03"
 author: "Saroj Kumar"
 tags: ["Tips & Tricks","Web"]
 ---

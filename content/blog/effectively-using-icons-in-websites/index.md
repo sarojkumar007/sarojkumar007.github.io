@@ -1,7 +1,7 @@
 ---
 title: "Effectively using Icons in Websites ✌🏻"
 description: "A icon to website is like cherry to a cake. It makes 'em look better. Know how you can use them effectively."
-date: "2020-07-25"
+date: "2021-07-25"
 author: "Saroj Kumar"
 tags: ["Tips & Tricks","Web"]
 ---

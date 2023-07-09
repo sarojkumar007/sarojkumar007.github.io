@@ -131,54 +131,6 @@ const ProjectsPage = () => {
             Head={
               <div className="flex items-center">
                 <span className="material-symbols-rounded gradient_multi_text mr-4 basis-6">
-                  monitoring
-                </span>
-                <div className="flex-1 flex flex-wrap items-baseline">
-                  <h3 className="text-xl md:text-2xl mr-2">
-                    Data Simulator on 2D/3D Space using Python
-                  </h3>
-                  <span className="text-sm text-gray-400 dark:text-gray-500">
-                    DRDO, Chandipur
-                  </span>
-                </div>
-              </div>
-            }
-            open={false}
-          >
-            <figure>
-              <StaticImage
-                layout="constrained"
-                src={"../images/project/data_sim.webp"}
-                alt="Data Simulator on 2D/3D Space using Python"
-                className="w-full max-w-full"
-              />
-            </figure>
-            <p>
-              An Graphical User Interface for measuring cursor/pointer movement
-              in 2D/3D space.
-            </p>
-            <div className="flex flex-wrap gap-2 my-4">
-              <span className="tag1">
-                <SiPython />
-                <span>Python</span>
-              </span>
-              <span className="tag1">
-                <span>tkinter (Tcl/Tk GUI toolkit)</span>
-              </span>
-            </div>
-            <h3 className="text-base font-normal">Additional Tools used:</h3>
-            <div className="flex flex-wrap gap-2 my-4">
-              <span className="tag1">
-                <SiBlender />
-                <span>Blender</span>
-              </span>
-            </div>
-          </Accordion>
-          {/* -------------- */}
-          <Accordion
-            Head={
-              <div className="flex items-center">
-                <span className="material-symbols-rounded gradient_multi_text mr-4 basis-6">
                   agriculture
                 </span>
                 <div className="flex-1 flex flex-wrap items-baseline">
@@ -249,6 +201,54 @@ const ProjectsPage = () => {
               important role on irrigation process. Weather prediction can also
               be an extended feature.
             </p>
+          </Accordion>
+          {/* -------------- */}
+          <Accordion
+            Head={
+              <div className="flex items-center">
+                <span className="material-symbols-rounded gradient_multi_text mr-4 basis-6">
+                  monitoring
+                </span>
+                <div className="flex-1 flex flex-wrap items-baseline">
+                  <h3 className="text-xl md:text-2xl mr-2">
+                    Data Simulator on 2D/3D Space using Python
+                  </h3>
+                  <span className="text-sm text-gray-400 dark:text-gray-500">
+                    DRDO, Chandipur
+                  </span>
+                </div>
+              </div>
+            }
+            open={false}
+          >
+            <figure>
+              <StaticImage
+                layout="constrained"
+                src={"../images/project/data_sim.webp"}
+                alt="Data Simulator on 2D/3D Space using Python"
+                className="w-full max-w-full"
+              />
+            </figure>
+            <p>
+              An Graphical User Interface for measuring cursor/pointer movement
+              in 2D/3D space.
+            </p>
+            <div className="flex flex-wrap gap-2 my-4">
+              <span className="tag1">
+                <SiPython />
+                <span>Python</span>
+              </span>
+              <span className="tag1">
+                <span>tkinter (Tcl/Tk GUI toolkit)</span>
+              </span>
+            </div>
+            <h3 className="text-base font-normal">Additional Tools used:</h3>
+            <div className="flex flex-wrap gap-2 my-4">
+              <span className="tag1">
+                <SiBlender />
+                <span>Blender</span>
+              </span>
+            </div>
           </Accordion>
         </div>
       </section>
