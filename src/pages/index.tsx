@@ -291,7 +291,7 @@ const HomePage = () => {
               Interested to <span className="text-gray-900">Open Source</span>?
             </p>
             <p className="text-md dark:text-gray-700">
-              Email me through contact page to contribute.
+              Email me through <Link to="/contact" className="blog_link">contact page</Link> to contribute.
             </p>
           </div>
         </div>
