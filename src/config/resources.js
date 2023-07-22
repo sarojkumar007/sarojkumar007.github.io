@@ -346,7 +346,7 @@ export const resources = [
         title: "For Python Automation",
         description:
           "If you are starting python full-stack automation. Check this.",
-        link: `https://towardsdatascience.com10-python-modules-for-full-stack-automation-and-testing-eabccd2f025c`,
+        link: `https://towardsdatascience.com/10-python-modules-for-full-stack-automation-and-testing-eabccd2f025c`,
       },
       {
         title: "Linux Terminal CheatSheat",

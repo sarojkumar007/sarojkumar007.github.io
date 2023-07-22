@@ -28,9 +28,17 @@ const ResourceGroup: FC<ResourceGroupProps> = ({ title, icon, list }) => {
                 href={i.link}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="global_link mb-4 text-xl"
+                className="global_link text-xl"
               >
                 <h3>{i.title}</h3>
+              </a>
+              <a
+                href={i.link}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="block break-words truncate"
+              >
+                <p className='mb-4 text-gray-400'>{new URL(i.link).host}</p>
               </a>
               <p className="">{i.description}</p>
             </div>
