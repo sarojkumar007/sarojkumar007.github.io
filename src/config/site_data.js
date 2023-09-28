@@ -141,17 +141,17 @@ export const skills = {
       level: "Expert",
       color: "#000000",
     },
-    {
-      icon: SiDocker,
-      skill: "Docker",
-      level: "Beginner",
-      color: "#2496ED",
-    },
-    {
-      icon: IconFirebase,
-      skill: "Firebase",
-      level: "Intermediate",
-    },
+    // {
+    //   icon: SiDocker,
+    //   skill: "Docker",
+    //   level: "Beginner",
+    //   color: "#2496ED",
+    // },
+    // {
+    //   icon: IconFirebase,
+    //   skill: "Firebase",
+    //   level: "Intermediate",
+    // },
     {
       icon: SiMarkdown,
       skill: "Markdown",
