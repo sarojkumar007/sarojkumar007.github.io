@@ -105,7 +105,7 @@ const HomePage = () => {
               <br />
               <p>
                 I have a passion for Web Development and I enjoy creating
-                dynamic and responsive websites.
+                dynamic and responsive website.
               </p>
               <br />
               <Link
