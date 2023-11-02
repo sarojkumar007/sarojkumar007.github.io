@@ -20,9 +20,9 @@ const siteConfig = {
 }
 
 const social = {
-  twitter: `_sarojk18`,
+  twitter: `sarojk18_`,
   github: `sarojkumar007`,
-  instagram: `_sarojk18`,
+  instagram: `sarojk18_`,
   linkedin: `sarojk18`,
   youtube: `#!`, //`https://www.youtube.com/channel/UCyG5IZIwPxKiG9tmM-SoCtg`,
   codepen: `sarojk18`,
