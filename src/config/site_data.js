@@ -199,7 +199,7 @@ export const skills = {
 export const edu = [
   {
     title: "Bachelor of Technology",
-    location: "Govt. College of Engineering, Bhawanipatna",
+    location: "GCEK, Biju Patnaik University of Technology (BPUT), Odisha",
     stream: "Computer Science (CSE)",
     duration: {
       from: 2016,
@@ -208,8 +208,8 @@ export const edu = [
     description: `I came here for my graduation after 1 year of JEE preparation. This college taught me how to tackle life situations being an engineer.`,
   },
   {
-    title: "Council of Higher Secondary Education",
-    location: "Nayagarh Junior College, Nayagarh",
+    title: "Higher Secondary Education",
+    location: "Nayagarh, Board of Secondary Education (BSE), Odisha",
     stream: "Science (PCMB)",
     duration: {
       from: 2013,
@@ -218,8 +218,8 @@ export const edu = [
     description: `After my High school, I went to town for my intermediate +2. It was quite the experience about everything that will change your life. I learned a lot and did all stuff I can do with my friends. the final year was all about geting your career set, we all focused towards competitives.`,
   },
   {
-    title: "Higher Secondary Education",
-    location: "Raghunath Bidyapitha, Odagaon",
+    title: "Higher Education - School",
+    location: "Raghunath Bidyapitha, Odagaon, Odisha",
     stream: "High School Certification",
     duration: {
       from: 2003,
@@ -253,7 +253,7 @@ export const experience = [
     location: "Cometa Intellect LLP",
     duration: {
       from: "May 2020",
-      to: `Jul 2020`,
+      to: `Sep 2020`,
     },
     desc: `Developed multi functionality website/webapp having features like blogs, audio/video players, forums, chat feature, content posting, podcasts, profile management, authentication and more. Learned technologies like socket, CORS and frameworks like Vue, SASS and more.`,
   },
