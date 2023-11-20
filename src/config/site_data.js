@@ -231,11 +231,20 @@ export const edu = [
 
 export const experience = [
   {
+    role: `Senior Analyst`,
+    location: `HCL Technologies, Noida`,
+    duration: {
+      from: `Oct 2023`,
+      to: `Present`,
+    },
+    desc: ``,
+  },
+  {
     role: `Analyst / Automation Engineer`,
     location: `HCL Technologies, Noida`,
     duration: {
       from: `Jan 2022`,
-      to: `Present`,
+      to: `Oct 2023`,
     },
     desc: `Promoted to senior role where I manage the automation perspective as a engineer, helping in solving customer facing tasks, workload achievements and more. Worked on AD, Wintel Tools, Python, PowerShell Advanced, Ansible, AWS Services.`,
   },
@@ -249,7 +258,7 @@ export const experience = [
     desc: `Worked on scripting technologies like PowerShell and Bash. Providing solutions to automate repetitive  and time consuming tasks. Learned a lot of tools and methods in the process.`,
   },
   {
-    role: `Development Intern`,
+    role: `Senior Development Intern`,
     location: "Cometa Intellect LLP",
     duration: {
       from: "May 2020",
