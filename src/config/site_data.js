@@ -2,7 +2,7 @@ import IconAdobeXD from "@components/svgs/IconAdobeXD"
 import IconAtom from "@components/svgs/IconAtom"
 import IconBash from "@components/svgs/IconBash"
 import IconFigma from "@components/svgs/IconFigma"
-import IconFirebase from "@components/svgs/IconFirebase"
+// import IconFirebase from "@components/svgs/IconFirebase"
 import IconMySQL from "@components/svgs/IconMySQL"
 import IconPyCharm from "@components/svgs/IconPyCharm"
 import IconPython from "@components/svgs/IconPython"
@@ -10,10 +10,12 @@ import IconSublimeText from "@components/svgs/IconSublimeText"
 
 // prettier-ignore
 import {
-  SiAngular, SiAnsible, SiBootstrap, SiCss3, SiDocker, SiGatsby, SiGit,
+  SiAngular, SiAnsible, SiBootstrap, SiCss3, SiGatsby, SiGit,
   SiHtml5, SiJavascript, SiJenkins, SiMarkdown, SiMongodb, SiNextdotjs,
   SiNodedotjs, SiPhp, SiPowershell, SiReact, SiSass, SiTypescript, SiVisualstudiocode
 } from '@icons-pack/react-simple-icons'
+
+// SiDocker
 
 import { siteConfig } from "."
 
@@ -261,10 +263,11 @@ export const experience = [
     role: `Senior Development Intern`,
     location: "Cometa Intellect LLP",
     duration: {
-      from: "May 2020",
+      from: "Mar 2020",
       to: `Sep 2020`,
     },
-    desc: `Developed multi functionality website/webapp having features like blogs, audio/video players, forums, chat feature, content posting, podcasts, profile management, authentication and more. Learned technologies like socket, CORS and frameworks like Vue, SASS and more.`,
+    desc: `Developed enterprise level web applications for customers while keeping performance, UX and security in mind. Contributed to building a CI/CD pipeline to automate the application deployment.`,
+    // `Developed multi functionality website/webapp having features like blogs, audio/video players, forums, chat feature, content posting, podcasts, profile management, authentication and more. Learned technologies like socket, CORS and frameworks like Vue, SASS and more.`
   },
   {
     role: `Summer Intern`,
@@ -273,7 +276,7 @@ export const experience = [
       from: "Jun 2019",
       to: `Jul 2019`,
     },
-    desc: `Built a Graphical User Interface for cursor/pointer movement in 2D/3D space. Technologies used: Python.`,
+    desc: `Developed a Graphical User Interface for cursor/pointer movement in 2D/3D space using Python and under guidance of Scientist-C`,
   },
   {
     role: `Committee Member`,

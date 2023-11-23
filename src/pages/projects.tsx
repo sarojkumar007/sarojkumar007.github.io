@@ -10,16 +10,22 @@ import DesignedSection from "@components/short/DesignedSection"
 
 import { projectsList } from "@config/site_data"
 import {
-  SiAnsible,
+  SiAwslambda,
   SiBlender,
   SiCitrix,
+  SiCss3,
+  SiDjango,
+  SiGatsby,
   SiGnubash,
-  SiMicrosoftazure,
+  SiJavascript,
   SiMongodb,
   SiNodedotjs,
+  SiPhp,
   SiPowershell,
   SiPython,
   SiRaspberrypi,
+  SiSass,
+  SiTypescript,
 } from "@icons-pack/react-simple-icons"
 import { StaticImage } from "gatsby-plugin-image"
 import { ExternalLink } from "react-feather"
@@ -50,14 +56,14 @@ const ProjectsPage = () => {
             Head={
               <div className="flex items-center">
                 <span className="material-symbols-rounded gradient_multi_text mr-4 basis-6">
-                  auto_fix
+                  cloud
                 </span>
                 <div className="flex-1 flex flex-wrap items-baseline">
                   <h3 className="text-xl md:text-2xl mr-2">
-                    CFT and Workload Automation
+                    Cloud and Infra Automation for AWS and vCenters
                   </h3>
                   <span className="text-sm text-gray-400 dark:text-gray-500">
-                    HCLTech, Noida
+                    HCLTech IOMC, Noida
                   </span>
                 </div>
               </div>
@@ -67,14 +73,14 @@ const ProjectsPage = () => {
             <figure>
               <StaticImage
                 layout="constrained"
-                src={"../images/project/workload_automation.webp"}
-                alt="CFT and Workload Automation"
+                src={"../images/project/cloud_automation.webp"}
+                alt="Cloud and Infra Automation"
                 className="w-full max-w-full"
-                style={{ objectPosition: "top" }}
+                style={{ top: "-50px" }}
               />
             </figure>
             <p>
-              Features that I worked on with Automation while solving Customer
+              Features that I worked on while solving Customer
               Facing Tasks and Workload Automation and providing solutions to
               client requirements.
             </p>
@@ -92,10 +98,11 @@ const ProjectsPage = () => {
                 <span>Python</span>
               </span>
               <span className="tag1">
-                <SiAnsible />
-                <span>Ansible</span>
+                <span>Active Directory</span>
               </span>
-            </div>
+              <span className="tag1">
+                <span>Servicenow</span>
+              </span>            </div>
             <h3 className="text-base font-normal">Additional Tools used:</h3>
             <div className="flex flex-wrap gap-2 my-4">
               <span className="tag1">
@@ -103,27 +110,130 @@ const ProjectsPage = () => {
                 <span>Citrix</span>
               </span>
               <span className="tag1">
-                <SiMicrosoftazure />
-                <span>Microsoft Azure</span>
+                <SiAwslambda />
+                <span>AWS Lambda</span>
+              </span>
+            </div>
+            <ul className="ul">
+              <li>Performed various cloud automations throughout the Financial Year which includes solutions like Bulk Instance Actions, Unused resource cleanup, Windows Administration, Active Directory</li>
+              <li>Reduced workload and manual effort by 85% through Scripts.</li>
+              <li>Revised, modularized and updated old code bases to modern development standards, reducing operational overheads and improving efficiency.</li>
+            </ul>
+          </Accordion>
+          {/* -------------- */}
+          <Accordion
+            Head={
+              <div className="flex items-center">
+                <span className="material-symbols-rounded gradient_multi_text mr-4 basis-6">
+                  auto_fix
+                </span>
+                <div className="flex-1 flex flex-wrap items-baseline">
+                  <h3 className="text-xl md:text-2xl mr-2">
+                    Dashboard for <em>iExecute</em>
+                  </h3>
+                  <span className="text-sm text-gray-400 dark:text-gray-500">
+                    HCLTech IOMC, Noida
+                  </span>
+                </div>
+              </div>
+            }
+            open={false}
+          >
+            <figure>
+              <StaticImage
+                layout="constrained"
+                src={"../images/project/workload_automation.webp"}
+                alt="Dashboard for iExecute"
+                className="w-full max-w-full"
+                style={{ objectPosition: "top" }}
+              />
+            </figure>
+            <p>Built the dasboard for iExecute - Adaptive and Self-Learning Supply Chain Execution</p>
+            <div className="flex flex-wrap gap-2 my-4">
+              <span className="tag1">
+                <SiPowershell />
+                <span>PowerShell</span>
+              </span>
+              <span className="tag1">
+                <SiJavascript />
+                <span>JavaScript</span>
+              </span>
+              <span className="tag1">
+                <SiPhp />
+                <span>PHP</span>
+              </span>
+              <span className="tag1">
+                <SiCss3 />
+                <span>CSS</span>
               </span>
             </div>
             <ul className="ul">
               <li>
-                Reduced workload and manual effort by 85% through Scripts.
+                Developed and Tested dashboard module for iExecute which shows completions, logs and success rates for tasks performed in a given time.
               </li>
-              <li>
-                Provided automation solutions on tracks like Wintel, AD, Linux,
-                Cloud and Backup.
-              </li>
-              <li>
-                Revised, modularized and updated old code bases to modern
-                development standards, reducing operational overheads and
-                improving efficiency.
-              </li>
-              <li>
-                Automated reporting, monitoring, maintaining infrastructures for
-                vCenters, RVTools, Active Directory and Azure.
-              </li>
+              <li>Developed an additional utility page for iExecute for task scheduling, which works just like the Windows Task Scheduler, for Web.</li>
+            </ul>
+          </Accordion>
+          {/* -------------- */}
+          <Accordion
+            Head={
+              <div className="flex items-center">
+                <span className="material-symbols-rounded gradient_multi_text mr-4 basis-6">
+                  diversity_1
+                </span>
+                <div className="flex-1 flex flex-wrap items-baseline">
+                  <h3 className="text-xl md:text-2xl mr-2">
+                    Kite CRM and NAC Dharamgarh Websites
+                  </h3>
+                  <span className="text-sm text-gray-400 dark:text-gray-500">
+                    Cometa Intellect LLP
+                  </span>
+                </div>
+              </div>
+            }
+            open={false}
+          >
+            <figure>
+              <StaticImage
+                layout="constrained"
+                src={"../images/project/crm.webp"}
+                alt="Kite CRM and NAC"
+                className="w-full max-w-full"
+              />
+            </figure>
+            <p></p>
+            <div className="flex flex-wrap gap-2 my-4">
+              <span className="tag1">
+                <SiGatsby />
+                <span>Gatsby</span>
+              </span>
+              <span className="tag1">
+                <SiTypescript />
+                <span>TypeScript</span>
+              </span>
+              <span className="tag1">
+                <SiNodedotjs />
+                <span>Node.js</span>
+              </span>
+              <span className="tag1">
+                <SiDjango />
+                <span>Django</span>
+              </span>
+              <span className="tag1">
+                <SiMongodb />
+                <span>MongoDB</span>
+              </span>
+            </div>
+            <h3 className="text-base font-normal">Additional Tools used:</h3>
+            <div className="flex flex-wrap gap-2 my-4">
+              <span className="tag1">
+                <SiSass />
+                <span>SCSS</span>
+              </span>
+            </div>
+            <ul className="ul">
+              <li>Designed and implemented Kite CRM which manages Contacts, Leads, Tasks and opportunities for customers in an intuitive way. It also has features like Email Integration, Dashboard, Reports, Search, Access Management and more.</li>
+              <li>Developed high performant Govt. website for NAC, Dharamgarh, Odisha which includes Online Tender Management, Grievance Redressal System and more using modern Web Technologies.</li>
             </ul>
           </Accordion>
           {/* -------------- */}
