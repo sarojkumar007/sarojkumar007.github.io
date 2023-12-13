@@ -9,7 +9,7 @@ import DesignedSection from "@components/short/DesignedSection"
 import { siteConfig } from "@config/index"
 import slugify from "@lib/slugify"
 import { BlogPostView } from "@lib/types"
-import { BookOpen, Calendar, Tag } from "react-feather"
+import { BookOpen, Calendar, Tag, User } from "react-feather"
 
 interface BlogPostTemplateProps {
   data: {
@@ -69,6 +69,12 @@ const BlogPostTemplate = ({
                     {t}
                   </Link>
                 ))}
+              </div>
+            </div>
+            <div className="flex items-center justify-center flex-wrap text-white mt-4">
+              <div className="flex items-center text-white">
+                <User className="w-4 h-4 mr-1" />
+                <span>{post.frontmatter.author}</span>
               </div>
             </div>
           </div>
@@ -152,6 +158,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        author
         description
         tags
       }
