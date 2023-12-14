@@ -1,9 +1,9 @@
 ## Contributing to sarojkumar007.github.io
 
-[fork]: /fork
-[pr]: /compare
-[discussion]: /discussions
-[issue]: /issues
+[fork]: https://github.com/sarojkumar007/sarojkumar007.github.io/fork
+[pr]: https://github.com/sarojkumar007/sarojkumar007.github.io/pulls
+[discussion]: https://github.com/sarojkumar007/sarojkumar007.github.io/discussions
+[issue]: https://github.com/sarojkumar007/sarojkumar007.github.io/issues
 [style]: https://standardjs.com/
 [code-of-conduct]: CODE_OF_CONDUCT.md
 
