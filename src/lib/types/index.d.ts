@@ -79,6 +79,7 @@ type BlogPostGQL = {
     }
   }
   frontmatter: {
+    author: string
     date: string
     title: string
     description: string
@@ -92,6 +93,7 @@ type BlogPostView = {
   frontmatter: {
     title: string
     date: string
+    author: string
     description: string
     tags: string[]
   }

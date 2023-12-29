@@ -277,6 +277,7 @@
   .gatsby-highlight pre[class*="language-"]::before {
     @apply bg-multi-c2 text-white text-xs leading-none absolute right-4 uppercase top-0 rounded-b-md py-1 px-2;
   }
+  // JavaScript
   pre[class*="language-javascript"]:before {
     content: "javascript";
   }
@@ -286,12 +287,24 @@
   pre[class*="language-jsx"]:before {
     content: "jsx";
   }
+  // TypeScript
+  pre[class*="language-typescript"]:before {
+    content: "typescript";
+  }
+  pre[class*="language-ts"]:before {
+    content: "ts";
+  }
+  pre[class*="language-tsx"]:before {
+    content: "tsx";
+  }
+  // Web Languages
   pre[class*="language-html"]:before {
     content: "html";
   }
   pre[class*="language-css"]:before {
     content: "css";
   }
+  // Scripting
   pre[class*="language-powershell"]:before {
     content: "ps";
   }
@@ -300,6 +313,9 @@
   }
   pre[class*="language-sh"]:before {
     content: "bash";
+  }
+  pre[class*="language-php"]:before {
+    content: "php";
   }
 }
 

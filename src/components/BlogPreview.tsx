@@ -6,7 +6,7 @@ import type { FC, Key } from "react"
 import { formatDate } from "@lib/index"
 import slugify from "@lib/slugify"
 import { Link, navigate } from "gatsby"
-import { BookOpen, Calendar, Tag } from "react-feather"
+import { BookOpen, Calendar, Tag, User } from "react-feather"
 
 const BlogPreview: FC<{ post: BlogPostGQL }> = ({ post }) => {
   return (
@@ -25,10 +25,10 @@ const BlogPreview: FC<{ post: BlogPostGQL }> = ({ post }) => {
               <Calendar className="w-4 h-4 text-multi-c1 mr-1" />
               <span>{formatDate(post.frontmatter.date)}</span>
             </div>
-            {/* <div className="flex items-center">
+            <div className="flex items-center">
               <User className="w-4 h-4 text-multi-c1 mr-1" />
-              <span>{post.author}</span>
-            </div> */}
+              <span>{post.frontmatter.author}</span>
+            </div>
             <div className="flex items-center">
               <BookOpen className="w-4 h-4 text-multi-c1 mr-1" />
               <span>{post.fields.readingTime.text}</span>
