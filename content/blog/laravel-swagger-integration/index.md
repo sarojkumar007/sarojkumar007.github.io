@@ -1,7 +1,7 @@
 ---
 title: "Laravel Swagger Integration 2024"
 description: "Leverage the power of Laravel and the Swagger tool with this comprehensive guide on Laravel Swagger Integration. Click here to Explore."
-date: "2023-12-11"
+date: "2024-01-01"
 author: "Anshuman Bharatiya"
 tags: ["PHP", "Laravel", "Web", "REST-API", "Swagger"]
 ---
@@ -10,14 +10,14 @@ tags: ["PHP", "Laravel", "Web", "REST-API", "Swagger"]
 
 Leverage the power of Laravel and the Swagger tool with this comprehensive guide on Laravel Swagger Integration. Explore the step-by-step process of creating detailed REST API documentation effortlessly, ensuring seamless communication and understanding of your Laravel-based APIs.
 
-## Table of Contents
+<!-- ## Table of Contents
 - [Introduction](#introduction)
 - [What is Laravel?](#what-is-laravel)
 - [What is Swagger?](#what-is-swagger)
 - [Advantages of Integrating Swagger with Laravel](#advantages-of-integrating-swagger-with-laravel)
 - [Requirements and Setup for Laravel Swagger](#requirements-and-setup-for-laravel-swagger)
 - [Step-by-Step Guide for Laravel Swagger Integration](#step-by-step-guide-for-laravel-swagger-integration)
-- [Conclusion](#conclusion)
+- [Conclusion](#conclusion) -->
 
 
 
@@ -42,6 +42,7 @@ Whether you're building small projects or large-scale applications, Laravel prov
 # What is Swagger?
 
 ![Swagger](image1.png)
+<p class="text-center">[ <em> Swagger API DOCs UI </em> ] </p>
 
 Swagger is a tool that acts like a helpful guide for developers in the realm of web development. It's akin to a well-organized manual that explains how to use web APIs in a clear and understandable manner. This tool ensures that developers and users can easily comprehend the ins and outs of an API—what data to send, where to send it, and what to expect in return. In simpler terms, Swagger streamlines the process of creating comprehensive API documentation, making it akin to a user-friendly map for navigating the landscape of web development. [Read More About Swagger](https://swagger.io/docs/)
 
@@ -96,7 +97,7 @@ Laravel Swagger integration reduces the time and resources required for manually
  - [Composer](https://getcomposer.org/)
  - Swagger/OpenAPI Specification
  - Swagger UI Package (If not using Laravel Sanctum)
- - Text Editor or IDE([Visual Studio Code](https://code.visualstudio.com/download), [Atom Editor](https://atom.en.lo4d.com/windows) etc.)
+ - Text Editor or IDE([Visual Studio Code](https://code.visualstudio.com/download), [Atom Editor](https://atom.en.lo4d.com/windows))etc.
  - [XAMPP Tool](https://www.apachefriends.org/download.html)
 
 ***Developer Should Know to Start Integrations***
@@ -113,20 +114,21 @@ Laravel Swagger integration reduces the time and resources required for manually
 Integrating Swagger with Laravel involves a few steps to generate API documentation for your Laravel application. Here's a step-by-step guide:
 
 ### 1. Install Laravel Project
-```
+```cmd
 composer global require laravel/installer
 
 laravel new laravel-swagger-api-docs
+```
 
 or
 
+```cmd
 composer create-project laravel/laravel laravel-swagger-api-docs
-
 ```
 
 After the project has been created, start Laravel's local development server using the Laravel's Artisan CLI serve command:
 
-```
+```cmd
 cd laravel-swagger-api-docs
  
 php artisan serve
@@ -137,7 +139,7 @@ php artisan serve
 
 Open the .env file in the root of your Laravel project. This file contains environment-specific configuration, including database settings. Set the following parameters:
 
-```
+```'':title=.env
 DB_CONNECTION=mysql
 DB_HOST=your_database_host
 DB_PORT=your_database_port
@@ -146,14 +148,13 @@ DB_USERNAME=your_database_username
 DB_PASSWORD=your_database_password
 ```
 ***Example:***
-```
+```'':title=.env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=example_l_swagger
 DB_USERNAME=root
 DB_PASSWORD=1234
-
 ```
 
 To create a database for a Laravel project, you'll need a database management system (DBMS) and a local development environment. Laravel supports various database systems, but MySQL is commonly used. So Install XAMPP or any DBMS.
@@ -163,30 +164,29 @@ To create a database for a Laravel project, you'll need a database management sy
 
 Laravel Passport, which is a Laravel package for API authentication using OAuth2. The below command will download and install the Passport package and its dependencies.
 
-```
+```cmd
 composer require laravel/passport
 
 php artisan passport:install
 ```
 After install Update */config/database.php* file below 2 lines.
 
-```
+```php:title=/config/database.php
 'mysql' => [
     'charset' => 'utf8', // default value is 'utf8mb4'utf8mb4
     'collation' => 'utf8_unicode_ci', // default value is 'utf8mb4_unicode_ci'
 ]
-
 ```
 
 ***php artisan migrate*** is a Laravel command that applies pending database migrations, creating or updating database tables based on defined schema changes in your application. Here, we are using the default migration file and its related table.
 
-```
+```cmd
 php artisan migrate
 ```
 
 Open your App\User model and make sure it implements the Laravel\Passport\HasApiTokens trait. In *\app\Models\User.php* use **Passport** instend of **Sanctum** for HasApiTokens.
 
-```
+```php:title=/app/Models/User.php
 use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
@@ -197,7 +197,7 @@ class User extends Authenticatable
 
 Update *config/auth.php*
 
-```
+```php:title=/config/auth.php
 'guards' => [
         'web' => [
             'driver' => 'session',
@@ -215,13 +215,13 @@ Update *config/auth.php*
 
 Install the necessary packages for Swagger integration:
 
-```
+```cmd
 composer require "darkaonline/l5-swagger"
 ```
 
 Publish the configuration file to customize Swagger settings:
 
-```
+```cmd
 php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
 ```
 
@@ -229,7 +229,7 @@ This will create a *config/l5-swagger.php* file.
 
 Configure *l5-swagger.php*. Open the generated */config/l5-swagger.php* file and uncomment the below line of code.
 
-```
+```php:title=/config/l5-swagger.php
 /* Open API 3.0 support */
 'passport' => [ // Unique name of security
     'type' => 'oauth2', // The type of the security scheme. Valid values are "basic", "apiKey" or "oauth2".
@@ -250,7 +250,7 @@ Configure *l5-swagger.php*. Open the generated */config/l5-swagger.php* file and
 
 ### 5. Create Routes
 
-```
+```php:title=/routes/api.php
 use App\Http\Controllers\Api\AuthController;
 
 Route::post('login', [AuthController::class, 'login']);
@@ -259,13 +259,13 @@ Route::post('register', [AuthController::class, 'register']);
 
 ### 6. Create User Registration and Login Controller
 
-```
+```cmd
 php artisan make:controller Api/AuthController
 ```
 
 ### 7. Implement User Registration and Login Logic.
 
-```
+```php:title=/app/Http/Controllers/Api/AuthController.php
 <?php
 
     namespace App\Http\Controllers\Api;
@@ -404,7 +404,7 @@ php artisan make:controller Api/AuthController
 
 ### 8. Update Version in \app\Http\Controllers\Controller.php file 
 
-```
+```php:title=/app/Http/Controllers/Controller.php
 <?php
     namespace App\Http\Controllers;
 
@@ -422,48 +422,54 @@ php artisan make:controller Api/AuthController
     {
         use AuthorizesRequests, ValidatesRequests;
     }
-
 ```
 
 ### 9. Generate Swagger Documentation:
 
 Generate Swagger documentation by running below command:
-```
+
+```cmd
 php artisan l5-swagger:generate
 ```
 
 ### 10. Run The Laravel Application and Access the Documentation
 
-```
 Start the Laravel development server by running the command:
-    php artisan serve
 
-Open your browser and navigate to the following address:
-    http://127.0.0.1:8000/
-
-To access the API documentation, go to:
-    http://127.0.0.1:8000/api/documentation
-
+```cmd
+php artisan serve
 ```
+
+Open your browser and navigate to the following address: `http://127.0.0.1:8000/`
+
+To access the API documentation, go to: `http://127.0.0.1:8000/api/documentation`
+
+
 
 ![Swagger2](image2.png)
+<p class="text-center">[ <em> Swagger API DOCs Image-1 </em> ] </p>
+
 ![Swagger3](image3.png)
+<p class="text-center">[ <em> Swagger API DOCs Image-2 </em> ] </p>
+
 ![Swagger4](image4.png)
+<p class="text-center">[ <em> Swagger API DOCs Image-3 </em> ] </p>
 
 > Notes:
 
-```
-These commands clear specific Laravel caches:
+```cmd
+rem These commands clear specific Laravel caches:
 
 php artisan cache:clear: Clears the application cache.
 php artisan route:clear: Clears the route cache.
 php artisan config:clear: Clears the configuration cache.
 ```
 
-### Click Here for [Source Code](https://github.com/AnshumanBharatiya/laravel-swagger-api-docs)
+### Click Here for [Source Code](https://github.com/AnshumanBharatiya/laravel-swagger-api-docs "GitHub")
 
 # Conclusion
-> In the realm of web development, the fusion of Laravel with Swagger in 2024 emerges as a game-changer. This integration streamlines API documentation, fostering clarity and collaboration. Developers benefit from an interactive API explorer and standardized design practices, optimizing efficiency. As we navigate the dynamic landscape, Laravel Swagger Integration stands as a beacon of seamless development, where communication is clear, and innovation thrives. Here's to a future of efficient, collaborative, and well-documented APIs. Happy coding!
+
+In the realm of web development, the fusion of Laravel with Swagger in 2024 emerges as a game-changer. This integration streamlines API documentation, fostering clarity and collaboration. Developers benefit from an interactive API explorer and standardized design practices, optimizing efficiency. As we navigate the dynamic landscape, Laravel Swagger Integration stands as a beacon of seamless development, where communication is clear, and innovation thrives. Here's to a future of efficient, collaborative, and well-documented APIs. Happy coding!
 
 <br>
 
@@ -471,4 +477,4 @@ php artisan config:clear: Clears the configuration cache.
 
 ***If you like this post, feel free to share it.***
 
-***Thanks in Advance***
+***Thank You***

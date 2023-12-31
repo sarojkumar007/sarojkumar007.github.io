@@ -317,6 +317,12 @@
   pre[class*="language-php"]:before {
     content: "php";
   }
+  pre[class*="language-cmd"]:before {
+    content: "cmd";
+  }
+  pre[class*="language-shell"]:before {
+    content: "shell";
+  }
 }
 
 .blog_link {
