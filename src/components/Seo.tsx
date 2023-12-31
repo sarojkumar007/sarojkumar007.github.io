@@ -35,25 +35,24 @@ const Seo = ({ description, title, children }: SEOProps) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
+  // MAIN TITLE
+  const constructedTitle = defaultTitle
+    ? `${title} - ${defaultTitle}'s Portfolio`
+    : title
+
   return (
     <>
-      <title>
-        {defaultTitle ? `${title} - ${defaultTitle}'s Portfolio` : title}
-      </title>
+      <title>{constructedTitle}</title>
       <meta id="description" name="description" content={metaDescription} />
       <meta name="keywords" content={siteConfig.keywords.join(",")} />
-      <meta
-        id="og:title"
-        property="og:title"
-        content={defaultTitle ? `${title} | ${defaultTitle}` : title}
-      />
+      <meta id="og:title" property="og:title" content={constructedTitle} />
       <meta
         id="og:description"
         property="og:description"
         content={metaDescription}
       />
       <meta id="og:type" property="og:type" content="website" />
-      <meta property="og:site_name" content={defaultTitle} />
+      <meta property="og:site_name" content={`${defaultTitle}'s Portfolio`} />
       <meta name="twitter:card" content="summary" />
       <meta
         name="twitter:creator"
@@ -62,7 +61,7 @@ const Seo = ({ description, title, children }: SEOProps) => {
       <meta
         id="twitter:title"
         name="twitter:title"
-        content={defaultTitle ? `${title} | ${defaultTitle}` : title}
+        content={constructedTitle}
       />
       <meta
         id="twitter:description"
