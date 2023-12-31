@@ -97,6 +97,7 @@ type BlogPostView = {
     description: string
     tags: string[]
   }
+  tableOfContents?: string
   fields: {
     slug?: string
     readingTime: {

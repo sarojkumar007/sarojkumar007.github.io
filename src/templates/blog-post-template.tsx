@@ -10,6 +10,7 @@ import { siteConfig } from "@config/index"
 import slugify from "@lib/slugify"
 import { BlogPostView } from "@lib/types"
 import { BookOpen, Calendar, Tag, User } from "react-feather"
+import Accordion from "@components/Accordion"
 
 interface BlogPostTemplateProps {
   data: {
@@ -85,11 +86,29 @@ const BlogPostTemplate = ({
       >
         <div className="max-w-full mx-auto flex-1">
           <div className="blog_content mb-4 font-sailec">
-            <article dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Accordion
+              Head={
+                <h3 className="flex items-center">
+                  <span className="material-symbols-rounded mr-4 -translate-y-[2px]">
+                    list_alt
+                  </span>
+                  <span>TABLE OF CONTENTS</span>
+                </h3>
+              }
+            >
+              <section
+                className="toc_main"
+                dangerouslySetInnerHTML={{ __html: post.tableOfContents }}
+              />
+            </Accordion>
+            <article
+              className="!mt-8"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
           </div>
           <nav className="">
             <ul className="flex justify-between">
-              {previous && (
+              {previous ? (
                 <li>
                   <Link
                     to={`/blog/${previous.fields.slug}`}
@@ -107,8 +126,10 @@ const BlogPostTemplate = ({
                     </div>
                   </Link>
                 </li>
+              ) : (
+                <li></li>
               )}
-              {next && (
+              {next ? (
                 <li>
                   <Link
                     to={`/blog/${next.fields.slug}`}
@@ -126,6 +147,8 @@ const BlogPostTemplate = ({
                     </span>
                   </Link>
                 </li>
+              ) : (
+                <li></li>
               )}
             </ul>
           </nav>
@@ -138,7 +161,7 @@ const BlogPostTemplate = ({
 export const Head = ({ data: { markdownRemark: post } }) => {
   return (
     <Seo
-      title={post.frontmatter.title}
+      title={`${post.frontmatter.title} by ${post.frontmatter.author}`}
       description={post.frontmatter.description || post.excerpt}
     />
   )
@@ -162,6 +185,7 @@ export const pageQuery = graphql`
         description
         tags
       }
+      tableOfContents
       fields {
         slug
         readingTime {

@@ -1,5 +1,5 @@
 const siteConfig = {
-  title: `Saroj Kumar Sahoo`,
+  title: `Saroj Kumar`,
   desc: `Saroj Kumar Sahoo is an Automation Engineer and Front-end Web Developer.`,
   homepage: `https://sarojkumar.dev`,
   canonical: `https://sarojkumar007.github.io`,

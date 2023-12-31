@@ -3,7 +3,7 @@ title: "Getting Started with PowerShell"
 description: "Day to day tasks take a lot of manual efforts and time, which we can reduce by automation using scripts. Here's How."
 date: "2022-04-03"
 author: "Saroj Kumar"
-tags: ["Automation","Windows","Powershell"]
+tags: ["Automation", "Windows", "Powershell"]
 ---
 
 **Automation is the FUTURE!**
@@ -24,33 +24,31 @@ With system level access, the performance is high and with a lot of built in fea
 
 Powershell is most useful for managing and automating Microsft environments. It helps users automate repeatitive and time-consuming tasks and tasks such as user management, CI/CD, managing cloud services, finding, filtering, expoorting information, interacting with system apps and more.
 
-
 Let's see how we can use it.
 
 Every windows device such as Windows 7,8,10, Windows Server 2008, Windows Server 2012 R2 and more have pre-installed PowerShell.
 
-### Checking if powershell installed or not
+## Checking if powershell installed or not
 
 On your system, click on `Win` key and type 'powershell'. You will see some suggestions as below:
 
 ![PowerShell](powershell-search.png?v=1)
 
-You see a bunch of powershell apps such as *Windows PowerShell* and *Windows PowerShell ISE*.
+You see a bunch of powershell apps such as _Windows PowerShell_ and _Windows PowerShell ISE_.
 
-*ISE* stands for *Integrated Scripting Environment*.
+_ISE_ stands for _Integrated Scripting Environment_.
 
-*Windows PowerShell ISE* provides you a environment for writing scripts while you can use *Windows PowerShell* as a command shell.
+_Windows PowerShell ISE_ provides you a environment for writing scripts while you can use _Windows PowerShell_ as a command shell.
 
 > Other than running commands or writing script, we can test, debug our scripts in ISE.
 
 Now that you know powershell is installed, let's write some scripts.
 
-### Writing PowerShell Script
+## Writing PowerShell Script
 
-Open *PowerShell ISE*. You will see something like this:
+Open _PowerShell ISE_. You will see something like this:
 
 ![PowerShell App](powershell-app.png?v=1)
-
 
 On the script pane, type `hostname`. Then, on the top you can see two little green play buttons. 1<sup>st</sup> one is for running whole file and 2<sup>nd</sup> one is for running only the selected script.
 
@@ -62,7 +60,7 @@ Powershell can run Command Prompt commands as well as PowerShell Code.
 
 Unlike other programming/scripting languages, it also has DATATYPES, OPERATORS, DATA STRUCTURES, FUNCTIONS, CONDITIONALS(If, For, ForEach, While, Do-While), CLASSES. Additionally, It has commandlets(cmdlets),libraries and modules.
 
-### Variables and Datatypes
+## Variables and Datatypes
 
 We declare varibales or assign values in PowerShell, in this way,
 
@@ -87,7 +85,7 @@ Write-Host $Var_Text
 
 Here, Write-Host is a builtin cmdlet in PowerShell, that prints a variable to terminal. More on cmdlets later.
 
-### Conditinals and Functions
+## Conditinals and Functions
 
 The basic systax is similar to the other programming/scripting languages, only with Capitalization ;p
 
@@ -98,7 +96,7 @@ If($true<#Condition#>){
 	#Action
 }
 
-for ($i = 1; $i -lt 10; $i++){ 
+for ($i = 1; $i -lt 10; $i++){
 	Write-Host $i
 }
 
@@ -114,11 +112,11 @@ function MyFunction ($Param1, $Param2){
 # MyFunction -Param1 <Param1Value> -Param2 <Param2Value>
 ```
 
-### Using CommandLets(cmdlets)
+## Using CommandLets(cmdlets)
 
 PowerShell has a builtin cmdlet for Every Operation you might perform on a Windows Device.
 
-E.g. *Fetching a list of files present in a Folder* (Similar to *dir* for cmd.)
+E.g. _Fetching a list of files present in a Folder_ (Similar to _dir_ for cmd.)
 
 ```powershell
 Get-ChildItem -Path "path/to/folder"
@@ -129,6 +127,7 @@ To Avail all the list of cmdlets we can run below command:
 ```powershell
 Get-Command -CommandType Cmdlet
 ```
+
 OR to check if a specific command exists or not, type:
 
 ```powershell
@@ -147,7 +146,7 @@ If you want to read book:
 
 # Bonus Tips
 
-> PowerShell is built on .NET. So, it has support of .NET which we can use to extend our possibility of automation and *Save the Day!*
+> PowerShell is built on .NET. So, it has support of .NET which we can use to extend our possibility of automation and _Save the Day!_
 
 > Use can install powershell on other platforms like linux and run powershell scripts/cmdlets.
 

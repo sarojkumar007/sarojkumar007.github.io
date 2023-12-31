@@ -37,7 +37,9 @@ const Seo = ({ description, title, children }: SEOProps) => {
 
   return (
     <>
-      <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      <title>
+        {defaultTitle ? `${title} - ${defaultTitle}'s Portfolio` : title}
+      </title>
       <meta id="description" name="description" content={metaDescription} />
       <meta name="keywords" content={siteConfig.keywords.join(",")} />
       <meta

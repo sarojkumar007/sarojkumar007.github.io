@@ -116,6 +116,61 @@
   }
 }
 
+.toc_main {
+  ul {
+    display: block;
+    width: 100%;
+  }
+  ul ul {
+    padding-left: 1.25rem; // pl-5
+  }
+  ul li {
+    @apply text-sm;
+
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &::before {
+      content: "arrow_right";
+
+      @apply gradient_multi_text mr-1;
+
+      font-family: "Material Symbols Rounded";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      font-feature-settings: "liga";
+    }
+
+    a:hover,
+    a:focus {
+      @apply text-multi-c2 dark:text-multi-c3 underline;
+    }
+  }
+}
+.blog_head_anchor {
+  transform: translate(-100%, 25%) !important;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover {
+  .blog_head_anchor svg {
+    @apply dark:fill-gray-300;
+  }
+}
+
 .blog_content article {
   @apply mt-4 dark:font-light;
 
@@ -142,7 +197,7 @@
   p ol,
   ul,
   ol {
-    @apply font-[inherit] space-y-1 ml-2 md:ml-4;
+    @apply font-[inherit] space-y-2 ml-2 md:ml-4;
   }
 
   p ol,
@@ -158,9 +213,9 @@
       align-items: flex-start;
 
       &::before {
-        content: "directions_alt";
+        content: "verified";
 
-        @apply gradient_blue_text mr-2;
+        @apply gradient_multi_text mr-2;
 
         font-family: "Material Symbols Rounded";
         font-weight: normal;
@@ -215,7 +270,7 @@
   p code {
     @apply p-1;
   }
-  a {
+  a:not(.blog_head_anchor) {
     @apply inline-block no-underline font-[inherit] text-sm text-multi-c1;
 
     &:hover,
@@ -335,3 +390,5 @@
 }
 
 // Override
+
+// .gatsby-highlight-code-line{}

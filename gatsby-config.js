@@ -54,6 +54,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-autolink-headers",
+            options: {
+              className: "blog_head_anchor",
+            },
+          },
+          {
             resolve: "gatsby-remark-code-titles",
             options: {
               className: "code-title",

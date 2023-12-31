@@ -3,7 +3,7 @@ title: "How to Start Front-end Web Development"
 description: "This post is perfect for you, if you want to start Front-end Web Development. It gives you a head-start, roadmap and resources to start your web dev journey."
 date: "2021-04-03"
 author: "Saroj Kumar"
-tags: ["Tips & Tricks","Web"]
+tags: ["Tips & Tricks", "Web"]
 ---
 
 Hey Guys! I am starting a new Series on Fundamentals of Web Development from scratch and here is the first post that describes everything you need to know about Front-end Web Development.
@@ -21,10 +21,10 @@ You need to learn Languages that are used to create a page/document that can be 
 Below mentioned items are the starting point of your Great Journey! Get a hands on to these.
 
 1. A Code Editor (Any of your choice)
-	- Atom
-	- Visual Studio Code
-	- Sublime Text
-	- Brackets
+   - Atom
+   - Visual Studio Code
+   - Sublime Text
+   - Brackets
 2. Understanding of CLI (Command-line Interface) to fasten your workflow.
 3. Browsers and DevTools
 
@@ -56,7 +56,7 @@ While working with Web Development, if you are stuck at some point, these sites 
 
 # What to Learn after that:
 
-### Version Control System (git, GitHub)
+## Version Control System (git, GitHub)
 
 You must have knowledge about version control systems like `git` which will fasten your work and let you work on your project the way you like.
 
@@ -72,13 +72,13 @@ There are a number of sites/services that provide git solution, like
 8. [AWS CodeCommit](https://aws.amazon.com/codecommit/)
 9. [GitKraken](https://www.gitkraken.com/)
 
-### npm (Node Package Manager)
+## npm (Node Package Manager)
 
 Node Package Manager is very common around every project you are going to face in life. So, be a good friends with `npm`. There are tons of packages available in `npm` that make our projects easier to work with.
 
 [Read More](https://docs.npmjs.com/)
 
-### Libraries and Frameworks
+## Libraries and Frameworks
 
 As we are talking about `npm`, lets take a moment to dive in. Libraries and Frameworks are the pre-built files and tools that can be used in our project to reduce the workload.
 
@@ -93,10 +93,9 @@ Here are some of the sites that help deploying your static site real quick, and 
 - [Netlify](https://netlify.com)
 - [GitHub Pages](https://pages.github.com/)
 - [AWS Amplify](https://aws.amazon.com/amplify/)
-- [Surge](https://surge.sh/) (*Best for Quick Deploy*)
+- [Surge](https://surge.sh/) (_Best for Quick Deploy_)
 - [Aerobatic](https://www.aerobatic.com/)
 - [zeit.co](https://zeit.co/)
-
 
 That's all for the first post. In the upcoming posts, we will explore more on Web Languages.
 
