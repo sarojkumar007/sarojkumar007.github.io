@@ -50,7 +50,7 @@ Integrating Swagger with Laravel offers several advantages, enhancing the develo
 
 4. **Consistent API Design:**
 
-Swagger enforces consistency in API design by providing a standardized format for documenting endpoints, request parameters, and responses. This consistency is beneficial for maintaining a cohesive and well-structured API.
+    Swagger enforces consistency in API design by providing a standardized format for documenting endpoints, request parameters, and responses. This consistency is beneficial for maintaining a cohesive and well-structured API.
 
 5. **Client Code Generation:**
 
