@@ -20,13 +20,15 @@ const siteConfig = {
 }
 
 const social = {
-  twitter: `sarojk18_`,
-  github: `sarojkumar007`,
-  instagram: `sarojk18_`,
-  linkedin: `sarojk18`,
-  youtube: `#!`, //`https://www.youtube.com/channel/UCyG5IZIwPxKiG9tmM-SoCtg`,
+  twitter: `https://x.com/sarojk18_`,
+  github: `https://github.com/sarojkumar007`,
+  instagram: `https://www.instagram.com/sarojk18_/`,
+  linkedin: `https://www.linkedin.com/in/sarojk18/`,
+  youtube: `http://www.youtube.com/@sarojk18`, //`https://www.youtube.com/channel/UCyG5IZIwPxKiG9tmM-SoCtg`,
   codepen: `sarojk18`,
-  hackerrank: `sarojk18`,
+  hackerrank: `https://www.hackerrank.com/profile/sarojk18`,
+  leetcode: `https://leetcode.com/u/sarojk18/`,
+  codewars: `https://www.codewars.com/users/sarojk18`,
 }
 
 const seo = {

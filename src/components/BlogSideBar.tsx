@@ -2,11 +2,7 @@ import React from "react"
 
 import { siteConfig } from "@config/index"
 
-import {
-  SiFacebook,
-  SiTwitter,
-  SiWhatsapp,
-} from "@icons-pack/react-simple-icons"
+import { SiFacebook, SiX, SiWhatsapp } from "@icons-pack/react-simple-icons"
 import slugify from "@lib/slugify"
 
 import { Link, graphql, useStaticQuery } from "gatsby"
@@ -109,16 +105,16 @@ const BlogSideBar = ({ shareLink }: BlogSideBarProps) => {
                 target={`_blank`}
                 rel="noreferrer noopener"
               >
-                <SiFacebook className="w-6 h-6" title="" color="#1877F2" />
+                <SiFacebook className="w-6 h-6" title="" color="#0866FF" />
               </a>
               <a
-                href={`https://twitter.com/share?text=${encodeURI(
+                href={`https://x.com/share?text=${encodeURI(
                   `Blog by ${siteConfig.title}`
                 )}&url=${encodeURI(shareLink as string)}`}
                 target={`_blank`}
                 rel="noreferrer noopener"
               >
-                <SiTwitter className="w-6 h-6" title="" color="#1DA1F2" />
+                <SiX className="w-6 h-6" title="" color="#000" />
               </a>
             </div>
           </SideBarSection>

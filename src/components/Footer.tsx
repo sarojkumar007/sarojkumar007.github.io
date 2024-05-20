@@ -8,7 +8,7 @@ import { Link } from "gatsby"
 import {
   SiGatsby,
   SiGithub,
-  SiInstagram,
+  SiLeetcode,
   SiLinkedin,
 } from "@icons-pack/react-simple-icons"
 
@@ -25,15 +25,15 @@ const FooterMain: FC = () => {
           </Link>
           <div className="flex items-center space-x-2">
             <a
-              href={`https://instagram.com/${social.instagram}`}
+              href={social.leetcode}
               target={`_blank`}
               rel={`noreferrer noopener`}
               className="footer_icon_link"
             >
-              <SiInstagram className="w-5 h-5" />
+              <SiLeetcode className="w-5 h-5" />
             </a>
             <a
-              href={`https://github.com/${social.github}`}
+              href={social.github}
               target={`_blank`}
               rel={`noreferrer noopener`}
               className="footer_icon_link"
@@ -41,7 +41,7 @@ const FooterMain: FC = () => {
               <SiGithub className="w-5 h-5" />
             </a>
             <a
-              href={`https://linkedin.com/in/${social.linkedin}`}
+              href={social.linkedin}
               target={`_blank`}
               rel={`noreferrer noopener`}
               className="footer_icon_link"

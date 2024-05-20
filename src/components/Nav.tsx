@@ -9,7 +9,7 @@ import IconLogo from "./svgs/IconLogo"
 
 import {
   SiGithub,
-  SiInstagram,
+  SiLeetcode,
   SiLinkedin,
 } from "@icons-pack/react-simple-icons"
 
@@ -131,17 +131,17 @@ const Nav = () => {
         <ul className="justify-self-end flex items-center gap-4">
           <li className="hidden md:inline-block">
             <a
-              href={`https://instagram.com/${social.instagram}`}
+              href={social.leetcode}
               target={`_blank`}
               rel={`noreferrer noopener`}
               className="nav_icon_link"
             >
-              <SiInstagram className="w-5 h-5" />
+              <SiLeetcode className="w-5 h-5" />
             </a>
           </li>
           <li className="hidden md:inline-block">
             <a
-              href={`https://github.com/${social.github}`}
+              href={social.github}
               target={`_blank`}
               rel={`noreferrer noopener`}
               className="nav_icon_link"
@@ -151,7 +151,7 @@ const Nav = () => {
           </li>
           <li className="hidden md:inline-block">
             <a
-              href={`https://www.linkedin.com/in/${social.linkedin}`}
+              href={social.linkedin}
               target={`_blank`}
               rel={`noreferrer noopener`}
               className="nav_icon_link"
