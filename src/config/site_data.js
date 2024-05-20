@@ -369,6 +369,26 @@ export const projectsList = {
       liveLink: `${siteConfig.homepage}/Mini-Projects/WebNote/`,
       gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/WebNote/`,
     },
+    {
+      id: "local-image-editor",
+      name: "Local Image Editor",
+      date: "10-Apr-2023",
+      tags: ["CSS", "JavaScript"],
+      image: `/img/project/l_i_e.webp`,
+      desc: `A locally available and basic image editing tool, for your quick image editing.`,
+      liveLink: `${siteConfig.homepage}/Mini-Projects/ImageEditor/`,
+      gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/ImageEditor/`,
+    },
+    {
+      id: "emi-calc",
+      name: "EMI Calculator",
+      date: "24-Mar-2024",
+      tags: ["HTML", "CSS", "JavaScript"],
+      image: `/img/project/emi_calc.webp`,
+      desc: `Calculator your reducing interest EMI and other informations with just few inputs. Easy and convenient way to track your repayments.`,
+      liveLink: `${siteConfig.homepage}/Mini-Projects/EMICalculator/`,
+      gitLink: `https://github.com/sarojkumar007/Mini-Projects/tree/main/EMICalculator/`,
+    },
   ],
 
   miniGames: [
