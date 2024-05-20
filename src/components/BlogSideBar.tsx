@@ -96,7 +96,7 @@ const BlogSideBar = ({ shareLink }: BlogSideBarProps) => {
                 target={`_blank`}
                 rel="noreferrer noopener"
               >
-                <SiWhatsapp className="w-5 h-5" title="" color="#25D366" />
+                <SiWhatsapp className="size-6" title="" color="#25D366" />
               </a>
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURI(
@@ -105,7 +105,7 @@ const BlogSideBar = ({ shareLink }: BlogSideBarProps) => {
                 target={`_blank`}
                 rel="noreferrer noopener"
               >
-                <SiFacebook className="w-6 h-6" title="" color="#0866FF" />
+                <SiFacebook className="size-6" title="" color="#0866FF" />
               </a>
               <a
                 href={`https://x.com/share?text=${encodeURI(
@@ -114,7 +114,7 @@ const BlogSideBar = ({ shareLink }: BlogSideBarProps) => {
                 target={`_blank`}
                 rel="noreferrer noopener"
               >
-                <SiX className="w-6 h-6" title="" color="#000" />
+                <SiX className="size-6 text-black dark:text-white" title="" />
               </a>
             </div>
           </SideBarSection>

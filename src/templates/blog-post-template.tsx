@@ -85,6 +85,11 @@ const BlogPostTemplate = ({
         shareLink={`${siteConfig.homepage}/blog/${post.fields.slug}/`}
       >
         <div className="max-w-full mx-auto flex-1">
+          <div className="mb-8">
+            <Link to="/blog" className="blog_link">
+              Back to All Blogs
+            </Link>
+          </div>
           <div className="blog_content mb-4 font-sailec">
             <Accordion
               Head={
