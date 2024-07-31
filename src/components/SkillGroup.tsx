@@ -27,7 +27,9 @@ const SkillGroup: FC<SkillGroupType> = ({ cat, s }) => {
                 <h4 className="text-base font-medium text-gray-600">
                   {skl.skill}
                 </h4>
-                {/* <span className="text-sm text-gray-500">{skl.level}</span> */}
+                {skl.level == "Basic" && (
+                  <span className="text-sm text-gray-500">{skl.level}</span>
+                )}
               </div>
             </div>
           ))}

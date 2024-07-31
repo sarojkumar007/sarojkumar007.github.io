@@ -59,8 +59,8 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      <section className="relative w-full px-4 md:px-16">
-        <div className="px-6 py-8 md:px-8 md:py-8 bg-gray-100 dark:bg-gray-700/20 skew-y-2 rounded-3xl">
+      <section className="relative w-full px-4 md:px-16 mb-24 grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-8">
+        <div className="px-6 py-8 md:px-8 md:py-8 max-w-2xl bg-gray-100 dark:bg-gray-700/20 skew-y-2 rounded-3xl">
           <div className="-skew-y-2">
             <h1 className="gradient_multi_text text-2xl md:text-4xl font-medium">
               Work / Responsibilities
@@ -72,21 +72,22 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="relative w-full px-4 py-12 md:px-16 md:py-24">
-        <div className="text-2xl md:text-4xl font-semibold mb-12">
-          <h1>
-            My <span className="gradient_multi_text">Educational</span>{" "}
-            Background.
-          </h1>
-        </div>
+        <div className="p-8">
+          <div className="text-2xl md:text-4xl font-semibold mb-12">
+            <h1>
+              My <span className="gradient_multi_text">Educational</span>{" "}
+              Background.
+            </h1>
+          </div>
 
-        <ol className="relative border-l border-gray-200 dark:border-gray-700">
-          {edu.map((ed, i) => (
-            <Edu key={i} ed={ed} />
-          ))}
-        </ol>
+          <ol className="relative border-l border-gray-200 dark:border-gray-700">
+            {edu.map((ed, i) => (
+              <Edu key={i} ed={ed} />
+            ))}
+          </ol>
+        </div>
       </section>
+      {/* <section className="relative w-full px-4 py-12 md:px-16 md:py-24"></section> */}
     </Layout>
   )
 }

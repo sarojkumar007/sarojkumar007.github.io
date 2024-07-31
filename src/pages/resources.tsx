@@ -2,12 +2,12 @@ import React from "react"
 
 import type { FC } from "react"
 
+import Seo from "@components/Seo"
+import slugify from "@lib/slugify"
 import Layout from "@components/Layout"
 import ResourceGroup from "@components/ResourceGroup"
-import Seo from "@components/Seo"
 import DesignedSection from "@components/short/DesignedSection"
-import { resources } from "@config/resources"
-import slugify from "@lib/slugify"
+import { resources, resources_last_updated } from "@config/resources"
 
 const ResourcesPage: FC = () => {
   return (
@@ -48,6 +48,15 @@ const ResourcesPage: FC = () => {
               list={r.resources}
             />
           ))}
+        {resources_last_updated && (
+          <p className="my-4 px-2 text-sm text-gray-400 dark:text-gray-600">
+            <strong>Last Updated: </strong>
+            {new Intl.DateTimeFormat("en-US", {
+              month: "short",
+              year: "numeric",
+            }).format(resources_last_updated)}
+          </p>
+        )}
       </section>
     </Layout>
   )

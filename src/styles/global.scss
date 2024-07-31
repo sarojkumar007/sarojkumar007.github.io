@@ -185,8 +185,14 @@ body {
   }
 }
 
-// SVG Overrides
+// SVG/Icon Overrides
 
 .NotFound_svg__bg {
   @apply fill-gray-200 dark:fill-gray-700/50;
+}
+
+.material-symbols-rounded {
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
 }

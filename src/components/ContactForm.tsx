@@ -113,6 +113,14 @@ const ContactForm: FC<{}> = () => {
               />
             </div>
           </div>
+
+          <p className="text-xs text-gray-300 dark:text-gray-500">
+            <span className="text-base text-red-500 mr-1">📌</span>
+            <span>
+              This data is completely confidential and solely used for further
+              communication. I do not store this information.
+            </span>
+          </p>
           <div className="my-4">
             <label htmlFor="msg" className="label">
               Your Query / Suggestion.
@@ -123,6 +131,7 @@ const ContactForm: FC<{}> = () => {
               className="input mt-2"
               placeholder="Write your Query"
               value={formQuery.query}
+              rows={3}
               onInput={e =>
                 setFormQuery(q => ({
                   ...q,

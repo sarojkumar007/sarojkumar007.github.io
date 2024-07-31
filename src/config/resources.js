@@ -5,6 +5,7 @@ import {
   Activity, Droplet, Hash, Image, Layout, PenTool, Settings, Smile, Tool
 } from 'react-feather';
 
+export const resources_last_updated = new Date("2024-Jul-31")
 export const resources = [
   {
     cat: "Tools",
@@ -36,7 +37,7 @@ export const resources = [
     resources: [
       {
         title: "W3 Schools",
-        description: "Best website to start learning HTML.",
+        description: "Best website to start learning HTML and others too.",
         link: `https://www.w3schools.com/html/`,
       },
       {
@@ -226,7 +227,7 @@ export const resources = [
         title: "Google Fonts",
         description:
           "The #1 resource for free and easy-to-use webfonts. Has a huge library of fonts.",
-        link: `https://www.google.com/fonts`,
+        link: `https://fonts.google.com/`,
       },
       {
         title: "1001 Fonts",

@@ -1,15 +1,17 @@
 import React from "react"
-
 import { Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "@components/Layout"
 import Seo from "@components/Seo"
+import Layout from "@components/Layout"
 import SkillGroup from "@components/SkillGroup"
 import DesignedSection from "@components/short/DesignedSection"
-import { IconLike1, IconLike2, IconLike3 } from "@components/svgs/IconLike"
-import PageGridSVG from "@components/svgs/PageGrid"
+
 import { skills } from "@config/site_data"
-import { StaticImage } from "gatsby-plugin-image"
+import { pub_resume } from "@config/index"
+
+import PageGridSVG from "@components/svgs/PageGrid"
+import { IconLike1, IconLike2, IconLike3 } from "@components/svgs/IconLike"
 
 const HomePage = () => {
   return (
@@ -33,15 +35,18 @@ const HomePage = () => {
             </p>
 
             <div className="mt-8">
-              <button
-                className="rounded-md text-[0.8125rem] font-semibold leading-5 bg-gray-50/10 hover:bg-gray-100/20 backdrop-blur-sm text-white disabled:hover:bg-gray-50/10"
-                disabled
+              <a
+                href={pub_resume}
+                target="_blank"
+                className="inline-block rounded-md text-[0.8125rem] font-semibold leading-5 bg-gray-50/10 hover:bg-gray-100/20 backdrop-blur-sm text-white disabled:hover:bg-gray-50/10 cursor-pointer disabled:cursor-not-allowed select-none"
               >
                 <div className="px-4 py-3 rounded-md flex items-center gap-2">
-                  <span className="material-symbols-rounded">download</span>
-                  <span>Download Resume</span>
+                  <span className="material-symbols-rounded">
+                    picture_as_pdf
+                  </span>
+                  <span>View Resume</span>
                 </div>
-              </button>
+              </a>
             </div>
           </div>
         </DesignedSection>
@@ -76,7 +81,7 @@ const HomePage = () => {
           <div className="grid grid-items-center px-2 py-8 md:p-8">
             <div className="text-base md:text-lg font-sailec font-medium">
               <p>
-                Automation Engineer at{" "}
+                Cloud and OnPrem Automation SME at{" "}
                 <a
                   href={`https://www.hcltech.com/`}
                   target={`_blank`}
@@ -86,26 +91,26 @@ const HomePage = () => {
                   HCLTech, Noida
                 </a>
                 , where I design and implement automated solutions for various
-                projects.
+                tracks.
               </p>
               <br />
               <p>
-                I have a Bachelor of Technology degree in Computer Science and
-                Engineering from{" "}
+                I have a Bachelors degree in Computer Science and Engineering
+                from{" "}
                 <a
                   href={`https://gcekbpatna.ac.in/`}
                   target={`_blank`}
                   rel="noreferrer noopener"
                   className="global_link"
                 >
-                  GCEK Bhawanipatna
+                  GCEK, Bhawanipatna
                 </a>
                 , Odisha
               </p>
               <br />
               <p>
                 I have a passion for Web Development and I enjoy creating
-                dynamic and responsive website.
+                dynamic and responsive Web Apps.
               </p>
               <br />
               <Link
@@ -128,7 +133,7 @@ const HomePage = () => {
       {/* LIKES SECTION */}
       <section className="relative w-full px-4 py-12 md:px-16 md:py-24">
         <PageGridSVG
-          className="absolute bottom-0 left-1/2 text-gray-300 w-full max-w-[724px]"
+          className="absolute bottom-0 left-1/2 text-gray-200 dark:text-gray-700 w-full max-w-[724px]"
           style={{
             transform: "translateX(-50%)",
           }}
@@ -136,7 +141,7 @@ const HomePage = () => {
         <div className="text-center">
           <div className="text-3xl md:text-5xl font-semibold">
             <h1>
-              What I’m <span className="gradient_multi_text">passionate</span>{" "}
+              What I'm <span className="gradient_multi_text">passionate</span>{" "}
               and
               <br className="hidden md:inline" />{" "}
               <span className="gradient_blue_text">enthusiastic</span> about.
@@ -291,7 +296,11 @@ const HomePage = () => {
               Interested to <span className="text-gray-900">Open Source</span>?
             </p>
             <p className="text-md dark:text-gray-700">
-              Email me through <Link to="/contact" className="blog_link">contact page</Link> to contribute.
+              Email me through{" "}
+              <Link to="/contact" className="blog_link">
+                contact page
+              </Link>{" "}
+              to contribute.
             </p>
           </div>
         </div>

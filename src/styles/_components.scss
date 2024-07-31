@@ -25,7 +25,7 @@ $anim-time: 1s;
   transform-origin: center;
   transition: transform 0.7s linear;
 
-  animation: rotate 12s ease infinite;
+  animation: rotate 10s ease infinite;
   animation-delay: 5s;
 
   @include respond(md) {
@@ -42,8 +42,8 @@ $anim-time: 1s;
   left: 0;
   width: var(--size);
   height: var(--size);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  // border-radius: 50%;
   transform: rotate(0deg);
   transition: transform 0.7s linear;
 
@@ -63,6 +63,7 @@ $anim-time: 1s;
     position: absolute;
     width: var(--child);
     height: var(--child);
+    border-radius: 50%;
     top: calc(-1 * var(--child) / 2); /* -child size/2 */
     left: calc(
       (var(--size) / 2) - (var(--child) / 2)
@@ -77,11 +78,15 @@ $anim-time: 1s;
   }
 }
 
-// ACCORDION
+.dark .circular {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* ACCORDION */
 
 .accordion {
   @apply border border-gray-400 dark:border-gray-500 rounded-2xl p-4 my-2;
-  // bg
+  /* bg */
 
   &__head {
     @apply flex select-none cursor-pointer;
@@ -114,7 +119,7 @@ $anim-time: 1s;
   }
 }
 
-// BANNER
+/* BANNER */
 
 .banner {
   @apply relative rounded-xl md:rounded-3xl grid grid-cols-1 overflow-hidden;
@@ -131,7 +136,7 @@ $anim-time: 1s;
   }
 }
 
-// SLIDE Button
+/* SLIDE Button */
 
 .slide_button {
   @apply px-3 py-2.5 bg-gray-800 dark:bg-gray-100 text-white  dark:text-gray-700 rounded-xl flex items-center font-light tracking-wide;
@@ -157,7 +162,7 @@ $anim-time: 1s;
   }
 }
 
-// FORMS
+/* FORMS */
 
 .input {
   @apply block w-full rounded-bl-2xl rounded-tr-2xl border-0 py-2.5 px-4 text-gray-900 dark:text-gray-200 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-multi-c3 dark:focus:ring-multi-c3 sm:leading-6 dark:bg-gray-700 md:text-lg outline-none invalid:focus:ring-multi-c2 invalid:dark:focus:ring-multi-c2 placeholder:font-normal;

@@ -2,7 +2,7 @@ import React from "react"
 
 import { useEffect, useState } from "react"
 
-import { quotes } from "@config/misc"
+import { quotes } from "@config/quotes"
 
 // import QuoteLeft from '../images/assets/graphic/quote-left-solid.svg'
 

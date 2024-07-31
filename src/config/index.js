@@ -35,4 +35,6 @@ const seo = {
   GA4_MEASUREMENT_ID: "G-E427YCY03W",
 }
 
-module.exports = { siteConfig, social, seo }
+const pub_resume = `https://drive.google.com/file/d/1aLRhp6ZZB20e05H5G0JmC861864RAiF2/view`
+
+module.exports = { siteConfig, social, seo, pub_resume }

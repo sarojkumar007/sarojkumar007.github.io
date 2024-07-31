@@ -7,6 +7,8 @@ import IconMySQL from "@components/svgs/IconMySQL"
 import IconPyCharm from "@components/svgs/IconPyCharm"
 import IconPython from "@components/svgs/IconPython"
 import IconSublimeText from "@components/svgs/IconSublimeText"
+import IconAWS from "@components/svgs/IconAWS"
+import IconMSAzure from "@components/svgs/IconMSAzure"
 
 // prettier-ignore
 import {
@@ -90,13 +92,13 @@ export const skills = {
     {
       icon: SiReact,
       skill: "ReactJS",
-      level: "Expert",
+      level: "Intermediate",
       color: "#61DAFB",
     },
     {
       icon: SiAngular,
       skill: "Angular",
-      level: "Intermediate",
+      level: "Expert",
       color: "#DD0031",
     },
     {
@@ -108,7 +110,7 @@ export const skills = {
     {
       icon: SiNextdotjs,
       skill: "Next.js",
-      level: "Expert",
+      level: "Intermediate",
       color: "#000000",
     },
   ],
@@ -116,7 +118,7 @@ export const skills = {
     {
       icon: IconMySQL,
       skill: "MySQL",
-      level: "Intermediate",
+      level: "Basic",
     },
     {
       icon: SiMongodb,
@@ -140,7 +142,7 @@ export const skills = {
     {
       icon: SiAnsible,
       skill: "Ansible",
-      level: "Expert",
+      level: "Intermediate",
       color: "#000000",
     },
     // {
@@ -159,6 +161,16 @@ export const skills = {
       skill: "Markdown",
       level: "Expert",
       color: "#000000",
+    },
+    {
+      icon: IconAWS,
+      skill: "AWS",
+      level: "Intermediate",
+    },
+    {
+      icon: IconMSAzure,
+      skill: "Microsoft Azure",
+      level: "Intermediate",
     },
   ],
   IDEs: [
@@ -193,7 +205,7 @@ export const skills = {
     {
       icon: IconAdobeXD,
       skill: "Adobe XD",
-      level: "Beginner",
+      level: "Basic",
     },
   ],
 }
@@ -234,7 +246,7 @@ export const edu = [
 export const experience = [
   {
     role: `Senior Analyst`,
-    location: `HCL Technologies, Noida`,
+    location: `HCLTech, Noida`,
     duration: {
       from: `Oct 2023`,
       to: `Present`,
@@ -243,7 +255,7 @@ export const experience = [
   },
   {
     role: `Analyst / Automation Engineer`,
-    location: `HCL Technologies, Noida`,
+    location: `HCLTech, Noida`,
     duration: {
       from: `Jan 2022`,
       to: `Oct 2023`,
@@ -261,7 +273,7 @@ export const experience = [
   },
   {
     role: `Senior Development Intern`,
-    location: "Cometa Intellect LLP",
+    location: "Cometa Intellect LLP (Remote)",
     duration: {
       from: "Mar 2020",
       to: `Sep 2020`,
