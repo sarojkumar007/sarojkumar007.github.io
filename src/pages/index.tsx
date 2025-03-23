@@ -81,17 +81,16 @@ const HomePage = () => {
           <div className="grid grid-items-center px-2 py-8 md:p-8">
             <div className="text-base md:text-lg font-sailec font-medium">
               <p>
-                Cloud and OnPrem Automation SME at{" "}
+                Senior App/Cloud Developement SME at{" "}
                 <a
-                  href={`https://www.hcltech.com/`}
+                  href={`https://www.accenture.com/in-en`}
                   target={`_blank`}
                   rel="noreferrer noopener"
                   className="global_link"
                 >
-                  HCLTech, Noida
+                  Accenture, India
                 </a>
-                , where I design and implement automated solutions for various
-                tracks.
+                , where I develop and implement cloud solutions.
               </p>
               <br />
               <p>

@@ -219,7 +219,7 @@ export const edu = [
       from: 2016,
       to: 2020,
     },
-    description: `I came here for my graduation after 1 year of JEE preparation. This college taught me how to tackle life situations being an engineer.`,
+    description: ``,
   },
   {
     title: "Higher Secondary Education",
@@ -229,7 +229,7 @@ export const edu = [
       from: 2013,
       to: 2015,
     },
-    description: `After my High school, I went to town for my intermediate +2. It was quite the experience about everything that will change your life. I learned a lot and did all stuff I can do with my friends. the final year was all about geting your career set, we all focused towards competitives.`,
+    description: ``,
   },
   {
     title: "Higher Education - School",
@@ -239,19 +239,28 @@ export const edu = [
       from: 2003,
       to: 2013,
     },
-    description: `This was the best schooling life, I ever had. I studied 8th to 10th here. I had a lot of friends and teachers were super friendly. I had my times with Junior Red Cross and got chance to join campus training at Bhubaneswar. I was the best cadet in my final year.`,
+    description: ``,
   },
 ]
 
 export const experience = [
   {
+    role: `SDE Ⅱ`,
+    location: `Accenture, India`,
+    duration: {
+      from: `Feb 2025`,
+      to: `Present`,
+    },
+    desc: ``,
+  },
+  {
     role: `Senior Analyst`,
     location: `HCLTech, Noida`,
     duration: {
       from: `Oct 2023`,
-      to: `Present`,
+      to: `Feb 2025`,
     },
-    desc: ``,
+    desc: `Promoted to senior role where I manage the automation perspective as a engineer, helping in solving customer facing tasks, workload achievements and more. Worked on AD, Wintel Tools, Python, PowerShell Advanced, Ansible, AWS Services.`,
   },
   {
     role: `Analyst / Automation Engineer`,
@@ -260,7 +269,7 @@ export const experience = [
       from: `Jan 2022`,
       to: `Oct 2023`,
     },
-    desc: `Promoted to senior role where I manage the automation perspective as a engineer, helping in solving customer facing tasks, workload achievements and more. Worked on AD, Wintel Tools, Python, PowerShell Advanced, Ansible, AWS Services.`,
+    desc: ``,
   },
   {
     role: `Graduate Engineer Trainee`,

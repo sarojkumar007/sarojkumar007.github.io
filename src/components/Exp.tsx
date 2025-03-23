@@ -14,7 +14,7 @@ const Exp: FC<ExpProps> = ({ exp }) => {
         <span className="material-symbols-rounded self-start mt-1 mr-1 gradient_blue_text">
           rocket_launch
         </span>
-        <div className="flex flex-col">
+        <div className="flex flex-col flex-1">
           <div className="flex flex-col md:flex-row md:items-baseline md:space-x-2">
             <h3 className="text-2xl">{exp.role}</h3>
             <span className="text-sm text-gray-400">{exp.location}</span>
